@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mitophy"
+version = "0.1.0"
+description = "Evolution of mitochondria: literature phylogenies + periodically updated de novo analyses, rendered as a static site"
+requires-python = ">=3.10"
+dependencies = ["biopython", "dendropy", "jinja2", "pyyaml", "pyhmmer", "matplotlib", "pandas", "requests"]
+
+[project.scripts]
+mitophy = "mitophy.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mitophy*"]
+
+[tool.setuptools.package-data]
+"mitophy.site" = ["templates/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["e2e: end-to-end fixture pipeline (needs mafft/trimal/iqtree/fasttree)"]

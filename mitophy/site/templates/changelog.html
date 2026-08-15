@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Changelog{% endblock %}
+{% block content %}
+<h1>Changelog</h1>
+<p class="lead">One entry per automated pipeline run, recording data versions, tool versions, models and what changed in the sampled taxon set. Hand-written notes about content changes live in <a href="{{ site.repo_url }}/blob/main/CHANGELOG.md">CHANGELOG.md</a> and the git history.</p>
+{% for r in runs %}
+<div class="card" style="margin:1rem 0">
+  <h3>{{ r.date }} <span class="badge">profile {{ r.profile }}</span> <span class="badge">mitophy {{ r.mitophy_version }}</span></h3>
+  <dl class="kv">
+    <dt>RefSeq mitochondrion</dt><dd>{% for k, v in r.refseq_mito.files.items() %}{{ k }} — {{ v }}{% if not loop.last %}; {% endif %}{% endfor %} · {{ r.refseq_mito.n_records | fmtnum }} records, {{ r.refseq_mito.n_complete_genomes | fmtnum }} complete genomes</dd>
+    {% if r.origin.tool %}<dt>origin tree</dt><dd>{{ r.origin.tool }} {{ r.origin.model }} · {{ r.origin.n_taxa }} taxa × {{ r.origin.n_sites | fmtnum }} sites · {{ r.origin.markers | length }} markers · lnL {{ r.origin.lnL | fmtfloat(1) }} · {{ r.origin.rooted_on }}{% if r.origin.runtime_s %} · {{ (r.origin.runtime_s/60)|round(0)|int }} min{% endif %}</dd>{% endif %}
+    {% if r.diversification.tool %}<dt>diversification tree</dt><dd>{{ r.diversification.tool }} {{ r.diversification.model }} · {{ r.diversification.n_taxa }} taxa × {{ r.diversification.n_sites | fmtnum }} sites · lnL {{ r.diversification.lnL | fmtfloat(1) }}</dd>{% endif %}
+    <dt>sampled genomes</dt><dd>{{ r.diversification.n_sampled }} · +{{ r.diff.added | length }} / −{{ r.diff.removed | length }} vs previous run
+      {% if r.diff.added or r.diff.removed %}<details><summary class="small">show accessions</summary><p class="small">{% if r.diff.added %}added: {{ r.diff.added | join(', ') }}{% endif %}{% if r.diff.removed %}<br>removed: {{ r.diff.removed | join(', ') }}{% endif %}</p></details>{% endif %}</dd>
+    <dt>tools</dt><dd class="small">{% for k, v in r.tools.items() %}{{ k }} {{ v }}{% if not loop.last %} · {% endif %}{% endfor %}</dd>
+    <dt>record</dt><dd class="small"><a href="data/runs/{{ r.date }}.json">{{ r.date }}.json</a></dd>
+  </dl>
+</div>
+{% else %}<p>No runs recorded yet.</p>{% endfor %}
+{% endblock %}

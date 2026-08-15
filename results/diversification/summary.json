@@ -1,0 +1,38 @@
+{
+  "n_refseq_genomes": 17720,
+  "n_sampled": 618,
+  "n_groups": 20,
+  "n_by_supergroup": {
+    "Opisthokonta": 16544,
+    "Archaeplastida": 805,
+    "SAR": 316,
+    "Discoba": 14,
+    "Amoebozoa": 12,
+    "Cryptista": 11,
+    "Other": 7,
+    "Haptista": 6,
+    "Malawimonadida": 3,
+    "CRuMs": 1,
+    "Obazoa": 1
+  },
+  "length_min": 5150,
+  "length_max": 2290019,
+  "largest": "Selenicereus monacanthus",
+  "smallest": "Hypnea edeniana",
+  "most_genes": "Utricularia reniformis",
+  "most_genes_n": 2190,
+  "transl_tables": {
+    "2": 7767,
+    "5": 7282,
+    "4": 1323,
+    "1": 873,
+    "9": 329,
+    "3": 93,
+    "13": 19,
+    "22": 11,
+    "": 9,
+    "11": 7,
+    "16": 5,
+    "14": 2
+  }
+}

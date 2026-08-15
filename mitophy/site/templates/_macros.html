@@ -1,0 +1,26 @@
+{% macro tree_slot(url, title='', collapse=False, labels=False) -%}
+<div class="tree-slot" data-tree="{{ url }}" data-title="{{ title }}" data-collapse="{{ '1' if collapse else '0' }}" data-labels="{{ '1' if labels else '0' }}"><p class="small">Loading tree…</p></div>
+{%- endmacro %}
+
+{% macro run_card(t, title, extra='') -%}
+<div class="card">
+  <h3>{{ title }}</h3>
+  {% if t %}
+  <div class="big">{{ t.n_taxa }} taxa</div>
+  <div class="sub">{{ t.n_sites | fmtnum }} aligned sites · {{ t.markers | length }} markers</div>
+  <dl class="kv" style="margin-top:.5rem">
+    <dt>method</dt><dd>{{ t.tool }} {{ t.model }}</dd>
+    <dt>support</dt><dd>{{ t.support_type }}</dd>
+    <dt>log-likelihood</dt><dd>{{ t.lnL | fmtfloat(1) }}</dd>
+    <dt>rooted on</dt><dd>{{ t.rooted_on }}</dd>
+    <dt>run</dt><dd>{{ t.date }} · profile {{ t.profile }}{% if t.runtime_s %} · {{ (t.runtime_s/60) | round(0) | int }} min{% endif %}</dd>
+  </dl>
+  {{ extra }}
+  {% else %}<p class="small">No result yet — the pipeline has not produced this tree.</p>{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro reflist(keys) -%}
+<h2>References</h2>
+{% for k in keys | unique %}<p class="ref">{{ ref_html(k) | safe }}</p>{% endfor %}
+{%- endmacro %}

@@ -1,0 +1,294 @@
+{
+ "date": "2026-08-15",
+ "timestamp": "2026-08-15T23:39:44Z",
+ "profile": "default",
+ "mitophy_version": "0.1.0",
+ "refseq_mito": {
+  "files": {
+   "mitochondrion.1.genomic.gbff.gz": "Thu, 09 Jul 2026 18:20:43 GMT"
+  },
+  "n_records": 18236,
+  "n_complete_genomes": 17720
+ },
+ "tools": {
+  "python": "3.13.11",
+  "biopython": "1.87",
+  "pyhmmer": "0.12.2",
+  "mafft": "7.505",
+  "trimal": "1.5.rev1",
+  "iqtree": "iqtree3 3.1.1",
+  "fasttree": "2.2.0",
+  "datasets": "18.25.1"
+ },
+ "origin": {
+  "tool": "IQ-TREE",
+  "model": "LG+F+G4",
+  "lnL": -821983.6695,
+  "n_taxa": 103,
+  "n_sites": 10206,
+  "markers": [
+   "atp1",
+   "atp6",
+   "atp9",
+   "cob",
+   "cox1",
+   "cox2",
+   "cox3",
+   "nad1",
+   "nad11",
+   "nad2",
+   "nad3",
+   "nad4",
+   "nad4L",
+   "nad5",
+   "nad6",
+   "nad7",
+   "nad8",
+   "nad9",
+   "rpl14",
+   "rpl16",
+   "rpl2",
+   "rpl5",
+   "rpl6",
+   "rpoB",
+   "rpoC",
+   "rps11",
+   "rps12",
+   "rps19",
+   "rps3",
+   "rps7",
+   "sdh2",
+   "sdh3",
+   "sdh4",
+   "secY",
+   "tufA"
+  ],
+  "rooted_on": "outgroup (Betaproteobacteria, Gammaproteobacteria, Bacteria)",
+  "date": "2026-08-15",
+  "runtime_s": 3260,
+  "profile": "default",
+  "versions": {
+   "iqtree": "iqtree3 3.1.1",
+   "fasttree": "2.2.0",
+   "mafft": "7.505",
+   "trimal": "1.5.rev1"
+  },
+  "orthologs": {
+   "cox1": {
+    "mito": 38,
+    "bact": 58
+   },
+   "cox2": {
+    "mito": 40,
+    "bact": 53
+   },
+   "cox3": {
+    "mito": 40,
+    "bact": 53
+   },
+   "cob": {
+    "mito": 42,
+    "bact": 57
+   },
+   "atp6": {
+    "mito": 40,
+    "bact": 61
+   },
+   "atp9": {
+    "mito": 40,
+    "bact": 61
+   },
+   "atp1": {
+    "mito": 20,
+    "bact": 61
+   },
+   "nad1": {
+    "mito": 41,
+    "bact": 56
+   },
+   "nad2": {
+    "mito": 40,
+    "bact": 57
+   },
+   "nad3": {
+    "mito": 40,
+    "bact": 56
+   },
+   "nad4": {
+    "mito": 41,
+    "bact": 57
+   },
+   "nad4L": {
+    "mito": 39,
+    "bact": 56
+   },
+   "nad5": {
+    "mito": 41,
+    "bact": 59
+   },
+   "nad6": {
+    "mito": 39,
+    "bact": 56
+   },
+   "nad7": {
+    "mito": 28,
+    "bact": 56
+   },
+   "nad8": {
+    "mito": 10,
+    "bact": 56
+   },
+   "nad9": {
+    "mito": 28,
+    "bact": 54
+   },
+   "nad11": {
+    "mito": 17,
+    "bact": 57
+   },
+   "sdh2": {
+    "mito": 12,
+    "bact": 57
+   },
+   "sdh3": {
+    "mito": 19,
+    "bact": 57
+   },
+   "sdh4": {
+    "mito": 18,
+    "bact": 56
+   },
+   "tufA": {
+    "mito": 6,
+    "bact": 61
+   },
+   "rpoB": {
+    "mito": 6,
+    "bact": 60
+   },
+   "rpoC": {
+    "mito": 6,
+    "bact": 60
+   },
+   "secY": {
+    "mito": 5,
+    "bact": 61
+   },
+   "rps3": {
+    "mito": 37,
+    "bact": 60
+   },
+   "rps12": {
+    "mito": 36,
+    "bact": 61
+   },
+   "rpl2": {
+    "mito": 25,
+    "bact": 61
+   },
+   "rpl5": {
+    "mito": 28,
+    "bact": 61
+   },
+   "rpl16": {
+    "mito": 35,
+    "bact": 61
+   },
+   "rpl14": {
+    "mito": 30,
+    "bact": 61
+   },
+   "rps19": {
+    "mito": 31,
+    "bact": 61
+   },
+   "rps7": {
+    "mito": 27,
+    "bact": 61
+   },
+   "rps11": {
+    "mito": 30,
+    "bact": 60
+   },
+   "rpl6": {
+    "mito": 30,
+    "bact": 61
+   }
+  }
+ },
+ "diversification": {
+  "tool": "FastTree",
+  "model": "LG GAMMA",
+  "lnL": -2071826.718,
+  "n_taxa": 618,
+  "n_sites": 4017,
+  "markers": [
+   "atp6",
+   "atp9",
+   "cob",
+   "cox1",
+   "cox2",
+   "cox3",
+   "nad1",
+   "nad2",
+   "nad3",
+   "nad4",
+   "nad4L",
+   "nad5",
+   "nad6"
+  ],
+  "rooted_on": "outgroup (Jakobida)",
+  "date": "2026-08-15",
+  "runtime_s": 113,
+  "profile": "default",
+  "versions": {
+   "iqtree": "iqtree3 3.1.1",
+   "fasttree": "2.2.0",
+   "mafft": "7.505",
+   "trimal": "1.5.rev1"
+  },
+  "n_sampled": 618
+ },
+ "summary": {
+  "n_refseq_genomes": 17720,
+  "n_sampled": 618,
+  "n_groups": 20,
+  "n_by_supergroup": {
+   "Opisthokonta": 16544,
+   "Archaeplastida": 805,
+   "SAR": 316,
+   "Discoba": 14,
+   "Amoebozoa": 12,
+   "Cryptista": 11,
+   "Other": 7,
+   "Haptista": 6,
+   "Malawimonadida": 3,
+   "CRuMs": 1,
+   "Obazoa": 1
+  },
+  "length_min": 5150,
+  "length_max": 2290019,
+  "largest": "Selenicereus monacanthus",
+  "smallest": "Hypnea edeniana",
+  "most_genes": "Utricularia reniformis",
+  "most_genes_n": 2190,
+  "transl_tables": {
+   "2": 7767,
+   "5": 7282,
+   "4": 1323,
+   "1": 873,
+   "9": 329,
+   "3": 93,
+   "13": 19,
+   "22": 11,
+   "": 9,
+   "11": 7,
+   "16": 5,
+   "14": 2
+  }
+ },
+ "diff": {
+  "added": [],
+  "removed": []
+ }
+}

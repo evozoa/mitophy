@@ -1,0 +1,301 @@
+{
+ "id": "eukaryote_supergroups",
+ "title": "Eukaryote supergroups and their mitochondrial genomes (consensus after Burki et al. 2020)",
+ "citations": [
+  "Burki2020",
+  "Roger2017",
+  "Gray2012",
+  "Burger2013",
+  "Janouskovec2017",
+  "Tikhonenkov2022",
+  "Karnkowska2016",
+  "SmithKeeling2015"
+ ],
+ "summary": "Cladogram of eukaryotic supergroups (topology after Burki et al. 2020, with Provora added after Tikhonenkov et al. 2022). The root of the eukaryote tree is unresolved; the tree is drawn with Discoba branching first only for convenience. Each tip carries a summary of what mitochondrial genomes look like in that lineage: size range, number of protein-coding genes, genetic code and notable peculiarities. Hover a tip for details.",
+ "rooted_on": "arbitrary (root of eukaryotes is uncertain)",
+ "tips": {
+  "Jakobida": {
+   "name": "Jakobida",
+   "group": "Jakobida",
+   "color": "#8c1d1d",
+   "note": "The most bacteria-like mtDNAs known: 60–100 kb, 62–66 protein genes (Andalucia godoyi 67.6 kb, 100 genes incl. 66 proteins; Reclinomonas americana 69 kb, 97 genes) incl. a bacterial-type multisubunit RNA polymerase (rpoA–D), tufA, secY, tatC and many ribosomal proteins; Shine–Dalgarno-like motifs; standard genetic code (Lang 1997; Burger 2013)."
+  },
+  "Heterolobosea": {
+   "name": "Heterolobosea",
+   "group": "Discoba",
+   "color": "#c0392b",
+   "note": "Naegleria gruberi: ~50 kb, ~46 protein genes; Acrasis: extensive gene loss/transfer. Standard code."
+  },
+  "Euglenozoa": {
+   "name": "Euglenozoa",
+   "group": "Discoba",
+   "color": "#c0392b",
+   "note": "Bizarre architectures: kinetoplastids have a maxicircle (~20–40 kb, ~18 proteins, many cryptogenes) + thousands of minicircles encoding guide RNAs for U-insertion/deletion editing; diplonemids split genes into modules on separate chromosomes joined by trans-splicing; Euglena has fragmented genes. Standard code."
+  },
+  "Metamonada": {
+   "name": "Metamonada",
+   "group": "Metamonada",
+   "color": "#7f8c8d",
+   "note": "No mitochondrial genome at all: mitosomes/hydrogenosomes (Giardia, Trichomonas) lack DNA; Monocercomonoides has lost the organelle entirely (Karnkowska 2016)."
+  },
+  "Malawimonadida": {
+   "name": "Malawimonadida",
+   "group": "Malawimonadida",
+   "color": "#a04000",
+   "note": "Malawimonas jakobiformis: ~47 kb, ~50 protein genes, gene-rich but lacks the jakobid bacterial RNA polymerase. Standard code."
+  },
+  "Amoebozoa": {
+   "name": "Amoebozoa",
+   "group": "Amoebozoa",
+   "color": "#af7ac5",
+   "note": "Dictyostelium discoideum 55.6 kb (~40 proteins), Acanthamoeba castellanii 41.6 kb (~33 proteins, code 4); Physarum uses C-insertion RNA editing."
+  },
+  "Apusomonadida": {
+   "name": "Apusomonadida",
+   "group": "Apusozoa",
+   "color": "#d2b4de",
+   "note": "Thecamonas trahens: gene-rich mtDNA with many ribosomal-protein genes; standard code."
+  },
+  "Breviatea": {
+   "name": "Breviatea",
+   "group": "Apusozoa",
+   "color": "#d2b4de",
+   "note": "Anaerobic; Pygsuia has hydrogenosome-like organelles; mtDNA highly reduced/absent in some."
+  },
+  "Fungi": {
+   "name": "Fungi",
+   "group": "Fungi",
+   "color": "#6c3483",
+   "note": "19–235 kb (mostly introns and ORFs), typically 14 core proteins (cox1–3, cob, atp6/8/9, nad1–6/4L) plus rps3; loss of complex I in Saccharomycetales/Schizosaccharomyces; mould code (table 4, UGA=Trp) in most; Allomyces/Rhizophydium (chytrids) more gene-rich."
+  },
+  "Ichthyosporea": {
+   "name": "Ichthyosporea (+Filasterea)",
+   "group": "Ichthyosporea",
+   "color": "#5dade2",
+   "note": "Amoebidium parasiticum: hundreds of linear chromosomes, >200 kb total; Capsaspora ~ 197 kb; Sphaeroforma."
+  },
+  "Choanoflagellata": {
+   "name": "Choanoflagellata",
+   "group": "Choanoflagellata",
+   "color": "#2e86c1",
+   "note": "Monosiga brevicollis 76.6 kb, 55 genes including several ribosomal proteins; standard code."
+  },
+  "Metazoa": {
+   "name": "Metazoa",
+   "group": "Metazoa",
+   "color": "#1f4e79",
+   "note": "Bilaterians: compact 14–20 kb circles, 13 proteins (cox1–3, cob, atp6/8, nad1–6/4L), 2 rRNAs, 22 tRNAs; genetic codes 2/4/5/9/13/14/… (Boore 1999). Non-bilaterians differ: cnidarians (linear, code 4, few tRNAs), sponges (up to 25 kb, extra genes), Trichoplax 43 kb with introns (Lavrov & Pett 2016)."
+  },
+  "CRuMs": {
+   "name": "CRuMs",
+   "group": "CRuMs",
+   "color": "#a3e4d7",
+   "note": "Collodictyonids, rigifilids, Mantamonas: gene-rich mtDNAs (e.g. Diphylleia rotans), retaining many ribosomal-protein genes."
+  },
+  "Glaucophyta": {
+   "name": "Glaucophyta",
+   "group": "Glaucophyta",
+   "color": "#45b39d",
+   "note": "Cyanophora paradoxa 51.6 kb, ~ 33 protein genes; Glaucocystis larger."
+  },
+  "Rhodophyta": {
+   "name": "Rhodophyta",
+   "group": "Rhodophyta",
+   "color": "#e74c3c",
+   "note": "25–35 kb, 24–27 protein genes, highly conserved gene order (Chondrus crispus 25.8 kb; Porphyra purpurea 36.8 kb); Cyanidiales similar."
+  },
+  "Chlorophyta": {
+   "name": "Chlorophyta",
+   "group": "Chlorophyta",
+   "color": "#52be80",
+   "note": "Extreme variation: prasinophytes ~45 kb, gene-rich (Nephroselmis olivacea 45.2 kb) vs Chlamydomonas reinhardtii 15.8 kb linear, 7 proteins, fragmented rRNAs; some Sphaeropleales/Ulvophyceae with expanded genomes; non-standard codes in some (Zíhala & Eliáš 2019)."
+  },
+  "Streptophyta": {
+   "name": "Streptophyta (land plants + charophytes)",
+   "group": "Streptophyta",
+   "color": "#1e8449",
+   "note": "Land plants: 200 kb to >11 Mb (Silene conica 11.3 Mb; Sloan 2012), yet only ~40 protein genes; huge intergenic regions, foreign DNA, recombination, C→U RNA editing, multichromosomal structures. Charophytes 40–70 kb, gene-rich (Chara vulgaris 67.7 kb). Standard code."
+  },
+  "Cryptista": {
+   "name": "Cryptista",
+   "group": "Cryptophyta",
+   "color": "#117864",
+   "note": "Rhodomonas salina 48 kb (~45 proteins), Hemiselmis andersenii 60 kb; gene-rich, bacterial-like gene clusters."
+  },
+  "Haptista": {
+   "name": "Haptista",
+   "group": "Haptophyta",
+   "color": "#d4ac0d",
+   "note": "Emiliania huxleyi 29 kb, ~20 protein genes; Chrysochromulina similar; centrohelid mtDNAs are larger and more gene-rich."
+  },
+  "Telonemia": {
+   "name": "Telonemia",
+   "group": "Telonemia",
+   "color": "#f8c471",
+   "note": "Sister lineage of SAR (together TSAR); gene-rich mitogenome, only recently characterised."
+  },
+  "Stramenopiles": {
+   "name": "Stramenopiles",
+   "group": "Stramenopiles",
+   "color": "#ca6f1e",
+   "note": "35–58 kb, ~35–40 protein genes incl. many ribosomal proteins (Phytophthora infestans 37.9 kb; diatoms 35–45 kb; brown algae 35–58 kb; Cafeteria 43 kb; Thraustochytrium ~ 40 kb). Standard code."
+  },
+  "Alveolata": {
+   "name": "Alveolata",
+   "group": "Alveolata",
+   "color": "#f39c12",
+   "note": "Ciliates: linear ~47 kb, ~44 proteins, split genes (Tetrahymena), code 4. Apicomplexa: the smallest mtDNAs, ~6 kb linear tandem repeats with only cox1, cox3, cob and fragmented rRNAs (Plasmodium; Feagin 2012). Dinoflagellates: same three genes, massively fragmented and edited (Waller & Jackson 2009). Chromera/Vitrella: 2 genes."
+  },
+  "Rhizaria": {
+   "name": "Rhizaria",
+   "group": "Rhizaria",
+   "color": "#f7dc6f",
+   "note": "Bigelowiella natans (chlorarachniophyte) ~40 kb; foraminiferan and radiolarian mtDNAs remain poorly known."
+  },
+  "Provora": {
+   "name": "Provora",
+   "group": "Other eukaryotes",
+   "color": "#95a5a6",
+   "note": "Newly recognised supergroup of predatory flagellates (Tikhonenkov 2022); Ancoracysta twista mtDNA 55 kb with 47 protein genes — among the most gene-rich outside jakobids (Janouškovec 2017)."
+  },
+  "Hemimastigophora": {
+   "name": "Hemimastigophora",
+   "group": "Other eukaryotes",
+   "color": "#95a5a6",
+   "note": "Hemimastix kukwesjijk and Spironema: mitochondrial genome data indicate a gene-rich mtDNA; complete genomes still poorly characterised."
+  }
+ },
+ "nodes": {
+  "root": {
+   "title": "Eukaryotes (LECA)",
+   "note": "Position of the root is uncertain (Burki 2020); LECA already had a mitochondrion with a genome broadly resembling that of jakobids in gene content."
+  },
+  "Discoba": {
+   "title": "Discoba"
+  },
+  "Amorphea": {
+   "title": "Amorphea"
+  },
+  "Obazoa": {
+   "title": "Obazoa"
+  },
+  "Opisthokonta": {
+   "title": "Opisthokonta"
+  },
+  "holozoa": {
+   "title": "Holozoa"
+  },
+  "Archaeplastida": {
+   "title": "Archaeplastida"
+  },
+  "Viridiplantae": {
+   "title": "Viridiplantae"
+  },
+  "SAR": {
+   "title": "SAR"
+  },
+  "TSAR": {
+   "title": "TSAR"
+  },
+  "Diaphoretickes": {
+   "title": "Diaphoretickes",
+   "note": "positions of Provora and Hemimastigophora within Diaphoretickes are uncertain (shown as a polytomy)"
+  },
+  "crown": {
+   "title": "crown eukaryotes (Amorphea+CRuMs, Diaphoretickes)"
+  },
+  "amorphea_crums": {
+   "title": "Amorphea + CRuMs"
+  }
+ },
+ "legend": [
+  {
+   "id": "Jakobida",
+   "color": "#8c1d1d"
+  },
+  {
+   "id": "Discoba",
+   "color": "#c0392b"
+  },
+  {
+   "id": "Metamonada",
+   "color": "#7f8c8d"
+  },
+  {
+   "id": "Malawimonadida",
+   "color": "#a04000"
+  },
+  {
+   "id": "Amoebozoa",
+   "color": "#af7ac5"
+  },
+  {
+   "id": "Apusozoa",
+   "color": "#d2b4de"
+  },
+  {
+   "id": "Fungi",
+   "color": "#6c3483"
+  },
+  {
+   "id": "Ichthyosporea",
+   "color": "#5dade2"
+  },
+  {
+   "id": "Choanoflagellata",
+   "color": "#2e86c1"
+  },
+  {
+   "id": "Metazoa",
+   "color": "#1f4e79"
+  },
+  {
+   "id": "CRuMs",
+   "color": "#a3e4d7"
+  },
+  {
+   "id": "Glaucophyta",
+   "color": "#45b39d"
+  },
+  {
+   "id": "Rhodophyta",
+   "color": "#e74c3c"
+  },
+  {
+   "id": "Chlorophyta",
+   "color": "#52be80"
+  },
+  {
+   "id": "Streptophyta",
+   "color": "#1e8449"
+  },
+  {
+   "id": "Cryptophyta",
+   "color": "#117864"
+  },
+  {
+   "id": "Haptophyta",
+   "color": "#d4ac0d"
+  },
+  {
+   "id": "Telonemia",
+   "color": "#f8c471"
+  },
+  {
+   "id": "Stramenopiles",
+   "color": "#ca6f1e"
+  },
+  {
+   "id": "Alveolata",
+   "color": "#f39c12"
+  },
+  {
+   "id": "Rhizaria",
+   "color": "#f7dc6f"
+  },
+  {
+   "id": "Other eukaryotes",
+   "color": "#95a5a6"
+  }
+ ]
+}

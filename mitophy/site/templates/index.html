@@ -1,0 +1,45 @@
+{% extends "base.html" %}{% import "_macros.html" as m with context %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>The evolution of mitochondria</h1>
+<p class="lead">Mitochondria descend from a bacterial endosymbiont related to the Alphaproteobacteria that was acquired more than 1.5 billion years ago, before the last eukaryotic common ancestor. Two questions organise this site: <a href="origin.html"><b>where</b></a> exactly among bacteria the mitochondrial lineage comes from, and <a href="diversification.html"><b>how</b></a> its genome subsequently diversified across the eukaryotic tree — from the bacteria-like, ~100-gene mtDNAs of jakobid flagellates to the 6 kb, three-gene remnants of apicomplexan parasites and the multi-megabase genomes of flowering plants.</p>
+<p>For each question the site shows two things side by side: a <b>curated summary of the literature</b> (hypotheses, key studies, what they used and what they found) and a <b>de novo analysis that is re-run automatically</b> from public data (NCBI RefSeq mitochondrial genomes and RefSeq bacterial proteomes) on a monthly schedule, so that trees, tables and charts track the growth of the databases. Every automated run is logged with data versions, tool versions and model details in the <a href="changelog.html">changelog</a>.</p>
+
+<h2>Current de novo results</h2>
+<div class="grid">
+  {% set o = origin.tree %}
+  {{ m.run_card(o, 'Origin: mitochondria among Alphaproteobacteria', ('<p class="small" style="margin:.6rem 0 0"><a href="origin.html#denovo">view tree →</a></p>') | safe) }}
+  {% set d = div.tree %}
+  {{ m.run_card(d, 'Diversification: mitochondrial genomes across eukaryotes', ('<p class="small" style="margin:.6rem 0 0"><a href="diversification.html#denovo">view tree →</a></p>') | safe) }}
+  <div class="card">
+    <h3>RefSeq mitochondrial genomes</h3>
+    {% if div.summary %}
+    <div class="big">{{ div.summary.n_refseq_genomes | fmtnum }}</div>
+    <div class="sub">complete mitogenomes parsed{% if latest.refseq_mito %} · release files: {% for k, v in latest.refseq_mito.files.items() %}{{ k }} ({{ v }}){% endfor %}{% endif %}</div>
+    <dl class="kv" style="margin-top:.5rem">
+      <dt>sampled for tree</dt><dd>{{ div.summary.n_sampled }}</dd>
+      <dt>size range</dt><dd>{{ div.summary.length_min | fmtnum }} bp (<i>{{ div.summary.smallest }}</i>) – {{ div.summary.length_max | fmtnum }} bp (<i>{{ div.summary.largest }}</i>)</dd>
+      <dt>most annotated proteins</dt><dd>{{ div.summary.most_genes_n }} (<i>{{ div.summary.most_genes }}</i>)</dd>
+    </dl>
+    {% else %}<p class="small">No data yet.</p>{% endif %}
+  </div>
+</div>
+
+{% if origin.headline and origin.headline.ok %}
+<div class="callout info" style="margin-top:1.2rem">
+  <b>Headline from the current automated origin tree:</b>
+  mitochondria are {% if origin.headline.monophyletic %}monophyletic{% else %}<b>not</b> recovered as monophyletic (clade of {{ origin.headline.clade_size }} includes {{ origin.headline.intruders }}){% endif %}
+  and their sister group is
+  {% if origin.headline.interpretation == 'rickettsiales_sister' %}the <b>Rickettsiales</b>{% elif origin.headline.interpretation == 'sister_to_alpha' %}<b>all sampled Alphaproteobacteria</b>{% else %}a clade of {{ origin.headline.sister_size }} taxa ({% for g, n in origin.headline.sister_groups %}{{ g }} {{ n }}{% if not loop.last %}, {% endif %}{% endfor %}){% endif %}
+  {% if origin.headline.sister_support %}(support at that node: {{ origin.headline.sister_support | fmtsupport }}){% endif %}.
+  <span class="small">Under a site-homogeneous LG+F+G4 model this is expected to be biased towards Rickettsiales-sister — see the <a href="origin.html">Origin page</a> for why.</span>
+</div>
+{% endif %}
+
+<h2>What is on this site</h2>
+<div class="grid">
+  <div class="card"><h3><a href="origin.html">Origin</a></h3><p>Competing hypotheses for the position of mitochondria relative to Alphaproteobacteria (sister to Rickettsiales; sister to all Alphaproteobacteria; within Alphaproteobacteria with Rickettsiales + marine Alpha-II lineages; the refuted SAR11 hypothesis), a table of what differs between studies, and the automated concatenated-protein tree of mitochondrion-encoded proteins with their bacterial homologs.</p></div>
+  <div class="card"><h3><a href="diversification.html">Diversification</a></h3><p>A consensus tree of eukaryote supergroups annotated with what mitochondrial genomes look like in each lineage, a gene-retention matrix for representative genomes, and an automated tree of ~600 taxonomically balanced RefSeq mitogenomes with genome-size, gene-content and genetic-code statistics over all ~{{ (div.summary.n_refseq_genomes // 1000 * 1000) | fmtnum if div.summary else '17,000' }} complete mitogenomes.</p></div>
+  <div class="card"><h3><a href="methods.html">Data &amp; Methods</a></h3><p>Marker genes and synonyms, taxon lists, sampling rules, ortholog assignment, alignment/trimming/tree-inference settings, tool versions and download links for all alignments, trees and tables.</p></div>
+</div>
+{% endblock %}

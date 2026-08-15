@@ -1,0 +1,27 @@
+name: test
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["results/**", "CHANGELOG.md"]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mamba-org/setup-micromamba@v2
+        with:
+          environment-file: environment.yml
+          cache-environment: true
+          init-shell: bash
+      - name: Unit tests
+        shell: bash -l {0}
+        run: pytest -q -m "not e2e"
+      - name: Fixture end-to-end (quick profile, offline)
+        shell: bash -l {0}
+        run: pytest -q -m e2e
+      - name: Site build
+        shell: bash -l {0}
+        run: mitophy site

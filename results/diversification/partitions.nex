@@ -1,0 +1,16 @@
+#nexus
+begin sets;
+  charset atp6 = 1-246;
+  charset atp9 = 247-321;
+  charset cob = 322-702;
+  charset cox1 = 703-1224;
+  charset cox2 = 1225-1469;
+  charset cox3 = 1470-1734;
+  charset nad1 = 1735-2057;
+  charset nad2 = 2058-2501;
+  charset nad3 = 2502-2618;
+  charset nad4 = 2619-3096;
+  charset nad4L = 3097-3195;
+  charset nad5 = 3196-3835;
+  charset nad6 = 3836-4017;
+end;

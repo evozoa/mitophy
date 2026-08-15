@@ -1,0 +1,154 @@
+# Marker genes for the two analyses.
+#   id         canonical (mito) gene id used in filenames
+#   synonyms   /gene and /product values in RefSeq mito GenBank records (matched after normalisation, see extract_mito.py)
+#   bact       bacterial homolog: product-name regexes (case-insensitive) used to pick seed sequences from RefSeq proteomes;
+#              the per-marker HMM is then built from mito + bacterial seeds and searched against every proteome
+#   use        which analyses use the marker: origin (mito + bacteria), diversification (mito only)
+# nad<n> <-> nuo mapping follows Lang et al. 1997 / Gray 2012 (nad7=NuoD, nad8=NuoI, nad9=NuoC, nad10=NuoE, nad11=NuoG).
+markers:
+  - id: cox1
+    synonyms: [cox1p, cox1, coi, co1, coxi, cox-1, mt-co1, "cytochrome c oxidase subunit 1", "cytochrome c oxidase subunit i", "cytochrome oxidase subunit 1", "cytochrome oxidase subunit i", "cytochrome c oxidase subunit1"]
+    bact: {product: ["cytochrome c oxidase subunit I$", "cytochrome c oxidase subunit 1$", "cytochrome-c oxidase subunit I", "^cytochrome c oxidase subunit I,", "\\bctaD\\b", "\\bcoxA\\b"], paralogs: "heme-copper oxidase family (cyoB, qoxB, ccoN, cbb3-type) — best hit + margin check"}
+    use: [origin, diversification]
+  - id: cox2
+    synonyms: [cox2p, cox2, coii, co2, coxii, cox-2, mt-co2, "cytochrome c oxidase subunit 2", "cytochrome c oxidase subunit ii", "cytochrome oxidase subunit 2", "cytochrome oxidase subunit ii"]
+    bact: {product: ["cytochrome c oxidase subunit II$", "cytochrome c oxidase subunit 2$", "cytochrome-c oxidase subunit II", "\\bctaC\\b", "\\bcoxB\\b"]}
+    use: [origin, diversification]
+  - id: cox3
+    synonyms: [cox3p, cox3, coiii, co3, coxiii, cox-3, mt-co3, "cytochrome c oxidase subunit 3", "cytochrome c oxidase subunit iii", "cytochrome oxidase subunit 3", "cytochrome oxidase subunit iii"]
+    bact: {product: ["cytochrome c oxidase subunit III$", "cytochrome c oxidase subunit 3$", "cytochrome-c oxidase subunit III", "\\bctaE\\b", "\\bcoxC\\b"]}
+    use: [origin, diversification]
+  - id: cob
+    synonyms: [cobp, cob, cytb, cyt-b, cyb, mt-cyb, "cytochrome b", "apocytochrome b", "cytochrome b/b6"]
+    bact: {product: ["ubiquinol-cytochrome c reductase cytochrome b subunit", "cytochrome b$", "cytochrome bc1 complex cytochrome b subunit", "quinol-cytochrome c reductase cytochrome b", "\\bpetB\\b", "\\bqcrB\\b"]}
+    use: [origin, diversification]
+  - id: atp6
+    synonyms: [atp6p, atp6, atpase6, atpase 6, mt-atp6, "atp synthase f0 subunit 6", "atp synthase fo subunit 6", "atp synthase subunit 6", "atp synthase subunit a", "atp synthase f0 subunit a", "atpase subunit 6", "atp synthase subunit 6 (atpase6)", "f0-atp synthase subunit 6"]
+    bact: {product: ["F0F1 ATP synthase subunit A$", "ATP synthase subunit a$", "F0F1 ATP synthase subunit a$", "\\batpB\\b"]}
+    use: [origin, diversification]
+  - id: atp8
+    synonyms: [atp8p, atp8, atpase8, atpase 8, mt-atp8, "atp synthase f0 subunit 8", "atp synthase fo subunit 8", "atp synthase subunit 8", "atpase subunit 8", "atp synthase protein 8"]
+    use: []            # tracked for gene-content stats only (too short/variable to align across eukaryotes)
+  - id: atp9
+    synonyms: [atp9p, atp9, atpase9, "atp synthase f0 subunit 9", "atp synthase fo subunit 9", "atp synthase subunit 9", "atp synthase subunit c", "atp synthase f0 subunit c", "atpase subunit 9", "atp synthase c subunit", "atp synthase subunit c (proteolipid)"]
+    bact: {product: ["F0F1 ATP synthase subunit C$", "ATP synthase subunit c$", "F0F1 ATP synthase subunit c$", "\\batpE\\b"]}
+    use: [origin, diversification]
+  - id: atp1
+    synonyms: [atp1, atpa, "atp synthase f1 subunit alpha", "atp synthase subunit alpha", "atp synthase alpha subunit", "atp synthase f1 subunit 1", "atpase alpha subunit", "atp synthase subunit 1"]
+    bact: {product: ["F0F1 ATP synthase subunit alpha", "ATP synthase subunit alpha", "\\batpA\\b"]}
+    use: [origin]
+  - id: nad1
+    synonyms: [nad1, nd1, nadh1, mt-nd1, "nadh dehydrogenase subunit 1", "nadh dehydrogenase subunit i", "nadh-ubiquinone oxidoreductase chain 1", "nadh dehydrogenase 1", "nadh dehydrogenase subunit1"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoH", "NADH-quinone oxidoreductase subunit H", "NADH dehydrogenase subunit H$", "\\bnuoH\\b", "NADH-quinone oxidoreductase subunit 1$"]}
+    use: [origin, diversification]
+  - id: nad2
+    synonyms: [nad2, nd2, nadh2, mt-nd2, "nadh dehydrogenase subunit 2", "nadh dehydrogenase subunit ii", "nadh-ubiquinone oxidoreductase chain 2", "nadh dehydrogenase 2"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoN", "NADH-quinone oxidoreductase subunit N", "\\bnuoN\\b", "NADH-quinone oxidoreductase subunit 14$"], paralogs: "NuoL/NuoM/NuoN antiporter-like family"}
+    use: [origin, diversification]
+  - id: nad3
+    synonyms: [nad3, nd3, nadh3, mt-nd3, "nadh dehydrogenase subunit 3", "nadh dehydrogenase subunit iii", "nadh-ubiquinone oxidoreductase chain 3", "nadh dehydrogenase 3"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoA", "NADH-quinone oxidoreductase subunit A$", "\\bnuoA\\b", "NADH-quinone oxidoreductase subunit 3$"]}
+    use: [origin, diversification]
+  - id: nad4
+    synonyms: [nad4, nd4, nadh4, mt-nd4, "nadh dehydrogenase subunit 4", "nadh dehydrogenase subunit iv", "nadh-ubiquinone oxidoreductase chain 4", "nadh dehydrogenase 4"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoM", "NADH-quinone oxidoreductase subunit M$", "\\bnuoM\\b", "NADH-quinone oxidoreductase subunit 13$"], paralogs: "NuoL/NuoM/NuoN antiporter-like family"}
+    use: [origin, diversification]
+  - id: nad4L
+    synonyms: [nad4l, nd4l, nadh4l, mt-nd4l, "nadh dehydrogenase subunit 4l", "nadh dehydrogenase subunit ivl", "nadh-ubiquinone oxidoreductase chain 4l", "nadh dehydrogenase 4l"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoK", "NADH-quinone oxidoreductase subunit K$", "\\bnuoK\\b", "NADH-quinone oxidoreductase subunit 11$"]}
+    use: [origin, diversification]
+  - id: nad5
+    synonyms: [nad5, nd5, nadh5, mt-nd5, "nadh dehydrogenase subunit 5", "nadh dehydrogenase subunit v", "nadh-ubiquinone oxidoreductase chain 5", "nadh dehydrogenase 5"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoL", "NADH-quinone oxidoreductase subunit L$", "\\bnuoL\\b", "NADH-quinone oxidoreductase subunit 12$"], paralogs: "NuoL/NuoM/NuoN antiporter-like family"}
+    use: [origin, diversification]
+  - id: nad6
+    synonyms: [nad6, nd6, nadh6, mt-nd6, "nadh dehydrogenase subunit 6", "nadh dehydrogenase subunit vi", "nadh-ubiquinone oxidoreductase chain 6", "nadh dehydrogenase 6"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoJ", "NADH-quinone oxidoreductase subunit J$", "\\bnuoJ\\b", "NADH-quinone oxidoreductase subunit 10$"]}
+    use: [origin, diversification]
+  - id: nad7
+    synonyms: [nad7, nd7, "nadh dehydrogenase subunit 7", "nadh dehydrogenase subunit vii", "nadh-ubiquinone oxidoreductase 49 kda subunit", "nadh dehydrogenase 49 kda subunit"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoD", "NADH-quinone oxidoreductase subunit D$", "NADH dehydrogenase \\(quinone\\) subunit D", "\\bnuoD\\b", "NADH-quinone oxidoreductase subunit 4$"]}
+    use: [origin, diversification]
+  - id: nad8
+    synonyms: [nad8, nd8, "nadh dehydrogenase subunit 8", "nadh-ubiquinone oxidoreductase 23 kda subunit", "nadh dehydrogenase 23 kda subunit"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoI", "NADH-quinone oxidoreductase subunit I$", "\\bnuoI\\b", "NADH-quinone oxidoreductase subunit 8$"]}
+    use: [origin]
+  - id: nad9
+    synonyms: [nad9, nd9, "nadh dehydrogenase subunit 9", "nadh-ubiquinone oxidoreductase 30 kda subunit", "nadh dehydrogenase 30 kda subunit"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoC", "NADH-quinone oxidoreductase subunit C$", "NADH-quinone oxidoreductase subunit C/D", "\\bnuoC\\b", "NADH-quinone oxidoreductase subunit 3$"]}
+    use: [origin, diversification]
+  - id: nad11
+    synonyms: [nad11, nd11, "nadh dehydrogenase subunit 11", "nadh-ubiquinone oxidoreductase 75 kda subunit", "nadh dehydrogenase 75 kda subunit"]
+    bact: {product: ["NADH-quinone oxidoreductase subunit NuoG", "NADH-quinone oxidoreductase subunit G$", "\\bnuoG\\b", "NADH-quinone oxidoreductase subunit 7$"]}
+    use: [origin]
+  - id: sdh2
+    synonyms: [sdh2, sdhb, "succinate dehydrogenase subunit 2", "succinate dehydrogenase iron-sulfur subunit", "succinate dehydrogenase iron-sulfur protein", "succinate dehydrogenase subunit b"]
+    bact: {product: ["succinate dehydrogenase iron-sulfur subunit", "succinate dehydrogenase.*iron-sulfur", "\\bsdhB\\b"]}
+    use: [origin]
+  - id: sdh3
+    synonyms: [sdh3, sdhc, "succinate dehydrogenase subunit 3", "succinate dehydrogenase cytochrome b subunit", "succinate dehydrogenase subunit c", "succinate dehydrogenase cytochrome b560 subunit"]
+    bact: {product: ["succinate dehydrogenase cytochrome b subunit", "succinate dehydrogenase, cytochrome b556 subunit", "\\bsdhC\\b"]}
+    use: [origin]
+  - id: sdh4
+    synonyms: [sdh4, sdhd, "succinate dehydrogenase subunit 4", "succinate dehydrogenase membrane anchor subunit", "succinate dehydrogenase subunit d", "succinate dehydrogenase hydrophobic membrane anchor protein"]
+    bact: {product: ["succinate dehydrogenase membrane anchor subunit", "succinate dehydrogenase, hydrophobic membrane anchor protein", "\\bsdhD\\b"]}
+    use: [origin]
+  - id: tufA
+    synonyms: [tufa, tuf, "elongation factor tu", "translation elongation factor tu", "elongation factor tu (ef-tu)"]
+    bact: {product: ["elongation factor Tu$", "translation elongation factor Tu", "\\btufA\\b"]}
+    use: [origin]
+  - id: rpoB
+    synonyms: [rpob, "dna-directed rna polymerase subunit beta", "rna polymerase beta subunit", "dna-directed rna polymerase beta subunit", "rna polymerase subunit beta"]
+    bact: {product: ["DNA-directed RNA polymerase subunit beta$", "\\brpoB\\b"]}
+    use: [origin]
+  - id: rpoC
+    synonyms: [rpoc, "dna-directed rna polymerase subunit beta'", "rna polymerase beta' subunit", "dna-directed rna polymerase beta' subunit", "rna polymerase subunit beta'"]
+    bact: {product: ["DNA-directed RNA polymerase subunit beta'$", "\\brpoC\\b"]}
+    use: [origin]
+  - id: secY
+    synonyms: [secy, "preprotein translocase subunit secy", "protein translocase subunit secy", "preprotein translocase secy subunit"]
+    bact: {product: ["preprotein translocase subunit SecY", "\\bsecY\\b"]}
+    use: [origin]
+  - id: rps3
+    synonyms: [rps3p, var1, rps3, "ribosomal protein s3", "small subunit ribosomal protein s3", "30s ribosomal protein s3", "ribosomal protein s3 (rps3)"]
+    bact: {product: ["30S ribosomal protein S3$", "\\brpsC\\b"]}
+    use: [origin]
+  - id: rps12
+    synonyms: [rps12, "ribosomal protein s12", "small subunit ribosomal protein s12", "30s ribosomal protein s12"]
+    bact: {product: ["30S ribosomal protein S12$", "\\brpsL\\b"]}
+    use: [origin]
+  - id: rpl2
+    synonyms: [rpl2, "ribosomal protein l2", "large subunit ribosomal protein l2", "50s ribosomal protein l2"]
+    bact: {product: ["50S ribosomal protein L2$", "\\brplB\\b"]}
+    use: [origin]
+  - id: rpl5
+    synonyms: [rpl5, "ribosomal protein l5", "large subunit ribosomal protein l5", "50s ribosomal protein l5"]
+    bact: {product: ["50S ribosomal protein L5$", "\\brplE\\b"]}
+    use: [origin]
+  - id: rpl16
+    synonyms: [rpl16, "ribosomal protein l16", "large subunit ribosomal protein l16", "50s ribosomal protein l16"]
+    bact: {product: ["50S ribosomal protein L16$", "\\brplP\\b"]}
+    use: [origin]
+  - id: rpl14
+    synonyms: [rpl14, "ribosomal protein l14", "large subunit ribosomal protein l14", "50s ribosomal protein l14"]
+    bact: {product: ["50S ribosomal protein L14$", "\\brplN\\b"]}
+    use: [origin]
+  - id: rps19
+    synonyms: [rps19, "ribosomal protein s19", "small subunit ribosomal protein s19", "30s ribosomal protein s19"]
+    bact: {product: ["30S ribosomal protein S19$", "\\brpsS\\b"]}
+    use: [origin]
+  - id: rps7
+    synonyms: [rps7, "ribosomal protein s7", "small subunit ribosomal protein s7", "30s ribosomal protein s7"]
+    bact: {product: ["30S ribosomal protein S7$", "\\brpsG\\b"]}
+    use: [origin]
+  - id: rps11
+    synonyms: [rps11, "ribosomal protein s11", "small subunit ribosomal protein s11", "30s ribosomal protein s11"]
+    bact: {product: ["30S ribosomal protein S11$", "\\brpsK\\b"]}
+    use: [origin]
+  - id: rpl6
+    synonyms: [rpl6, "ribosomal protein l6", "large subunit ribosomal protein l6", "50s ribosomal protein l6"]
+    bact: {product: ["50S ribosomal protein L6$", "\\brplF\\b"]}
+    use: [origin]
+
+# Product strings that are ignored (not counted as unmatched) when scanning mito CDS annotations
+ignore_products: ["hypothetical protein", "orf", "unnamed protein product", "unknown", "maturase", "intron", "reverse transcriptase", "endonuclease", "homing", "putative protein"]

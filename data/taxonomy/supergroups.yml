@@ -1,0 +1,38 @@
+# Map NCBI lineage substrings (first match wins, in order) to display groups and colours.
+groups:
+  - {id: Jakobida,        match: ["Jakobida"],                             color: "#8c1d1d", supergroup: Discoba}
+  - {id: Discoba,         match: ["Discoba", "Euglenozoa", "Heterolobosea"], color: "#c0392b", supergroup: Discoba}
+  - {id: Metamonada,      match: ["Metamonada", "Fornicata", "Parabasalia"], color: "#7f8c8d", supergroup: Metamonada}
+  - {id: Malawimonadida,  match: ["Malawimonadida", "Malawimonas"],       color: "#a04000", supergroup: Malawimonadida}
+  - {id: Metazoa,         match: ["Metazoa"],                              color: "#1f4e79", supergroup: Opisthokonta}
+  - {id: Choanoflagellata,match: ["Choanoflagellata"],                     color: "#2e86c1", supergroup: Opisthokonta}
+  - {id: Ichthyosporea,   match: ["Ichthyosporea", "Filasterea", "Pluriformea"], color: "#5dade2", supergroup: Opisthokonta}
+  - {id: Fungi,           match: ["Fungi"],                                color: "#6c3483", supergroup: Opisthokonta}
+  - {id: Amoebozoa,       match: ["Amoebozoa"],                            color: "#af7ac5", supergroup: Amoebozoa}
+  - {id: Apusozoa,        match: ["Apusozoa", "Apusomonadida", "Breviatea"], color: "#d2b4de", supergroup: Obazoa}
+  - {id: CRuMs,           match: ["Rigifilida", "Collodictyonidae", "Mantamonas", "Diphylleia"], color: "#a3e4d7", supergroup: CRuMs}
+  - {id: Streptophyta,    match: ["Streptophyta"],                         color: "#1e8449", supergroup: Archaeplastida}
+  - {id: Chlorophyta,     match: ["Chlorophyta"],                          color: "#52be80", supergroup: Archaeplastida}
+  - {id: Rhodophyta,      match: ["Rhodophyta"],                           color: "#e74c3c", supergroup: Archaeplastida}
+  - {id: Glaucophyta,     match: ["Glaucocystophyceae", "Glaucophyta"],    color: "#45b39d", supergroup: Archaeplastida}
+  - {id: Cryptophyta,     match: ["Cryptophyceae", "Cryptophyta"],         color: "#117864", supergroup: Cryptista}
+  - {id: Haptophyta,      match: ["Haptophyta", "Haptista", "Centroplasthelida"], color: "#d4ac0d", supergroup: Haptista}
+  - {id: Stramenopiles,   match: ["Stramenopiles", "Oomycota", "Bacillariophyta", "Phaeophyceae"], color: "#ca6f1e", supergroup: SAR}
+  - {id: Alveolata,       match: ["Alveolata", "Ciliophora", "Apicomplexa", "Dinophyceae"], color: "#f39c12", supergroup: SAR}
+  - {id: Rhizaria,        match: ["Rhizaria", "Cercozoa", "Foraminifera"],   color: "#f7dc6f", supergroup: SAR}
+  - {id: Telonemia,       match: ["Telonemida"],                            color: "#f8c471", supergroup: TSAR}
+  - {id: Other eukaryotes,match: ["Eukaryota"],                            color: "#95a5a6", supergroup: Other}
+  # bacterial groups (origin analysis)
+  - {id: Rickettsiales,   match: ["Rickettsiales"],                        color: "#b03a2e", supergroup: Alphaproteobacteria}
+  - {id: Holosporales,    match: ["Holosporales"],                         color: "#e6b0aa", supergroup: Alphaproteobacteria}
+  - {id: Pelagibacterales,match: ["Pelagibacterales", "SAR11"],            color: "#f5b041", supergroup: Alphaproteobacteria}
+  - {id: Rhodospirillales,match: ["Rhodospirillales", "Acetobacterales", "Azospirillales"], color: "#5b2c6f", supergroup: Alphaproteobacteria}
+  - {id: Sphingomonadales,match: ["Sphingomonadales"],                     color: "#1abc9c", supergroup: Alphaproteobacteria}
+  - {id: Hyphomicrobiales,match: ["Hyphomicrobiales", "Rhizobiales"],      color: "#27ae60", supergroup: Alphaproteobacteria}
+  - {id: Caulobacterales, match: ["Caulobacterales"],                      color: "#2980b9", supergroup: Alphaproteobacteria}
+  - {id: Rhodobacterales, match: ["Rhodobacterales"],                      color: "#8e44ad", supergroup: Alphaproteobacteria}
+  - {id: Magnetococcales, match: ["Magnetococcales", "Magnetococcia"],     color: "#d35400", supergroup: Alphaproteobacteria}
+  - {id: Other Alphaproteobacteria, match: ["Alphaproteobacteria"],        color: "#7d6608", supergroup: Alphaproteobacteria}
+  - {id: Betaproteobacteria,  match: ["Betaproteobacteria"],               color: "#566573", supergroup: Outgroup}
+  - {id: Gammaproteobacteria, match: ["Gammaproteobacteria"],              color: "#2c3e50", supergroup: Outgroup}
+  - {id: Bacteria,        match: ["Bacteria"],                             color: "#17202a", supergroup: Outgroup}

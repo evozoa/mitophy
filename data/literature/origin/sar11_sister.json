@@ -1,0 +1,154 @@
+{
+ "id": "sar11_sister",
+ "title": "Mitochondria sister to SAR11 (Pelagibacterales) — historical",
+ "hypothesis": "sar11_sister",
+ "summary": "Thrash et al. (2011) recovered mitochondria as sister to the abundant, streamlined marine SAR11 clade, suggesting a free-living, oligotrophic ancestor. Reanalyses showed the grouping to be a compositional/long-branch artefact: SAR11 and mitochondria (and Rickettsiales) share extremely AT-rich genomes; with better models and site stripping SAR11 falls elsewhere within Alphaproteobacteria and the SAR11–mitochondria clade disappears.",
+ "citations": [
+  "Thrash2011",
+  "RodriguezEzpeleta2012",
+  "Viklund2012"
+ ],
+ "dataset": "Thrash 2011: concatenated protein set incl. newly sequenced SAR11 genomes, homogeneous models. Rodríguez-Ezpeleta & Embley 2012 and Viklund 2012: CAT model, recoding, removal of fast/biased sites → SAR11 not related to mitochondria.",
+ "status": "Refuted; kept here as a textbook example of compositional attraction.",
+ "tips": {
+  "Mitochondria": {
+   "name": "Mitochondria",
+   "group": "Mitochondria",
+   "color": "#8c1d1d",
+   "kind": "mito",
+   "note": "mitochondrion-encoded proteins from gene-rich protists (e.g. Reclinomonas)"
+  },
+  "Rickettsiales": {
+   "name": "Rickettsiales",
+   "group": "Rickettsiales",
+   "color": "#b03a2e",
+   "kind": "bacteria",
+   "note": "Rickettsiaceae, Anaplasmataceae, Midichloriaceae"
+  },
+  "Holosporales": {
+   "name": "Holosporales",
+   "group": "Holosporales",
+   "color": "#e6b0aa",
+   "kind": "bacteria",
+   "note": "once grouped with Rickettsiales; independent origin of parasitism (Muñoz-Gómez 2019)"
+  },
+  "Pelagibacterales": {
+   "name": "Pelagibacterales (SAR11)",
+   "group": "Pelagibacterales",
+   "color": "#f5b041",
+   "kind": "bacteria"
+  },
+  "Rhodospirillales": {
+   "name": "Rhodospirillales",
+   "group": "Rhodospirillales",
+   "color": "#5b2c6f",
+   "kind": "bacteria"
+  },
+  "Sphingomonadales": {
+   "name": "Sphingomonadales",
+   "group": "Sphingomonadales",
+   "color": "#1abc9c",
+   "kind": "bacteria"
+  },
+  "Rhodobacterales": {
+   "name": "Rhodobacterales",
+   "group": "Rhodobacterales",
+   "color": "#8e44ad",
+   "kind": "bacteria"
+  },
+  "Caulobacterales": {
+   "name": "Caulobacterales",
+   "group": "Caulobacterales",
+   "color": "#2980b9",
+   "kind": "bacteria"
+  },
+  "Hyphomicrobiales": {
+   "name": "Hyphomicrobiales (Rhizobiales)",
+   "group": "Hyphomicrobiales",
+   "color": "#27ae60",
+   "kind": "bacteria"
+  },
+  "Magnetococcales": {
+   "name": "Magnetococcales",
+   "group": "Magnetococcales",
+   "color": "#d35400",
+   "kind": "bacteria",
+   "note": "earliest-branching alphaproteobacterial order"
+  },
+  "Betaproteobacteria": {
+   "name": "Betaproteobacteria (outgroup)",
+   "group": "Betaproteobacteria",
+   "color": "#566573",
+   "kind": "bacteria"
+  },
+  "Gammaproteobacteria": {
+   "name": "Gammaproteobacteria (outgroup)",
+   "group": "Gammaproteobacteria",
+   "color": "#2c3e50",
+   "kind": "bacteria"
+  }
+ },
+ "nodes": {
+  "mito_sar11": {
+   "title": "Mitochondria + SAR11",
+   "label": "key node (artefact)",
+   "note": "Grouping of the three most AT-rich lineages (SAR11, Rickettsiales, mitochondria) is unstable and disappears under CAT/recoding."
+  },
+  "alpha": {
+   "title": "Alphaproteobacteria"
+  },
+  "rhodo_holo": {
+   "note": "Holosporales branch with Rhodospirillales-related lineages, not with Rickettsiales (Muñoz-Gómez 2019)"
+  }
+ },
+ "legend": [
+  {
+   "id": "Mitochondria",
+   "color": "#8c1d1d"
+  },
+  {
+   "id": "Rickettsiales",
+   "color": "#b03a2e"
+  },
+  {
+   "id": "Holosporales",
+   "color": "#e6b0aa"
+  },
+  {
+   "id": "Pelagibacterales",
+   "color": "#f5b041"
+  },
+  {
+   "id": "Rhodospirillales",
+   "color": "#5b2c6f"
+  },
+  {
+   "id": "Sphingomonadales",
+   "color": "#1abc9c"
+  },
+  {
+   "id": "Rhodobacterales",
+   "color": "#8e44ad"
+  },
+  {
+   "id": "Caulobacterales",
+   "color": "#2980b9"
+  },
+  {
+   "id": "Hyphomicrobiales",
+   "color": "#27ae60"
+  },
+  {
+   "id": "Magnetococcales",
+   "color": "#d35400"
+  },
+  {
+   "id": "Betaproteobacteria",
+   "color": "#566573"
+  },
+  {
+   "id": "Gammaproteobacteria",
+   "color": "#2c3e50"
+  }
+ ]
+}

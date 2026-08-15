@@ -1,0 +1,311 @@
+# Taxa for the origin-of-mitochondria analysis.
+# mito: matched against RefSeq mitochondrial records by exact organism name (or accession if given).
+#       Preference given to gene-rich protist genomes; a few animals/fungi/plants for context.
+# bacteria: name -> RefSeq assembly (GCF) resolved by scripts/refresh_bacterial_accessions.py
+#       (reference/representative, complete genome preferred). Grouping is for display only; the lineage
+#       from NCBI is used for colouring.
+mito:
+- name: Andalucia godoyi
+- name: Reclinomonas americana
+- name: Jakoba libera
+- name: Jakoba bahamiensis
+- name: Seculamonas ecuadoriensis
+- name: Histiona aroides
+- name: Malawimonas jakobiformis
+- name: Naegleria gruberi
+- name: Diphylleia rotans
+- name: Ancoracysta twista
+- name: Marchantia polymorpha
+- name: Physcomitrium patens
+- name: Mesostigma viride
+- name: Nephroselmis olivacea
+- name: Prototheca wickerhamii
+- name: Chondrus crispus
+- name: Porphyra purpurea
+- name: Cyanidioschyzon merolae
+- name: Cyanidium caldarium
+- name: Cyanophora paradoxa
+- name: Rhodomonas salina
+- name: Hemiselmis andersenii
+- name: Phytophthora infestans
+- name: Synura synuroidea
+- name: Ochromonas danica
+- name: Cafeteria roenbergensis
+- name: Tetrahymena thermophila
+- name: Paramecium gigas
+- name: Emiliania huxleyi
+- name: Acanthamoeba castellanii
+- name: Dictyostelium discoideum
+- name: Monosiga brevicollis
+- name: Allomyces macrogynus
+- name: Rhizophydium sp. 136
+- name: Saccharomyces cerevisiae
+- name: Trichoplax adhaerens
+- name: Homo sapiens
+- name: Phaeodactylum tricornutum
+- name: Ectocarpus siliculosus
+- name: Chlorokybus atmophyticus
+- name: Chara vulgaris
+- name: Polytomella parva
+- name: Pycnococcus provasolii
+bacteria:
+  Rickettsiales:
+  - name: Rickettsia prowazekii
+    gcf: GCF_000277165.1
+    gcf_name: Rickettsia prowazekii str. Chernikova
+    level: Complete Genome
+  - name: Rickettsia bellii
+    gcf: GCF_000012385.1
+    gcf_name: Rickettsia bellii RML369-C
+    level: Complete Genome
+  - name: Orientia tsutsugamushi
+    gcf: GCF_900327255.1
+    gcf_name: Orientia tsutsugamushi
+    level: Complete Genome
+  - name: Anaplasma phagocytophilum
+    gcf: GCF_000964685.1
+    gcf_name: Anaplasma phagocytophilum str. Webster
+    level: Contig
+  - name: Ehrlichia chaffeensis
+    gcf: GCF_000013145.1
+    gcf_name: Ehrlichia chaffeensis str. Arkansas
+    level: Complete Genome
+  - name: Wolbachia pipientis
+    taxon: Wolbachia endosymbiont of Drosophila melanogaster
+    gcf: GCF_947533255.1
+    gcf_name: Wolbachia endosymbiont of Drosophila melanogaster
+    level: Complete Genome
+  - name: Neorickettsia sennetsu
+    gcf: GCF_000013165.1
+    gcf_name: Ehrlichia sennetsu str. Miyayama
+    level: Complete Genome
+  - name: Midichloria mitochondrii
+    taxon: Candidatus Midichloria mitochondrii
+    gcf: GCF_000219355.1
+    gcf_name: Candidatus Midichloria mitochondrii IricVA
+    level: Complete Genome
+  Holosporales:
+  - name: Holospora obtusa
+    gcf: GCF_000469665.2
+    gcf_name: Holospora obtusa F1
+    level: Contig
+  - name: Holospora undulata
+    gcf: GCF_000388175.3
+    gcf_name: Holospora undulata HU1
+    level: Scaffold
+  Pelagibacterales:
+  - name: Pelagibacter ubique
+    taxon: Candidatus Pelagibacter ubique
+    gcf: GCF_000012345.1
+    gcf_name: Candidatus Pelagibacter ubique HTCC1062
+    level: Complete Genome
+  - name: Pelagibacter sp. IMCC9063
+    taxon: Candidatus Pelagibacter sp. IMCC9063
+    gcf: GCF_000195085.1
+    gcf_name: Candidatus Pelagibacter sp. IMCC9063
+    level: Complete Genome
+  Rhodospirillales:
+  - name: Rhodospirillum rubrum
+    gcf: GCF_000013085.1
+    gcf_name: Rhodospirillum rubrum ATCC 11170
+    level: Complete Genome
+  - name: Azospirillum brasilense
+    gcf: GCF_007827425.1
+    gcf_name: Azospirillum brasilense
+    level: Contig
+  - name: Acetobacter pasteurianus
+    gcf: GCF_009914215.2
+    gcf_name: Acetobacter pasteurianus
+    level: Complete Genome
+  - name: Gluconobacter oxydans
+    gcf: GCF_000583855.1
+    gcf_name: Gluconobacter oxydans DSM 3504
+    level: Complete Genome
+  - name: Magnetospirillum gryphiswaldense
+    gcf: GCF_002995515.1
+    gcf_name: Magnetospirillum gryphiswaldense MSR-1
+    level: Complete Genome
+  - name: Tistrella mobilis
+    gcf: GCF_057418525.1
+    gcf_name: Tistrella mobilis
+    level: Complete Genome
+  - name: Rhodovibrio salinarum
+    gcf: GCF_000515255.1
+    gcf_name: Rhodovibrio salinarum DSM 9154
+    level: Scaffold
+  Sphingomonadales:
+  - name: Sphingomonas wittichii
+    gcf: GCF_017607425.1
+    gcf_name: Rhizorhabdus wittichii
+    level: Complete Genome
+  - name: Zymomonas mobilis
+    gcf: GCF_000498655.1
+    gcf_name: Zymomonas mobilis subsp. mobilis str. CP4 = NRRL B-14023
+    level: Complete Genome
+  - name: Erythrobacter litoralis
+    gcf: GCF_001719165.1
+    gcf_name: Erythrobacter litoralis
+    level: Complete Genome
+  - name: Sphingobium japonicum
+    gcf: GCF_000091125.1
+    gcf_name: Sphingobium indicum UT26S
+    level: Complete Genome
+  - name: Sphingomonas paucimobilis
+    gcf: GCF_016027095.1
+    gcf_name: Sphingomonas paucimobilis
+    level: Complete Genome
+  Hyphomicrobiales:
+  - name: Rhizobium etli
+    gcf: GCF_000092045.1
+    gcf_name: Rhizobium etli CFN 42
+    level: Complete Genome
+  - name: Sinorhizobium meliloti
+    gcf: GCF_037023865.1
+    gcf_name: Sinorhizobium meliloti
+    level: Complete Genome
+  - name: Agrobacterium fabrum
+    gcf: GCF_000092025.1
+    gcf_name: Agrobacterium fabrum str. C58
+    level: Complete Genome
+  - name: Bradyrhizobium diazoefficiens
+    gcf: GCF_001642675.1
+    gcf_name: Bradyrhizobium diazoefficiens USDA 110
+    level: Complete Genome
+  - name: Brucella melitensis
+    gcf: GCF_000007125.1
+    gcf_name: Brucella melitensis bv. 1 str. 16M
+    level: Complete Genome
+  - name: Bartonella henselae
+    gcf: GCF_019930925.1
+    gcf_name: Bartonella henselae
+    level: Complete Genome
+  - name: Methylobacterium extorquens
+    gcf: GCF_000083545.1
+    gcf_name: Methylorubrum extorquens DM4
+    level: Complete Genome
+  - name: Mesorhizobium japonicum
+    gcf: GCF_012913625.1
+    gcf_name: Mesorhizobium japonicum R7A
+    level: Complete Genome
+  - name: Rhodopseudomonas palustris
+    gcf: GCF_016584445.1
+    gcf_name: Rhodopseudomonas palustris
+    level: Complete Genome
+  - name: Hyphomicrobium denitrificans
+    gcf: GCF_000143145.1
+    gcf_name: Hyphomicrobium denitrificans ATCC 51888
+    level: Complete Genome
+  Caulobacterales:
+  - name: Caulobacter vibrioides
+    gcf: GCF_000022005.1
+    gcf_name: Caulobacter vibrioides NA1000
+    level: Complete Genome
+  - name: Brevundimonas subvibrioides
+    gcf: GCF_000144605.1
+    gcf_name: Brevundimonas subvibrioides ATCC 15264
+    level: Complete Genome
+  - name: Phenylobacterium zucineum
+    gcf: GCF_000017265.1
+    gcf_name: Phenylobacterium zucineum HLK1
+    level: Complete Genome
+  Rhodobacterales:
+  - name: Cereibacter sphaeroides
+    gcf: GCF_003324715.1
+    gcf_name: Cereibacter sphaeroides 2.4.1
+    level: Complete Genome
+  - name: Paracoccus denitrificans
+    gcf: GCF_004063735.1
+    gcf_name: Paracoccus denitrificans
+    level: Complete Genome
+  - name: Ruegeria pomeroyi
+    gcf: GCF_000011965.2
+    gcf_name: Ruegeria pomeroyi DSS-3
+    level: Complete Genome
+  - name: Dinoroseobacter shibae
+    gcf: GCF_000018145.1
+    gcf_name: Dinoroseobacter shibae DFL 12 = DSM 16493
+    level: Complete Genome
+  - name: Roseobacter denitrificans
+    gcf: GCF_002983865.1
+    gcf_name: Roseobacter denitrificans
+    level: Complete Genome
+  Magnetococcales:
+  - name: Magnetococcus marinus
+    gcf: GCF_000014865.1
+    gcf_name: Magnetococcus marinus MC-1
+    level: Complete Genome
+  Other Alphaproteobacteria:
+  - name: Micavibrio aeruginosavorus
+    gcf: GCF_000226315.1
+    gcf_name: Micavibrio aeruginosavorus ARL-13
+    level: Complete Genome
+  - name: Parvularcula bermudensis
+    gcf: GCF_000152825.2
+    gcf_name: Parvularcula bermudensis HTCC2503
+    level: Complete Genome
+  - name: Kordiimonas gwangyangensis
+    gcf: GCF_000375545.1
+    gcf_name: Kordiimonas gwangyangensis DSM 19435 = JCM 12864
+    level: Contig
+  - name: Sneathiella glossodoripedis
+    gcf: GCF_055385085.1
+    gcf_name: Sneathiella glossodoripedis
+    level: Complete Genome
+  - name: Kiloniella laminariae
+    gcf: GCF_000374005.1
+    gcf_name: Kiloniella laminariae DSM 19542
+    level: Scaffold
+  - name: Geminicoccus roseus
+    gcf: GCF_000427665.1
+    gcf_name: Geminicoccus roseus DSM 18922
+    level: Scaffold
+  - name: Emcibacter nanhaiensis
+    gcf: GCF_006385175.1
+    gcf_name: Emcibacter nanhaiensis
+    level: Contig
+  - name: Hyphomonas neptunium
+    gcf: GCF_000013025.1
+    gcf_name: Hyphomonas neptunium ATCC 15444
+    level: Complete Genome
+  - name: Maricaulis maris
+    gcf: GCF_003634045.1
+    gcf_name: Maricaulis maris
+    level: Scaffold
+  - name: Rhodothalassium salexigens
+    gcf: GCF_004341375.1
+    gcf_name: Rhodothalassium salexigens DSM 2132
+    level: Scaffold
+  Outgroups:
+  - name: Escherichia coli
+    taxon: Escherichia coli str. K-12 substr. MG1655
+    gcf: GCF_000005845.2
+    gcf_name: Escherichia coli str. K-12 substr. MG1655
+    level: Complete Genome
+  - name: Pseudomonas aeruginosa
+    gcf: GCF_000006765.1
+    gcf_name: Pseudomonas aeruginosa PAO1
+    level: Complete Genome
+  - name: Neisseria meningitidis
+    gcf: GCF_022869645.1
+    gcf_name: Neisseria meningitidis
+    level: Complete Genome
+  - name: Burkholderia cenocepacia
+    gcf: GCF_001718895.1
+    gcf_name: Burkholderia cenocepacia
+    level: Complete Genome
+  - name: Nitrosomonas europaea
+    gcf: GCF_054182965.1
+    gcf_name: Nitrosomonas europaea
+    level: Complete Genome
+  - name: Ralstonia pickettii
+    gcf: GCF_014142625.1
+    gcf_name: Ralstonia pickettii
+    level: Contig
+  - name: Vibrio cholerae
+    gcf: GCF_008369605.1
+    gcf_name: Vibrio cholerae
+    level: Complete Genome
+  - name: Xanthomonas campestris
+    gcf: GCF_013388375.1
+    gcf_name: Xanthomonas campestris pv. raphani
+    level: Complete Genome

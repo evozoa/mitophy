@@ -1,0 +1,51 @@
+{% extends "base.html" %}{% import "_macros.html" as m with context %}
+{% block title %}Data & Methods{% endblock %}
+{% block content %}
+<h1>Data &amp; Methods</h1>
+<p class="lead">Everything on this site is produced by an open pipeline (<a href="{{ site.repo_url }}">source</a>) that runs monthly on GitHub Actions, commits its results and rebuilds the pages. This page documents the inputs and settings; the <a href="changelog.html">changelog</a> records what each run used.</p>
+
+<h2>Pipeline overview</h2>
+<ol>
+  <li><b>fetch-mito</b> — download the RefSeq release <code>mitochondrion.*.genomic.gbff.gz</code> files (cached by HTTP Last-Modified).</li>
+  <li><b>extract-mito</b> — stream-parse all records; keep complete genomes ({{ pipeline.filters.mito.min_length | fmtnum }}–{{ pipeline.filters.mito.max_length | fmtnum }} bp, definition contains “complete genome”, no “partial/unverified”); per genome record organism, NCBI lineage, length, GC, counts of CDS/tRNA/rRNA, <code>/transl_table</code>; assign CDS to marker genes by matching normalised <code>/gene</code> and <code>/product</code> against the synonym table below; take the protein from <code>/translation</code> (never re-translated; if absent, translated with the record's <code>/transl_table</code>).</li>
+  <li><b>fetch-bact</b> — download RefSeq proteomes (<code>datasets download genome accession … --include protein</code>) for the curated bacterial genome list.</li>
+  <li><b>orthologs</b> — for each origin marker, collect mitochondrial proteins of the listed eukaryotes plus bacterial seed proteins whose RefSeq product name matches the marker; align (MAFFT), build a profile HMM (pyhmmer/HMMER3), search all proteomes; keep the best hit per proteome (E ≤ {{ pipeline.orthologs.evalue }}, bit score ≥ {{ pipeline.orthologs.min_bitscore }}); a protein claimed by two markers goes to the marker where it scores higher (paralogue resolution, e.g. NuoL/M/N ↔ nad5/4/2, heme–copper oxidase family ↔ cox1); a second-best hit within {{ (pipeline.orthologs.ambiguity_margin*100)|int }}% of the best is flagged ambiguous. Mitochondrial sequences are validated against the same HMM.</li>
+  <li><b>sample</b> — deterministic taxonomically balanced subsample of mitogenomes for the diversification tree (see below).</li>
+  <li><b>align</b> — per marker MAFFT (origin: <code>{{ pipeline.tools.mafft.origin | join(' ') }}</code>; diversification: <code>{{ pipeline.tools.mafft.diversification | join(' ') }}</code>), trimAl (origin: <code>{{ pipeline.tools.trimal.origin | join(' ') }}</code>; diversification: <code>{{ pipeline.tools.trimal.diversification | join(' ') }}</code>), occupancy filter (origin: taxa ≥ {{ pipeline.occupancy.origin.min_markers_per_taxon }} markers, markers in ≥ {{ (pipeline.occupancy.origin.min_taxa_per_marker_frac*100)|int }}% of taxa; diversification: ≥ {{ pipeline.occupancy.diversification.min_markers_per_taxon }} markers, ≥ {{ (pipeline.occupancy.diversification.min_taxa_per_marker_frac*100)|int }}%), concatenation with a partition file.</li>
+  <li><b>trees</b> — origin: IQ-TREE ({{ pipeline.profiles.default.origin.model }}; automated monthly runs use <code>{{ pipeline.profiles.ci.origin.iqtree_extra | join(' ') }}</code> with {{ pipeline.profiles.ci.origin.alrt }} SH-aLRT replicates because ultrafast bootstrap is incompatible with the fast search and a full search does not fit the 6 h CI limit; local runs use a full search with {{ pipeline.profiles.default.origin.ufboot }} UFBoot + {{ pipeline.profiles.default.origin.alrt }} SH-aLRT; the <code>deep</code> profile uses {{ pipeline.profiles.deep.origin.model }} with a PMSF guide tree), rooted on the β/γ-proteobacterial outgroup. Diversification: FastTree <code>{{ pipeline.profiles.default.diversification.fasttree_args | join(' ') }}</code>, rooted on jakobids.</li>
+  <li><b>stats</b>, <b>provenance</b>, <b>site</b> — tables and charts over all genomes; run record; static HTML rendered with Jinja2; trees drawn client-side by a small dependency-free SVG viewer (<code>mtree.js</code>).</li>
+</ol>
+<p class="small">Idempotence: every stage hashes its inputs and is skipped when nothing changed. Tool versions in the last run: {% for k, v in latest.tools.items() %}{{ k }} {{ v }}{% if not loop.last %}, {% endif %}{% endfor %}.</p>
+
+<h2>Marker genes</h2>
+<div class="table-wrap"><table class="data sortable">
+  <thead><tr><th>Marker</th><th>Used in</th><th>Mitochondrial synonyms (matched after normalisation)</th><th>Bacterial homologue — RefSeq product patterns used to seed the HMM</th></tr></thead>
+  <tbody>{% for mk in markers %}<tr><td><b>{{ mk.id }}</b></td><td>{{ mk.use | join(', ') or 'stats only' }}</td><td class="small">{{ mk.synonyms | join('; ') }}</td><td class="small">{% if mk.bact %}{{ mk.bact.product | join(' | ') }}{% if mk.bact.paralogs %}<br><i>{{ mk.bact.paralogs }}</i>{% endif %}{% else %}—{% endif %}</td></tr>{% endfor %}</tbody>
+</table></div>
+
+<h2>Taxa in the origin analysis</h2>
+<div class="two-col">
+<div><h3>Mitochondrial genomes ({{ mito_taxa | length }} listed)</h3><p class="small">Matched by organism name to RefSeq; gene-rich protist mtDNAs are preferred, plus a few animals, fungi and plants. Those actually used are shown in the tree; the tree's taxa file lists accessions.</p>
+<p class="small">{% for t in mito_taxa %}<i>{{ t.name }}</i>{% if not loop.last %}, {% endif %}{% endfor %}</p></div>
+<div><h3>Bacterial genomes ({{ bact_rows | length }})</h3>
+<div class="table-wrap" style="max-height:24rem"><table class="data sortable" style="font-size:.8rem"><thead><tr><th>Group</th><th>Taxon</th><th>Assembly</th><th>Level</th></tr></thead>
+<tbody>{% for b in bact_rows %}<tr><td>{{ b.config_group }}</td><td><i>{{ b.name }}</i></td><td>{% if b.gcf %}<a href="https://www.ncbi.nlm.nih.gov/datasets/genome/{{ b.gcf }}" target="_blank" rel="noopener">{{ b.gcf }}</a>{% endif %}</td><td>{{ b.level }}</td></tr>{% endfor %}</tbody></table></div></div>
+</div>
+
+<h2>Sampling for the diversification tree</h2>
+<p>RefSeq is dominated by animals (~{{ (div.summary.n_by_supergroup.Opisthokonta / div.summary.n_refseq_genomes * 100) | round(0) | int if div.summary else 90 }}% Opisthokonta). To obtain a readable, taxonomically balanced tree the pipeline keeps one genome per species (preferring genomes with more markers, then longer, then older accessions), always includes {{ sampling.must_include | length }} reference genomes, and then fills per-stratum quotas — {% for s in sampling.strata %}{{ s.name }} {{ s.total_cap }}{% if not loop.last %}, {% endif %}{% endfor %} — by dividing each quota as evenly as possible among lineage children at every level of the NCBI lineage (hierarchical balanced allocation), so vertebrates and insects cannot swamp the sample. Selection is deterministic and “sticky”: previously selected accessions are kept when still eligible, so month-to-month changes are small and are listed in the changelog.</p>
+
+<h2>Groups and colours</h2>
+<p class="small">Taxa are assigned to display groups by matching NCBI lineage names in this order: {% for g in supergroups %}<span class="mtree-swatch" style="background:{{ g.color }}"></span>{{ g.id }}{% if not loop.last %} · {% endif %}{% endfor %}.</p>
+
+<h2>Headline computation</h2>
+<p class="small">The “where do mitochondria branch” statement is computed from the rooted origin tree: the MRCA of all mitochondrial tips is found; monophyly means the MRCA's clade contains no bacteria; the sister group is the other child of the MRCA's parent, and it is summarised by group composition (Rickettsiales only → “sister to Rickettsiales”; all sampled Alphaproteobacteria → “sister to all Alphaproteobacteria”; otherwise the composition is listed).</p>
+
+<h2>Reproduce locally</h2>
+<pre><code>git clone {{ site.repo_url }} &amp;&amp; cd mitophy
+micromamba create -y -f environment.yml -n mitophy &amp;&amp; micromamba activate mitophy
+mitophy all --profile quick --workdir work-quick   # ~10 min smoke run
+mitophy all                                        # full run (origin tree with UFBoot: hours)
+mitophy all --profile deep --threads 20            # site-heterogeneous origin tree → results/origin_deep
+mitophy site &amp;&amp; python -m http.server -d _site 8000</code></pre>
+{% endblock %}

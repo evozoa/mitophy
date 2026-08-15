@@ -1,0 +1,73 @@
+{% extends "base.html" %}{% import "_macros.html" as m with context %}
+{% block title %}Origin{% endblock %}
+{% block content %}
+<h1>Origin of mitochondria</h1>
+<p class="lead">All analyses agree that mitochondria arose from within (or next to) the Alphaproteobacteria. <i>Where</i> exactly is contested, because the mitochondrial lineage — like several candidate relatives (Rickettsiales, SAR11) — has a fast-evolving, AT-rich, reduced genome, and such lineages tend to attract each other in phylogenies under simple models. The literature tab summarises the hypotheses and what each study did; the de novo tab shows a tree that is rebuilt automatically from current public data.</p>
+
+<div class="tabs"><button data-tab="literature">Literature</button><button data-tab="denovo">De novo analysis</button></div>
+
+<section id="literature" class="tabpanel" data-hyp-scope>
+  <h2>Hypotheses</h2>
+  <div class="hyp-select">
+    {% for h in hyps.origin %}<button data-hyp="{{ h.tree }}">{{ h.label }}</button>{% endfor %}
+  </div>
+  {% for h in hyps.origin %}{% set t = lit[h.tree] %}
+  <div class="hyp-panel" data-hyp="{{ h.tree }}" data-tree="data/literature/{{ h.tree }}.json" data-title="{{ t.title }}">
+    <div class="two-col">
+      <div>
+        <h3>{{ t.title }}</h3>
+        <p>{{ t.summary }}</p>
+        <dl class="kv"><dt>data &amp; models</dt><dd>{{ t.dataset }}</dd><dt>status</dt><dd>{{ t.status }}</dd>
+        <dt>key studies</dt><dd>{% for c in t.citations %}{{ cite(c) | safe }}{% if not loop.last %}; {% endif %}{% endfor %}</dd></dl>
+      </div>
+      <div><div class="tree-slot"><p class="small">Loading…</p></div>
+      <p class="small">Cladogram (branch lengths not meaningful). Orange nodes carry notes — hover them. Alphaproteobacterial backbone simplified after {{ cite('MunozGomez2019') | safe }}.</p></div>
+    </div>
+  </div>
+  {% endfor %}
+
+  <h2>What differs between studies</h2>
+  <div class="table-wrap"><table class="data">
+    <thead><tr><th>Study</th><th>Data</th><th>Model / treatment</th><th>Taxon sampling</th><th>Result</th></tr></thead>
+    <tbody>{% for r in hyps.comparison %}<tr><td>{{ cite(r.ref) | safe }}</td><td>{{ r.data }}</td><td>{{ r.model }}</td><td>{{ r.sampling }}</td><td>{{ r.result }}</td></tr>{% endfor %}</tbody>
+  </table></div>
+  <h2>Why the answer depends on the model</h2>
+  <p>Mitochondrial, rickettsial and SAR11 genomes are all AT-rich, and their proteins are correspondingly enriched in amino acids encoded by AT-rich codons (F, I, K, N, Y). Site-homogeneous models (LG, WAG, JTT + Γ) assume the same amino-acid frequencies at every site and cannot distinguish shared composition from shared ancestry, so they tend to group these lineages together (long-branch attraction plus compositional attraction). Remedies used in the literature include site-heterogeneous mixture models (CAT-GTR, LG+C20–C60, PMSF), recoding amino acids into fewer classes (SR4, D6), removing the most compositionally heterogeneous sites, taxon sampling that breaks long branches (adding uncultured marine Alpha-II/MarineAlpha MAGs and free-living early-branching lineages) and heterotachy-aware branch-heterogeneous models. Different combinations lead to the different answers above; a fair reading is that the position of mitochondria at the base of, or just inside, Alphaproteobacteria remains genuinely open, with the most model-rich analyses currently favouring a sister-group relationship to all known Alphaproteobacteria ({{ cite('MunozGomez2022') | safe }}; review: {{ cite('Roger2017') | safe }}). Genome content and metabolism argue for a free-living, aerobic ancestor rather than a parasite like <i>Rickettsia</i> ({{ cite('Sassera2011') | safe }}; {{ cite('Geiger2023') | safe }}); host association evolved independently within Rickettsiales ({{ cite('Schon2022') | safe }}).</p>
+  {{ m.reflist(['Andersson1998','Fitzpatrick2006','Esser2004','Thrash2011','RodriguezEzpeleta2012','Viklund2012','Sassera2011','Wang2015','Martijn2018','MunozGomez2019','Fan2020','MunozGomez2022','MunozGomez2022b','Fan2022reply','Schon2022','Geiger2023','Roger2017']) }}
+</section>
+
+<section id="denovo" class="tabpanel">
+  <h2>Automated concatenated-protein tree</h2>
+  {% set o = origin.tree %}
+  {% if o %}
+  <div class="grid">
+    {{ m.run_card(o, 'Current tree') }}
+    <div class="card"><h3>Where do mitochondria branch?</h3>
+      {% set h = origin.headline %}
+      {% if h and h.ok %}
+      <p>Mitochondria (n = {{ h.n_mito }}) are {% if h.monophyletic %}<b>monophyletic</b>{% else %}<b>not monophyletic</b> — the smallest clade containing them has {{ h.clade_size }} taxa incl. {{ h.intruders }}{% endif %}{% if h.support %} (support {{ h.support | fmtsupport }}){% endif %}.
+      Sister group: {% if h.interpretation == 'rickettsiales_sister' %}<b>Rickettsiales</b> ({{ h.sister_size }} genomes){% elif h.interpretation == 'sister_to_alpha' %}<b>all sampled Alphaproteobacteria</b>{% else %}{{ h.sister_size }} taxa: {% for g, n in h.sister_groups %}{{ g }} ({{ n }}){% if not loop.last %}, {% endif %}{% endfor %}{% endif %}{% if h.sister_support %}; support at the joining node {{ h.sister_support | fmtsupport }}{% endif %}.</p>
+      <p class="small">Interpretation is computed automatically from the tree (see Methods) and updates with every run.</p>
+      {% else %}<p class="small">Not computable for this tree.</p>{% endif %}
+    </div>
+    <div class="card"><h3>Downloads</h3><ul class="small">
+      <li><a href="data/origin/tree.nwk">tree.nwk</a> (rooted Newick, labels = accessions) · <a href="data/origin/tree.json">tree.json</a> (with metadata)</li>
+      <li><a href="data/origin/concat.faa.gz">concat.faa.gz</a> · <a href="data/origin/partitions.nex">partitions.nex</a> · <a href="data/origin/occupancy.tsv">occupancy.tsv</a></li>
+      <li><a href="data/origin/iqtree.report.txt">IQ-TREE report</a> · <a href="data/origin/manifest.json">manifest.json</a></li></ul></div>
+  </div>
+  <div class="callout"><b>Read with care.</b> This automated tree uses a single concatenated matrix ({{ o.markers | length }} mitochondrion-encoded proteins and their bacterial homologs) under a site-homogeneous {{ o.model }} model{% if 'fast' in (origin.manifest.command or '') %} with IQ-TREE's fast search{% endif %}, without recoding, site stripping or metagenome-derived taxa. That is exactly the setting under which mitochondria are expected to be attracted to Rickettsiales (see the Literature tab). It is a reproducible, always-current baseline — not the last word. A deeper analysis (LG+C20+F+G4 with PMSF, full search, UFBoot) can be run locally with the <code>deep</code> profile{% if origin_deep.tree %} — see below{% endif %}.</div>
+  {{ m.tree_slot('data/origin/tree.json', 'Origin tree (' ~ o.tool ~ ' ' ~ o.model ~ ', ' ~ o.date ~ ')', labels=True) }}
+  <p class="small">Tip colours follow the taxonomic groups in the legend; mitochondrial genomes are labelled with the eukaryote species. Node dots: filled black ≥ 95, grey ≥ 80, hollow &lt; 80 ({{ o.support_type }}); node labels show the support values. Click nodes to collapse, legend entries to collapse groups, tips to open the NCBI record.</p>
+  <h3>Marker occupancy</h3>
+  <figure class="chart">{{ occupancy_inline | safe }}<figcaption>Which of the {{ o.markers | length }} markers each taxon contributes ({{ origin.manifest.align.n_taxa if origin.manifest.align else o.n_taxa }} taxa kept with ≥ {{ pipeline.occupancy.origin.min_markers_per_taxon }} markers; markers kept if present in ≥ {{ (pipeline.occupancy.origin.min_taxa_per_marker_frac*100)|int }}% of taxa). Gene-rich protist mtDNAs (jakobids, <i>Malawimonas</i>, red algae, cryptophytes, stramenopiles) contribute ribosomal proteins and complex I subunits absent from animal/fungal mtDNAs.</figcaption></figure>
+  {% if origin_deep.tree %}
+  <h2>Deep analysis (manual, site-heterogeneous model)</h2>
+  {% set od = origin_deep.tree %}
+  <div class="grid">{{ m.run_card(od, 'Deep tree') }}
+  {% set h = origin_deep.headline %}
+  <div class="card"><h3>Where do mitochondria branch?</h3>{% if h and h.ok %}<p>Monophyletic: {{ h.monophyletic }}. Sister group: {% for g, n in h.sister_groups %}{{ g }} ({{ n }}){% if not loop.last %}, {% endif %}{% endfor %}{% if h.sister_support %}; support {{ h.sister_support | fmtsupport }}{% endif %}.</p>{% endif %}</div></div>
+  {{ m.tree_slot('data/origin_deep/tree.json', 'Origin tree, deep profile (' ~ od.model ~ ', ' ~ od.date ~ ')', labels=True) }}
+  {% endif %}
+  {% else %}<p>No origin tree has been produced yet.</p>{% endif %}
+</section>
+{% endblock %}

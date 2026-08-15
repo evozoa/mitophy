@@ -1,0 +1,24 @@
+# Origin-of-mitochondria hypotheses shown on the Origin page (order = display order). Each references a tree in data/literature/origin/.
+origin:
+  - id: sister_to_alpha
+    label: Sister to all Alphaproteobacteria
+    tree: sister_to_alpha
+  - id: rickettsiales_sister
+    label: Sister to Rickettsiales
+    tree: rickettsiales_sister
+  - id: within_alpha
+    label: Within Alphaproteobacteria (Rickettsiales + Alpha-II)
+    tree: within_alpha_alphaII
+  - id: sar11_sister
+    label: Sister to SAR11 (historical)
+    tree: sar11_sister
+comparison:   # rows of the "what differs between studies" table
+  - {study: "Andersson et al. 1998", ref: Andersson1998, data: "R. prowazekii genome; single-gene and small concatenations", model: "ML/NJ, homogeneous", sampling: "few α-proteobacteria", result: "Rickettsiales-sister"}
+  - {study: "Fitzpatrick et al. 2006", ref: Fitzpatrick2006, data: "genome-scale supertree + concatenation", model: "ML, homogeneous", sampling: "~50 α-proteobacterial genomes", result: "Rickettsiales-sister"}
+  - {study: "Thrash et al. 2011", ref: Thrash2011, data: "concatenated proteins", model: "ML/Bayesian, homogeneous", sampling: "adds SAR11 genomes", result: "SAR11-sister"}
+  - {study: "Rodríguez-Ezpeleta & Embley 2012; Viklund et al. 2012", ref: RodriguezEzpeleta2012, data: "reanalyses", model: "CAT, recoding, site removal", sampling: "as above", result: "SAR11-sister rejected"}
+  - {study: "Wang & Wu 2015", ref: Wang2015, data: "29 slow-evolving proteins", model: "CAT-GTR", sampling: "broad α-proteobacteria", result: "Rickettsiales-sister"}
+  - {study: "Martijn et al. 2018", ref: Martijn2018, data: "24 mito-encoded proteins", model: "CAT-GTR + SR4/D6 recoding, biased-site removal", sampling: "+12 marine MAGs (Alpha-II, MarineAlpha)", result: "sister to all sampled Alphaproteobacteria"}
+  - {study: "Fan et al. 2020", ref: Fan2020, data: "conserved proteins, no site exclusion", model: "ML incl. mixture models; taxon-subsampling series", sampling: "systematic sampling from >3,000 genomes", result: "within Alphaproteobacteria, with Rickettsiales + Alpha-II"}
+  - {study: "Muñoz-Gómez et al. 2022", ref: MunozGomez2022, data: "108 markers", model: "LG+C60, CAT-GTR, PMSF, heterotachy-aware", sampling: "expanded incl. novel free-living lineages + MAGs", result: "sister to all known Alphaproteobacteria"}
+  - {study: "Geiger et al. 2023", ref: Geiger2023, data: "metabolic gene content", model: "presence/absence, gene phylogenies", sampling: "α-proteobacteria + MAGs", result: "ancestry among free-living aerobic α-proteobacteria"}

@@ -1,0 +1,58 @@
+# Deterministic, taxonomically stratified subsampling of RefSeq mitochondrial genomes.
+# Strata are applied in order; the first matching stratum decides the cap for a genome.
+# Within a stratum the quota is divided as evenly as possible among lineage children at every level (hierarchical
+# balanced allocation), so deep, over-represented clades (e.g. vertebrates, insects) cannot swamp the sample.
+must_include:                # always kept if present in RefSeq (accession or exact organism name)
+  - Andalucia godoyi
+  - Reclinomonas americana
+  - Jakoba libera
+  - Jakoba bahamiensis
+  - Seculamonas ecuadoriensis
+  - Histiona aroides
+  - Malawimonas jakobiformis
+  - Naegleria gruberi
+  - Marchantia polymorpha
+  - Physcomitrium patens
+  - Chondrus crispus
+  - Cyanidioschyzon merolae
+  - Porphyra purpurea
+  - Rhodomonas salina
+  - Phytophthora infestans
+  - Thraustochytrium aureum
+  - Tetrahymena thermophila
+  - Paramecium tetraurelia
+  - Plasmodium falciparum
+  - Acanthamoeba castellanii
+  - Dictyostelium discoideum
+  - Monosiga brevicollis
+  - Amoebidium parasiticum
+  - Capsaspora owczarzaki
+  - Allomyces macrogynus
+  - Saccharomyces cerevisiae
+  - Trichoplax adhaerens
+  - Homo sapiens
+  - Drosophila melanogaster
+  - Caenorhabditis elegans
+  - Chlamydomonas reinhardtii
+  - Mesostigma viride
+  - Prototheca wickerhamii
+  - Trypanosoma brucei
+  - Euglena gracilis
+  - Hemiselmis andersenii
+  - Chrysodidymus synuroideus
+  - Ochromonas danica
+  - Emiliania huxleyi
+  - Diphylleia rotans
+  - Ancoracysta twista
+  - Nephroselmis olivacea
+
+strata:                       # each stratum gets up to total_cap genomes, allocated evenly down the NCBI lineage
+  - {name: Metazoa,          lineage_contains: "Metazoa",        total_cap: 240}
+  - {name: Fungi,            lineage_contains: "Fungi",          total_cap: 90}
+  - {name: Viridiplantae,    lineage_contains: "Viridiplantae",  total_cap: 90}
+  - {name: Rhodophyta,       lineage_contains: "Rhodophyta",     total_cap: 40}
+  - {name: SAR,              lineage_contains: "Sar",            total_cap: 80}
+  - {name: Other eukaryotes, lineage_contains: "Eukaryota",      total_cap: 200}
+
+prefer: [more_markers, longer, older_accession]   # tie-breaking priority when choosing within a group
+sticky: true                                       # keep previously selected accessions when still eligible

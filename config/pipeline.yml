@@ -1,0 +1,55 @@
+# Global pipeline configuration. Profiles overlay the `default` block.
+workdir: work
+resultsdir: results
+seed: 42
+
+sources:
+  refseq_mito_dir: https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/
+  refseq_mito_glob: "mitochondrion.*.genomic.gbff.gz"
+
+profiles:
+  default:
+    threads: 4
+    origin:
+      method: iqtree
+      model: "LG+F+G4"
+      ufboot: 1000
+      alrt: 1000
+      iqtree_extra: []
+      max_mito: null          # null = all listed in taxa_origin.yml
+      max_bact: null
+    diversification:
+      method: fasttree
+      fasttree_args: ["-lg", "-gamma"]
+      max_taxa: 900
+  quick:                        # for CI tests / smoke runs
+    threads: 2
+    origin:  {model: "LG+G4", ufboot: 0, alrt: 1000, iqtree_extra: ["--fast"], max_mito: 12, max_bact: 8}
+    diversification: {max_taxa: 40}
+  ci:                           # GitHub Actions monthly run (must finish well within the 6 h job limit)
+    threads: 4
+    origin: {ufboot: 0, alrt: 1000, iqtree_extra: ["--fast"]}   # UFBoot is incompatible with --fast; SH-aLRT supports instead
+  deep:                         # occasional local run on many cores; results published to results/<analysis>_deep
+    threads: 20
+    origin: {model: "LG+C20+F+G4", pmsf_guide: "LG+F+G4", ufboot: 1000, alrt: 1000}
+    diversification: {method: iqtree, model: "LG+F+G4", iqtree_extra: ["--fast"]}
+
+tools:
+  mafft:   {origin: ["--localpair", "--maxiterate", "1000", "--anysymbol", "--quiet"], diversification: ["--auto", "--anysymbol", "--quiet"]}
+  trimal:  {origin: ["-automated1"], diversification: ["-gt", "0.5"]}
+  iqtree:  {bin: auto}
+  fasttree: {bin: auto}
+  datasets: {bin: datasets}
+
+orthologs:
+  evalue: 1.0e-10
+  min_bitscore: 50
+  ambiguity_margin: 0.10      # 2nd best hit within 10% of best bitscore -> flagged
+  seed_min_len_frac: 0.5      # bacterial seed length must be >= frac of median mito length (guards fragments)
+
+occupancy:
+  origin:          {min_markers_per_taxon: 4, min_taxa_per_marker_frac: 0.4}
+  diversification: {min_markers_per_taxon: 5, min_taxa_per_marker_frac: 0.5}
+
+filters:
+  mito: {min_length: 5000, max_length: 3000000, require_complete: true, exclude_definition_regex: "(?i)partial|unverified"}

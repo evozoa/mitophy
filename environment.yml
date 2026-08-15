@@ -1,0 +1,21 @@
+name: mitophy
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.12
+  - biopython>=1.83
+  - dendropy>=5
+  - jinja2
+  - pyyaml
+  - pyhmmer>=0.10
+  - matplotlib-base
+  - pandas
+  - requests
+  - pytest
+  - mafft>=7.5
+  - trimal>=1.4
+  - iqtree>=2.3
+  - fasttree>=2.1
+  - ncbi-datasets-cli>=16
+  - pip
+  - pip:
+      - -e .

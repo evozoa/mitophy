@@ -1,0 +1,47 @@
+{
+  "input_hash": "c57907fbda58bf9a0ceb95128966a5805f267d24cb7df6e4fab404e0da31a077",
+  "finished": "2026-08-15T23:39:43Z",
+  "tool": "FastTree",
+  "command": "/home/evozoa/miniconda3/bin/FastTreeMP -lg -gamma /home/evozoa/mitophy/work/diversification/concat.faa",
+  "model": "LG GAMMA",
+  "lnL": -2071826.718,
+  "support_type": "SH-like local support (FastTree)",
+  "rooted_on": "outgroup (Jakobida)",
+  "n_sites": 4017,
+  "analysis": "diversification",
+  "date": "2026-08-15",
+  "runtime_s": 113,
+  "profile": "default",
+  "versions": {
+    "iqtree": "iqtree3 3.1.1",
+    "fasttree": "2.2.0",
+    "mafft": "7.505",
+    "trimal": "1.5.rev1"
+  },
+  "align": {
+    "input_hash": "a8194df6c0105d4f56d867f6bdeeb706b3fb7cb8e19baeaaeea07d82d5b578ab",
+    "finished": "2026-08-15T23:37:50Z",
+    "n_taxa": 618,
+    "n_sites": 4017,
+    "markers": [
+      "atp6",
+      "atp9",
+      "cob",
+      "cox1",
+      "cox2",
+      "cox3",
+      "nad1",
+      "nad2",
+      "nad3",
+      "nad4",
+      "nad4L",
+      "nad5",
+      "nad6"
+    ],
+    "dropped_markers": [
+      "nad7",
+      "nad9"
+    ],
+    "dropped_taxa": []
+  }
+}

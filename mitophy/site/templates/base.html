@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.title }}{% endblock %} · {{ site.title }}</title>
+<meta name="description" content="{{ site.tagline }}">
+<link rel="stylesheet" href="static/css/site.css">
+<script>try{var t=localStorage.getItem('mitophy-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<header class="site"><div class="inner">
+  <a class="brand" href="index.html">{{ site.title }}<small>{{ site.tagline }}</small></a>
+  <nav>{% for n in site.nav %}<a href="{{ n.href }}" {% if n.href == page ~ '.html' %}class="active"{% endif %}>{{ n.title }}</a>{% endfor %}
+  <a href="{{ site.repo_url }}" target="_blank" rel="noopener">GitHub ↗</a></nav>
+  <button class="mtree-btn" data-theme-toggle title="toggle light/dark">◐</button>
+</div></header>
+<main>
+{% block content %}{% endblock %}
+</main>
+<footer class="site">
+  {{ site.title }} · built {{ now }}{% if latest.date %} · last pipeline run {{ latest.date }} (profile {{ latest.profile }}){% endif %} ·
+  code MIT, content CC-BY 4.0 · <a href="{{ site.repo_url }}">source</a>
+</footer>
+<script src="static/js/mtree.js"></script>
+<script src="static/js/site.js"></script>
+</body>
+</html>

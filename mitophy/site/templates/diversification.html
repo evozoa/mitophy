@@ -1,0 +1,61 @@
+{% extends "base.html" %}{% import "_macros.html" as m with context %}
+{% block title %}Diversification{% endblock %}
+{% block content %}
+<h1>Diversification of mitochondrial genomes</h1>
+<p class="lead">The mitochondrial genome of the last eukaryotic common ancestor already was a much-reduced bacterial genome, and every eukaryotic lineage has continued to lose genes to the nucleus (or altogether) at its own pace and in its own style. The result spans from the ~100-gene, bacteria-like mtDNAs of jakobids to the 3-gene, 6 kb genomes of apicomplexans and dinoflagellates, from 6 kb to 11 Mb in size, and includes at least ten different genetic codes.</p>
+
+<div class="tabs"><button data-tab="literature">Literature</button><button data-tab="denovo">De novo analysis</button></div>
+
+<section id="literature" class="tabpanel">
+  {% set t = lit['eukaryote_supergroups'] %}
+  <h2>{{ t.title }}</h2>
+  <p>{{ t.summary }} Sources: {% for c in t.citations %}{{ cite(c) | safe }}{% if not loop.last %}; {% endif %}{% endfor %}.</p>
+  {{ m.tree_slot('data/literature/eukaryote_supergroups.json', 'Eukaryote supergroups (cladogram)') }}
+  <h2>Gene retention in representative mitochondrial genomes</h2>
+  <p>Presence (filled) of the {{ matrix_markers | length }} tracked protein genes in representative complete mitogenomes, taken from the current RefSeq annotations by the pipeline (so this table updates too). Genes are ordered as in the marker table; taxa sorted by number of retained genes. Note that some absences reflect annotation vocabulary rather than biology (see the unmatched-products log in Methods).</p>
+  <div class="table-wrap"><table class="data sortable" style="font-size:.78rem">
+    <thead><tr><th>Organism</th><th>Group</th><th>bp</th><th>CDS</th><th>code</th>{% for mk in matrix_markers %}<th style="writing-mode:vertical-rl;transform:rotate(180deg);padding:.2rem .1rem">{{ mk }}</th>{% endfor %}<th>Σ</th></tr></thead>
+    <tbody>{% for r in matrix_rows %}<tr><td><i>{{ r.organism }}</i></td><td>{{ r.group }}</td><td>{{ r.length | fmtnum }}</td><td>{{ r.n_cds }}</td><td>{{ r.transl_table }}</td>{% for p in r.present %}<td style="text-align:center;padding:.1rem">{% if p %}<span style="display:inline-block;width:.7em;height:.7em;background:var(--accent);border-radius:2px"></span>{% endif %}</td>{% endfor %}<td>{{ r.present | select | list | length }}</td></tr>{% endfor %}</tbody>
+  </table></div>
+  <h2>Themes</h2>
+  <ul>
+    <li><b>Gene loss is the rule, but rates differ enormously.</b> Jakobids retain ~66 protein genes including a bacterial RNA polymerase ({{ cite('Lang1997') | safe }}; {{ cite('Burger2013') | safe }}); animals keep 13, apicomplexans 3; the direction is nearly always mtDNA → nucleus ({{ cite('Adams2003') | safe }}). Gene-rich mtDNAs are scattered across the tree (jakobids, malawimonads, <i>Ancoracysta</i>, cryptophytes, some CRuMs and stramenopiles), so LECA's mtDNA was itself gene-rich ({{ cite('Janouskovec2017') | safe }}; {{ cite('Roger2017') | safe }}).</li>
+    <li><b>Size and gene content are decoupled.</b> Land-plant mtDNAs reach megabases with only ~40 genes ({{ cite('Sloan2012') | safe }}); animal mtDNAs are compact; fungal genomes are inflated by introns and ORFs ({{ cite('SmithKeeling2015') | safe }}).</li>
+    <li><b>Architecture varies wildly:</b> linear and multichromosomal genomes, fragmented genes and rRNAs (Chlamydomonas, apicomplexans, dinoflagellates, diplonemids), RNA editing (kinetoplastids, plants, <i>Physarum</i>), and repeated changes of the genetic code (UGA = Trp in table 4 mtDNAs, reassignments in animals, ciliates, green algae).</li>
+    <li><b>Complete loss</b> of the mitochondrial genome occurred many times in anaerobes (mitosomes, hydrogenosomes) and, in <i>Monocercomonoides</i>, of the organelle itself ({{ cite('Karnkowska2016') | safe }}).</li>
+  </ul>
+  {{ m.reflist(['Burki2020','Lang1997','Gray1999','Gray2004','Gray2012','Burger2013','Janouskovec2017','Tikhonenkov2022','Adams2003','Sloan2012','SmithKeeling2015','Boore1999','Lavrov2016','Feagin2012','Waller2009','Zihala2019','Karnkowska2016','Roger2017']) }}
+</section>
+
+<section id="denovo" class="tabpanel">
+  {% set d = div.tree %}
+  <h2>Automated tree of RefSeq mitochondrial genomes</h2>
+  {% if d %}
+  <div class="grid">
+    {{ m.run_card(d, 'Current tree') }}
+    <div class="card"><h3>Sampling</h3><p class="small">{{ div.summary.n_sampled }} of {{ div.summary.n_refseq_genomes | fmtnum }} complete RefSeq mitogenomes, chosen deterministically to balance taxonomy: quotas per stratum ({% for s in sampling.strata %}{{ s.name }} {{ s.total_cap }}{% if not loop.last %}, {% endif %}{% endfor %}) are divided evenly down the NCBI lineage, one genome per species, must-include list of {{ sampling.must_include | length }} reference genomes, sticky between runs. Markers: {{ d.markers | join(', ') }}. Rooted on jakobids (an assumption — the eukaryote root is uncertain).</p></div>
+    <div class="card"><h3>Downloads</h3><ul class="small">
+      <li><a href="data/diversification/tree.nwk">tree.nwk</a> · <a href="data/diversification/tree.json">tree.json</a> · <a href="data/diversification/concat.faa.gz">concat.faa.gz</a> · <a href="data/diversification/partitions.nex">partitions.nex</a></li>
+      <li><a href="data/diversification/genomes.tsv">genomes.tsv</a> (sampled genomes) · <a href="data/diversification/stats_by_group.tsv">stats_by_group.tsv</a> (all genomes, per group) · <a href="data/diversification/summary.json">summary.json</a></li></ul></div>
+  </div>
+  <div class="callout">A {{ d.tool }} tree of {{ d.n_taxa }} mitogenomes from a concatenation of {{ d.markers | length }} broadly retained proteins is a coarse instrument: deep eukaryote relationships are not resolvable from a handful of fast-evolving mitochondrial genes, and lineages with extreme rates (apicomplexans, dinoflagellates, some animals) will be misplaced. Use it to explore the data and to watch how sampling changes as RefSeq grows, not as a phylogeny of eukaryotes.</div>
+  {{ m.tree_slot('data/diversification/tree.json', 'Mitochondrial genome tree (' ~ d.tool ~ ', ' ~ d.date ~ ')', collapse=True) }}
+  <p class="small">Groups are collapsed initially — click a triangle or a legend entry to expand; use the search box to find a species.</p>
+  {% endif %}
+  <h2>Statistics over all complete RefSeq mitogenomes</h2>
+  <div class="grid">
+    <div class="card"><div class="big">{{ div.summary.n_refseq_genomes | fmtnum }}</div><div class="sub">complete mitochondrial genomes in RefSeq</div></div>
+    <div class="card"><div class="big">{{ div.summary.n_by_supergroup.Opisthokonta | fmtnum }}</div><div class="sub">of them Opisthokonta (animals + fungi) — the sampling problem in one number</div></div>
+    <div class="card"><div class="big">{{ div.summary.transl_tables | length }}</div><div class="sub">different genetic codes (NCBI translation tables) in use</div></div>
+  </div>
+  {% for c, cap in [('length_by_group.svg', 'Genome length by group (log scale). Bars mark medians. Alveolates (apicomplexans, dinoflagellates) and animals are smallest; land plants largest.'), ('genes_vs_length.svg', 'Annotated protein-coding genes versus genome length. Gene number saturates around 60–70 while length varies over three orders of magnitude.'), ('transl_tables.svg', 'Genetic code (NCBI /transl_table) by supergroup: 1 standard; 2 vertebrate mito; 3 yeast mito; 4 mould/protozoan/coelenterate mito (UGA = Trp); 5 invertebrate mito; 9 echinoderm/flatworm; 13 ascidian; 14 alternative flatworm; 16 chlorophycean; 22 Scenedesmus.'), ('gene_retention.svg', 'Fraction of genomes in each group encoding each tracked protein gene (name-based annotation matching; groups with ≥ 5 genomes).')] %}
+  {% if c in div.charts %}<figure class="chart">{{ charts_inline[c] | safe }}<figcaption>{{ cap }} <a class="small" href="data/diversification/charts/{{ c }}">SVG</a></figcaption></figure>{% endif %}
+  {% endfor %}
+  <h2>Sampled genomes</h2>
+  <input class="mtree-search" data-filter-table="genomes-table" placeholder="filter table…"> <span class="small">{{ div.genomes | length }} genomes; click headers to sort.</span>
+  <div class="table-wrap" style="margin-top:.5rem"><table class="data sortable" id="genomes-table">
+    <thead><tr><th>Accession</th><th>Organism</th><th>Group</th><th>Stratum</th><th>bp</th><th>GC</th><th>CDS</th><th>tRNA</th><th>rRNA</th><th>code</th><th>markers</th></tr></thead>
+    <tbody>{% for g in div.genomes %}<tr><td><a href="https://www.ncbi.nlm.nih.gov/nuccore/{{ g.accession }}" target="_blank" rel="noopener">{{ g.accession }}</a></td><td><i>{{ g.organism }}</i></td><td>{{ g.group }}</td><td>{{ g.stratum }}</td><td>{{ g.length | fmtnum }}</td><td>{{ (g.gc | float * 100) | round(1) }}</td><td>{{ g.n_cds }}</td><td>{{ g.n_trna }}</td><td>{{ g.n_rrna }}</td><td>{{ g.transl_table }}</td><td>{{ g.n_markers }}</td></tr>{% endfor %}</tbody>
+  </table></div>
+</section>
+{% endblock %}

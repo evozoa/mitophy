@@ -1,0 +1,11 @@
+title: mitophy
+tagline: The evolution of mitochondria — literature phylogenies and self-updating de novo analyses
+base_url: https://evozoa.github.io/mitophy/
+repo_url: https://github.com/evozoa/mitophy
+author: evozoa
+nav:
+  - {title: Home, href: index.html}
+  - {title: Origin, href: origin.html}
+  - {title: Diversification, href: diversification.html}
+  - {title: Data & Methods, href: methods.html}
+  - {title: Changelog, href: changelog.html}

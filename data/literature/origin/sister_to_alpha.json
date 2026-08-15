@@ -1,0 +1,155 @@
+{
+ "id": "sister_to_alpha",
+ "title": "Mitochondria sister to all (known) Alphaproteobacteria",
+ "hypothesis": "sister_to_alpha",
+ "summary": "When compositional heterogeneity is addressed — by removing/recoding compositionally biased sites, by site-heterogeneous mixture models (LG+C60, CAT-GTR, PMSF), and by adding metagenome-assembled genomes of uncultured marine alphaproteobacteria — mitochondria no longer nest inside Alphaproteobacteria but branch as the sister lineage of all sampled alphaproteobacteria (Martijn et al. 2018), or of all known Alphaproteobacteria including newer lineages (Muñoz-Gómez et al. 2022). The Rickettsiales-sister signal is interpreted as an artefact of shared AT-rich, fast-evolving genomes.",
+ "citations": [
+  "Martijn2018",
+  "MunozGomez2022",
+  "MunozGomez2022b",
+  "Roger2017"
+ ],
+ "dataset": "Martijn 2018: 24 mito-encoded proteins, ~100 taxa incl. 12 marine MAGs (Alpha-II, MarineAlpha), CAT-GTR + SR4/D6 recoding, compositionally biased sites removed. Muñoz-Gómez 2022: 108 markers, expanded taxon sampling incl. Alpha-II/MarineAlpha MAGs and novel free-living lineages, LG+C60+F+G, CAT-GTR, site-and-branch-heterogeneous (GHOST/heterotachy-aware) analyses.",
+ "status": "Favoured by the most model-rich analyses to date; contested by Fan et al. 2020/2022 (see 'within Alphaproteobacteria').",
+ "tips": {
+  "Mitochondria": {
+   "name": "Mitochondria",
+   "group": "Mitochondria",
+   "color": "#8c1d1d",
+   "kind": "mito",
+   "note": "mitochondrion-encoded proteins from gene-rich protists (e.g. Reclinomonas)"
+  },
+  "Rickettsiales": {
+   "name": "Rickettsiales",
+   "group": "Rickettsiales",
+   "color": "#b03a2e",
+   "kind": "bacteria",
+   "note": "Rickettsiaceae, Anaplasmataceae, Midichloriaceae"
+  },
+  "Holosporales": {
+   "name": "Holosporales",
+   "group": "Holosporales",
+   "color": "#e6b0aa",
+   "kind": "bacteria",
+   "note": "once grouped with Rickettsiales; independent origin of parasitism (Muñoz-Gómez 2019)"
+  },
+  "Pelagibacterales": {
+   "name": "Pelagibacterales (SAR11)",
+   "group": "Pelagibacterales",
+   "color": "#f5b041",
+   "kind": "bacteria"
+  },
+  "Rhodospirillales": {
+   "name": "Rhodospirillales",
+   "group": "Rhodospirillales",
+   "color": "#5b2c6f",
+   "kind": "bacteria"
+  },
+  "Sphingomonadales": {
+   "name": "Sphingomonadales",
+   "group": "Sphingomonadales",
+   "color": "#1abc9c",
+   "kind": "bacteria"
+  },
+  "Rhodobacterales": {
+   "name": "Rhodobacterales",
+   "group": "Rhodobacterales",
+   "color": "#8e44ad",
+   "kind": "bacteria"
+  },
+  "Caulobacterales": {
+   "name": "Caulobacterales",
+   "group": "Caulobacterales",
+   "color": "#2980b9",
+   "kind": "bacteria"
+  },
+  "Hyphomicrobiales": {
+   "name": "Hyphomicrobiales (Rhizobiales)",
+   "group": "Hyphomicrobiales",
+   "color": "#27ae60",
+   "kind": "bacteria"
+  },
+  "Magnetococcales": {
+   "name": "Magnetococcales",
+   "group": "Magnetococcales",
+   "color": "#d35400",
+   "kind": "bacteria",
+   "note": "earliest-branching alphaproteobacterial order"
+  },
+  "Betaproteobacteria": {
+   "name": "Betaproteobacteria (outgroup)",
+   "group": "Betaproteobacteria",
+   "color": "#566573",
+   "kind": "bacteria"
+  },
+  "Gammaproteobacteria": {
+   "name": "Gammaproteobacteria (outgroup)",
+   "group": "Gammaproteobacteria",
+   "color": "#2c3e50",
+   "kind": "bacteria"
+  }
+ },
+ "nodes": {
+  "mito_alpha": {
+   "title": "Mitochondria + all Alphaproteobacteria",
+   "label": "key node",
+   "note": "Martijn 2018: PP ~1.0 under CAT-GTR after SR4 recoding; Muñoz-Gómez 2022: consistently recovered under LG+C60/PMSF/CAT-GTR with expanded sampling."
+  },
+  "alpha": {
+   "title": "Alphaproteobacteria (excluding mitochondria)"
+  },
+  "rhodo_holo": {
+   "note": "Holosporales branch with Rhodospirillales-related lineages, not with Rickettsiales (Muñoz-Gómez 2019)"
+  }
+ },
+ "legend": [
+  {
+   "id": "Mitochondria",
+   "color": "#8c1d1d"
+  },
+  {
+   "id": "Rickettsiales",
+   "color": "#b03a2e"
+  },
+  {
+   "id": "Holosporales",
+   "color": "#e6b0aa"
+  },
+  {
+   "id": "Pelagibacterales",
+   "color": "#f5b041"
+  },
+  {
+   "id": "Rhodospirillales",
+   "color": "#5b2c6f"
+  },
+  {
+   "id": "Sphingomonadales",
+   "color": "#1abc9c"
+  },
+  {
+   "id": "Rhodobacterales",
+   "color": "#8e44ad"
+  },
+  {
+   "id": "Caulobacterales",
+   "color": "#2980b9"
+  },
+  {
+   "id": "Hyphomicrobiales",
+   "color": "#27ae60"
+  },
+  {
+   "id": "Magnetococcales",
+   "color": "#d35400"
+  },
+  {
+   "id": "Betaproteobacteria",
+   "color": "#566573"
+  },
+  {
+   "id": "Gammaproteobacteria",
+   "color": "#2c3e50"
+  }
+ ]
+}

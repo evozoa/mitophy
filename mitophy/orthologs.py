@@ -98,10 +98,11 @@ def run(cfg: Config) -> Path:
     log.info("orthologs: %d proteins from %d proteomes; %d mito genomes; %d markers", len(all_text), len(products), len(mito), len(markers))
     mito_acc = [g["accession"] for g in mito]
 
-    # ---- build HMMs -----------------------------------------------------------------------------
+    # ---- build HMMs (seed alignments run with --thread 1: multithreaded MAFFT is not deterministic) ----------------
     builder = pyhmmer.plan7.Builder(ALPHA)
     background = pyhmmer.plan7.Background(ALPHA)
     hmms, mito_seqs = [], {}
+    jobs = []
     for m in markers:
         mid = m["id"]
         ms = read_marker_fasta(cfg.workdir / "mito" / "markers" / f"{mid}.faa")
@@ -121,8 +122,15 @@ def run(cfg: Config) -> Path:
         if len(train) < 3:
             log.warning("%s: too few training sequences (%d), skipping marker", mid, len(train)); continue
         fa = tmp / f"{mid}.seed.faa"; write_fasta(train, fa)
-        aln = tmp / f"{mid}.seed.aln"
-        sh(["mafft", "--auto", "--anysymbol", "--quiet", "--thread", str(threads), fa], stdout_to=aln, log_file=tmp / f"{mid}.mafft.log")
+        jobs.append((mid, fa, tmp / f"{mid}.seed.aln", len(ms), len(seeds)))
+    from concurrent.futures import ThreadPoolExecutor
+    def _aln(job):
+        mid, fa, aln, *_ = job
+        sh(["mafft", "--auto", "--anysymbol", "--quiet", "--thread", "1", fa], stdout_to=aln, log_file=tmp / f"{mid}.mafft.log")
+        return job
+    with ThreadPoolExecutor(max_workers=max(1, threads)) as ex:
+        done = list(ex.map(_aln, jobs))
+    for mid, fa, aln, n_m, n_b in done:
         with MSAFile(str(aln), digital=True, alphabet=ALPHA) as f:
             msa = f.read()
         msa.name = mid.encode()
@@ -130,7 +138,7 @@ def run(cfg: Config) -> Path:
         with open(hdir / f"{mid}.hmm", "wb") as fh:
             hmm.write(fh)
         hmms.append(hmm)
-        log.info("  %s: %d mito + %d bacterial seeds -> HMM (M=%d)", mid, len(ms), len(seeds), hmm.M)
+        log.info("  %s: %d mito + %d bacterial seeds -> HMM (M=%d)", mid, n_m, n_b, hmm.M)
 
     # ---- search proteomes -----------------------------------------------------------------------
     hits_rows = []

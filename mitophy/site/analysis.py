@@ -49,7 +49,7 @@ def occupancy_svg(occ_rows: list[dict], taxa: list[dict], out: Path) -> None:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     from matplotlib import rcParams
-    rcParams.update({"svg.fonttype": "none", "font.family": "sans-serif", "font.size": 8})
+    rcParams.update({"svg.fonttype": "none", "svg.hashsalt": "mitophy", "font.family": "sans-serif", "font.size": 8})
     tmeta = {t["label"]: t for t in taxa}
     markers = [k for k in occ_rows[0].keys() if k not in ("taxon", "n_markers")]
     rows = sorted(occ_rows, key=lambda r: (tmeta.get(r["taxon"], {}).get("kind", "") != "mito", tmeta.get(r["taxon"], {}).get("group", ""), r["taxon"]))
@@ -66,4 +66,4 @@ def occupancy_svg(occ_rows: list[dict], taxa: list[dict], out: Path) -> None:
     for s in ax.spines.values():
         s.set_visible(False)
     ax.set_title("Marker occupancy (filled = present) — mitochondria first, then bacteria by group", loc="left", fontsize=9)
-    fig.savefig(out, format="svg", bbox_inches="tight", transparent=True); plt.close(fig)
+    fig.savefig(out, format="svg", bbox_inches="tight", transparent=True, metadata={"Date": None}); plt.close(fig)

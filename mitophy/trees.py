@@ -150,11 +150,11 @@ def run(cfg: Config, analysis: str) -> Path:
     for f in [final_nwk, final_json, outdir / "occupancy.tsv", outdir / "partitions.nex", outdir / "taxa.json"]:
         shutil.copy(f, rdir / f.name)
     import gzip
-    with open(concat, "rb") as src, gzip.open(rdir / "concat.faa.gz", "wb") as dst:
+    with open(concat, "rb") as src, gzip.GzipFile(rdir / "concat.faa.gz", "wb", mtime=0) as dst:   # mtime=0: reproducible bytes
         shutil.copyfileobj(src, dst)
     logf = tdir / ("iqtree.log" if method == "iqtree" else "fasttree.log")
     if logf.exists():
-        with open(logf, "rb") as src, gzip.open(rdir / (logf.name + ".gz"), "wb") as dst:
+        with open(logf, "rb") as src, gzip.GzipFile(rdir / (logf.name + ".gz"), "wb", mtime=0) as dst:
             shutil.copyfileobj(src, dst)
     if (tdir / "iqtree.iqtree").exists():
         shutil.copy(tdir / "iqtree.iqtree", rdir / "iqtree.report.txt")

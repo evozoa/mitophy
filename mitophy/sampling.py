@@ -60,8 +60,11 @@ def balanced_pick(node: _Node, quota: int, score) -> list[dict]:
     while remaining > 0 and active:
         share = max(1, remaining // len(active))
         progressed = False
-        # small branches first so they are filled exactly; when only leftovers remain, prefer the largest branches
-        for i in sorted(active, key=lambda i: caps[i] - alloc[i], reverse=(remaining < len(active) * share)):
+        # small branches first so they are filled exactly; when only leftovers remain, prefer the largest branches.
+        # Ties always keep the original branch order (items sorted by score first), so results are a fixed point
+        # under sticky re-runs (a plain reverse sort would flip tie order and make the selection flip-flop).
+        leftover = remaining < len(active) * share
+        for i in sorted(active, key=lambda i: ((-(caps[i] - alloc[i]) if leftover else (caps[i] - alloc[i])), i)):
             give = min(share, caps[i] - alloc[i], remaining)
             if give > 0:
                 alloc[i] += give; remaining -= give; progressed = True

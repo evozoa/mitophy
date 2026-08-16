@@ -79,7 +79,8 @@ jobs:
             rm -rf results && cp -r "$tmp/results" results
             "$MAMBA_EXE" run -n mitophy mitophy provenance --profile "$profile"   # regenerate run record + CHANGELOG entry on top of the fresh CHANGELOG
             git add results CHANGELOG.md
-            if git diff --cached --quiet -- results/origin results/diversification results/origin_deep; then
+            # commit only when scientific content changed (trees, alignments, tables, charts) — run metadata alone (dates, runtimes) is not worth a commit
+            if git diff --cached --quiet -- 'results/*/tree.nwk' 'results/*/partitions.nex' 'results/*/occupancy.tsv' 'results/*/concat.faa.gz' 'results/*/genomes.tsv' 'results/*/stats_by_group.tsv' 'results/*/charts/*.svg' 'results/*/hits*.tsv'; then
               echo "changed=false" >> "$GITHUB_OUTPUT"; echo "no changes in trees/tables — nothing committed"; git reset -q --hard origin/main; exit 0
             fi
             git commit -q -m "pipeline: run $(date -u +%F) [skip ci]"

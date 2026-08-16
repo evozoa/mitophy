@@ -14,20 +14,20 @@ from .sampling import load_selected
 
 log = logging.getLogger("mitophy")
 BLUE, INK, MUTED, GRID = "#2a78d6", "#0b0b0b", "#52514e", "#e5e4e0"
-rcParams.update({"svg.fonttype": "none", "font.family": "sans-serif", "font.size": 10, "axes.edgecolor": MUTED,
+rcParams.update({"svg.fonttype": "none", "svg.hashsalt": "mitophy", "font.family": "sans-serif", "font.size": 10, "axes.edgecolor": MUTED,
                  "axes.labelcolor": INK, "xtick.color": MUTED, "ytick.color": MUTED, "axes.spines.top": False,
                  "axes.spines.right": False, "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.6, "axes.axisbelow": True,
                  "figure.facecolor": "none", "axes.facecolor": "none"})
 
 def _save(fig, path: Path):
-    fig.savefig(path, format="svg", bbox_inches="tight", transparent=True, dpi=200); plt.close(fig)
+    fig.savefig(path, format="svg", bbox_inches="tight", transparent=True, dpi=200, metadata={"Date": None}); plt.close(fig)
 
 def chart_length_by_group(rows: list[dict], out: Path, min_n: int = 5):
     by = defaultdict(list)
     for r in rows:
         by[r["group"]].append(r["length"])
     groups = [g for g in by if len(by[g]) >= min_n] or list(by)
-    groups.sort(key=lambda g: sorted(by[g])[len(by[g]) // 2])
+    groups.sort(key=lambda g: (sorted(by[g])[len(by[g]) // 2], g))
     fig, ax = plt.subplots(figsize=(8, 0.32 * len(groups) + 1.2))
     import random
     rnd = random.Random(1)
@@ -52,7 +52,7 @@ def chart_genes_vs_length(rows: list[dict], out: Path, label_names: list[str]):
 
 def chart_transl_tables(rows: list[dict], out: Path):
     c = Counter((r["supergroup"] or "Other", r["transl_table"] or "?") for r in rows)
-    sgs = sorted({k[0] for k in c}, key=lambda s: -sum(v for k, v in c.items() if k[0] == s))
+    sgs = sorted({k[0] for k in c}, key=lambda s: (-sum(v for k, v in c.items() if k[0] == s), s))
     tables = sorted({k[1] for k in c}, key=lambda t: (t == "?", int(t) if t.isdigit() else 99))
     fig, ax = plt.subplots(figsize=(7.5, 0.5 * len(sgs) + 1.5))
     import numpy as np
@@ -75,7 +75,7 @@ def chart_gene_retention(rows: list[dict], markers: list[str], out: Path, min_n:
         by[r["group"]].append(r["marker_set"])
     groups = [g for g in by if len(by[g]) >= min_n] or list(by)
     mat = np.array([[sum(1 for s in by[g] if m in s) / len(by[g]) for m in markers] for g in groups])
-    order = np.argsort(-mat.sum(axis=1))
+    order = sorted(range(len(groups)), key=lambda i: (-mat[i].sum(), groups[i]))
     groups = [groups[i] for i in order]; mat = mat[order]
     fig, ax = plt.subplots(figsize=(0.32 * len(markers) + 3, 0.32 * len(groups) + 1.5))
     ax.imshow(mat, cmap="Blues", vmin=0, vmax=1, aspect="auto")
@@ -105,7 +105,7 @@ def run(cfg: Config) -> Path:
         w = csv.writer(fh, delimiter="\t")
         w.writerow(["supergroup", "group", "n_genomes", "n_sampled", "median_length", "min_length", "max_length", "median_gc", "median_n_cds", "common_transl_table"] + [f"frac_{m}" for m in markers])
         nsel = Counter(r["group"] for r in sel)
-        for (sg, g), rs in sorted(by.items(), key=lambda kv: -len(kv[1])):
+        for (sg, g), rs in sorted(by.items(), key=lambda kv: (-len(kv[1]), kv[0])):
             L = sorted(r["length"] for r in rs); G = sorted(r["gc"] for r in rs); C = sorted(r["n_cds"] for r in rs)
             tt = Counter(r["transl_table"] for r in rs).most_common(1)[0][0]
             w.writerow([sg, g, len(rs), nsel.get(g, 0), L[len(L) // 2], L[0], L[-1], f"{G[len(G) // 2]:.3f}", C[len(C) // 2], tt] +

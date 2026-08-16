@@ -66,7 +66,7 @@ jobs:
             work/mito/unmatched_products.tsv
       - name: Commit results
         id: commit
-        shell: bash -l {0}
+        shell: bash          # non-login shell on purpose: `bash -l` runs ~/.bash_logout on exit, which breaks `set -e` exit codes
         run: |
           set -euo pipefail
           git config user.name "mitophy-bot"
@@ -77,7 +77,7 @@ jobs:
             tmp=$(mktemp -d); cp -r results "$tmp/results"
             git fetch origin main && git reset -q --hard origin/main
             rm -rf results && cp -r "$tmp/results" results
-            mitophy provenance --profile "$profile"        # regenerate run record + CHANGELOG entry on top of the fresh CHANGELOG
+            "$MAMBA_EXE" run -n mitophy mitophy provenance --profile "$profile"   # regenerate run record + CHANGELOG entry on top of the fresh CHANGELOG
             git add results CHANGELOG.md
             if git diff --cached --quiet -- results/origin results/diversification results/origin_deep; then
               echo "changed=false" >> "$GITHUB_OUTPUT"; echo "no changes in trees/tables — nothing committed"; git reset -q --hard origin/main; exit 0

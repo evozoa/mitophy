@@ -68,17 +68,25 @@ jobs:
         id: commit
         shell: bash -l {0}
         run: |
+          set -euo pipefail
           git config user.name "mitophy-bot"
           git config user.email "mitophy-bot@users.noreply.github.com"
-          git add results CHANGELOG.md
-          if git diff --cached --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"; echo "no result changes"
-          else
-            git commit -m "pipeline: run $(date -u +%F) [skip ci]"
-            git pull --rebase origin main
-            git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
+          profile="${{ inputs.profile || 'ci' }}"
+          for attempt in 1 2 3; do
+            # replay fresh results on top of the current main (other commits may have landed while we ran)
+            tmp=$(mktemp -d); cp -r results "$tmp/results"
+            git fetch origin main && git reset -q --hard origin/main
+            rm -rf results && cp -r "$tmp/results" results
+            mitophy provenance --profile "$profile"        # regenerate run record + CHANGELOG entry on top of the fresh CHANGELOG
+            git add results CHANGELOG.md
+            if git diff --cached --quiet -- results/origin results/diversification results/origin_deep; then
+              echo "changed=false" >> "$GITHUB_OUTPUT"; echo "no changes in trees/tables — nothing committed"; git reset -q --hard origin/main; exit 0
+            fi
+            git commit -q -m "pipeline: run $(date -u +%F) [skip ci]"
+            if git push origin HEAD:main; then echo "changed=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+            echo "push rejected (attempt $attempt), retrying"; sleep 15
+          done
+          echo "could not push results" >&2; exit 1
   deploy:
     needs: run
     runs-on: ubuntu-latest

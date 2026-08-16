@@ -1,15 +1,5 @@
 [
  {
-  "label": "NC_035508.1",
-  "name": "Apiospora arundinis",
-  "group": "Fungi",
-  "supergroup": "Opisthokonta",
-  "taxid": "335852",
-  "accession": "NC_035508.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Sordariomycetes; Xylariomycetidae; Amphisphaeriales; Apiosporaceae; Apiospora",
-  "kind": "mito"
- },
- {
   "label": "NC_068219.1",
   "name": "Amoeboaphelidium protococcarum",
   "group": "Fungi",
@@ -30,13 +20,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_086750.1",
-  "name": "Elmerina hispida",
+  "label": "NC_064984.1",
+  "name": "Aspergillus sclerotioniger",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "1245649",
-  "accession": "NC_086750.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Agaricomycetes; Auriculariales; Aporpiaceae; Elmerina",
+  "taxid": "319627",
+  "accession": "NC_064984.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Eurotiomycetes; Eurotiomycetidae; Eurotiales; Aspergillaceae; Aspergillus; Aspergillus subgen. Circumdati",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_064342.1",
+  "name": "Auricularia villosula",
+  "group": "Fungi",
+  "supergroup": "Opisthokonta",
+  "taxid": "1579976",
+  "accession": "NC_064342.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Agaricomycetes; Auriculariales; Auriculariaceae; Auricularia",
   "kind": "mito"
  },
  {
@@ -50,36 +50,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_077612.1",
-  "name": "Phyllosticta yuccae",
-  "group": "Fungi",
-  "supergroup": "Opisthokonta",
-  "taxid": "1151444",
-  "accession": "NC_077612.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Dothideomycetes; Dothideomycetes incertae sedis; Botryosphaeriales; Phyllostictaceae; Phyllosticta",
-  "kind": "mito"
- },
- {
-  "label": "NC_021436.1",
-  "name": "Rhizoctonia solani",
-  "group": "Fungi",
-  "supergroup": "Opisthokonta",
-  "taxid": "456999",
-  "accession": "NC_021436.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Agaricomycetes; Cantharellales; Ceratobasidiaceae; Rhizoctonia",
-  "kind": "mito"
- },
- {
-  "label": "NC_030600.1",
-  "name": "Cladophialophora bantiana",
-  "group": "Fungi",
-  "supergroup": "Opisthokonta",
-  "taxid": "89940",
-  "accession": "NC_030600.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Eurotiomycetes; Chaetothyriomycetidae; Chaetothyriales; Herpotrichiellaceae; Cladophialophora",
-  "kind": "mito"
- },
- {
   "label": "NC_042880.1",
   "name": "Chytriomyces confervae",
   "group": "Fungi",
@@ -87,6 +57,16 @@
   "taxid": "246404",
   "accession": "NC_042880.1",
   "lineage": "Eukaryota; Fungi; Fungi incertae sedis; chytridiomyceta; Chytridiomycota; Chytridiomycotina; Chytridiomycetes; Chytridiales; Chytriomycetaceae; Chytriomyces",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_004336.1",
+  "name": "Cryptococcus neoformans",
+  "group": "Fungi",
+  "supergroup": "Opisthokonta",
+  "taxid": "5207",
+  "accession": "NC_004336.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Tremellomycetes; Tremellales; Cryptococcaceae; Cryptococcus; Cryptococcus neoformans species complex",
   "kind": "mito"
  },
  {
@@ -270,6 +250,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_051483.1",
+  "name": "Monilinia laxa",
+  "group": "Fungi",
+  "supergroup": "Opisthokonta",
+  "taxid": "61186",
+  "accession": "NC_051483.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Leotiomycetes; Helotiales; Sclerotiniaceae; Monilinia",
+  "kind": "mito"
+ },
+ {
   "label": "NC_003048.1",
   "name": "Hyaloraphidium curvatum",
   "group": "Fungi",
@@ -277,6 +267,26 @@
   "taxid": "82268",
   "accession": "NC_003048.1",
   "lineage": "Eukaryota; Fungi; Fungi incertae sedis; chytridiomyceta; Monoblepharomycota; Hyaloraphidiomycetes; Hyaloraphidiales; Hyaloraphidiaceae; Hyaloraphidium",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_044675.1",
+  "name": "Porodaedalea pini",
+  "group": "Fungi",
+  "supergroup": "Opisthokonta",
+  "taxid": "108901",
+  "accession": "NC_044675.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Agaricomycetes; Hymenochaetales; Hymenochaetaceae; Porodaedalea",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_070371.1",
+  "name": "Cladonia uncialis",
+  "group": "Fungi",
+  "supergroup": "Opisthokonta",
+  "taxid": "174080",
+  "accession": "NC_070371.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Lecanoromycetes; OSLEUM clade; Lecanoromycetidae; Lecanorales; Lecanorineae; Cladoniaceae; Cladonia",
   "kind": "mito"
  },
  {
@@ -490,93 +500,93 @@
   "kind": "mito"
  },
  {
-  "label": "NC_069952.1",
-  "name": "Drechslerella dactyloides",
+  "label": "NC_022681.1",
+  "name": "Fusarium circinatum",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "74499",
-  "accession": "NC_069952.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Orbiliomycetes; Orbiliales; Orbiliaceae; Drechslerella",
+  "taxid": "48490",
+  "accession": "NC_022681.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Sordariomycetes; Hypocreomycetidae; Hypocreales; Nectriaceae; Fusarium; Fusarium fujikuroi species complex",
   "kind": "mito"
  },
  {
-  "label": "NC_039355.1",
-  "name": "Pertusaria propinqua",
+  "label": "NC_081479.1",
+  "name": "Leptographium aureum",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "2283411",
-  "accession": "NC_039355.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Lecanoromycetes; OSLEUM clade; Ostropomycetidae; Pertusariales; Pertusariaceae; Pertusaria",
+  "taxid": "273775",
+  "accession": "NC_081479.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Sordariomycetes; Sordariomycetidae; Ophiostomatales; Ophiostomataceae; Leptographium",
   "kind": "mito"
  },
  {
-  "label": "NC_029745.1",
-  "name": "Pyronema omphalodes",
+  "label": "NC_041248.1",
+  "name": "Orbilia brochopaga",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "337075",
-  "accession": "NC_029745.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Pezizomycetes; Pezizales; Pyronemataceae; Pyronema",
+  "taxid": "3140254",
+  "accession": "NC_041248.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Orbiliomycetes; Orbiliales; Orbiliaceae; Orbilia",
   "kind": "mito"
  },
  {
-  "label": "NC_053885.1",
-  "name": "Tuber calosporum",
+  "label": "NC_045397.1",
+  "name": "Morchella importuna",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "1894963",
-  "accession": "NC_053885.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Pezizomycetes; Pezizales; Tuberaceae; Tuber",
+  "taxid": "1174673",
+  "accession": "NC_045397.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Pezizomycetes; Pezizales; Morchellaceae; Morchella",
   "kind": "mito"
  },
  {
-  "label": "NC_022159.1",
-  "name": "Barnettozyma californica",
+  "label": "NC_022167.1",
+  "name": "Williopsis suaveolens",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "36038",
-  "accession": "NC_022159.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes; Phaffomycetales; Phaffomycetaceae; Barnettozyma",
+  "taxid": "907738",
+  "accession": "NC_022167.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes; Phaffomycetales; Wickerhamomycetaceae; Williopsis",
   "kind": "mito"
  },
  {
-  "label": "NC_050041.1",
-  "name": "Phallus indusiatus",
+  "label": "NC_014805.1",
+  "name": "Ogataea polymorpha",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "146777",
-  "accession": "NC_050041.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Agaricomycetes; Phallomycetidae; Phallales; Phallaceae; Phallus",
+  "taxid": "460523",
+  "accession": "NC_014805.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Pichiales; Pichiaceae; Ogataea",
   "kind": "mito"
  },
  {
-  "label": "NC_022158.1",
-  "name": "Pichia kluyveri",
+  "label": "NC_013830.1",
+  "name": "Candida maltosa",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "36015",
-  "accession": "NC_022158.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Pichiales; Pichiaceae; Pichia",
+  "taxid": "5479",
+  "accession": "NC_013830.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Debaryomycetaceae; Candida",
   "kind": "mito"
  },
  {
-  "label": "NC_022154.1",
-  "name": "Meyerozyma guilliermondii",
+  "label": "NC_050304.1",
+  "name": "Metschnikowia arizonensis",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "4929",
-  "accession": "NC_022154.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Debaryomycetaceae; Meyerozyma",
+  "taxid": "150206",
+  "accession": "NC_050304.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Metschnikowiaceae; Metschnikowia",
   "kind": "mito"
  },
  {
-  "label": "NC_053321.1",
-  "name": "Candidozyma auris",
+  "label": "NC_047242.1",
+  "name": "Bipolaris sorokiniana",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "498019",
-  "accession": "NC_053321.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Metschnikowiaceae; Candidozyma",
+  "taxid": "45130",
+  "accession": "NC_047242.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae; Pleosporaceae; Bipolaris",
   "kind": "mito"
  },
  {
@@ -610,22 +620,22 @@
   "kind": "mito"
  },
  {
+  "label": "NC_037938.1",
+  "name": "Ganoderma calidophilum",
+  "group": "Fungi",
+  "supergroup": "Opisthokonta",
+  "taxid": "2026244",
+  "accession": "NC_037938.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Agaricomycetes; Polyporales; Polyporaceae; Ganoderma",
+  "kind": "mito"
+ },
+ {
   "label": "NC_014352.1",
   "name": "Phakopsora meibomiae",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
   "taxid": "169999",
   "accession": "NC_014352.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Pucciniomycotina; Pucciniomycetes; Pucciniales; Phakopsoraceae; Phakopsora",
-  "kind": "mito"
- },
- {
-  "label": "NC_014344.1",
-  "name": "Phakopsora pachyrhizi",
-  "group": "Fungi",
-  "supergroup": "Opisthokonta",
-  "taxid": "170000",
-  "accession": "NC_014344.1",
   "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Pucciniomycotina; Pucciniomycetes; Pucciniales; Phakopsoraceae; Phakopsora",
   "kind": "mito"
  },
@@ -670,16 +680,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_069201.1",
-  "name": "Spathularia flavida",
-  "group": "Fungi",
-  "supergroup": "Opisthokonta",
-  "taxid": "33158",
-  "accession": "NC_069201.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Leotiomycetes; Rhytismatales; Cudoniaceae; Spathularia",
-  "kind": "mito"
- },
- {
   "label": "NC_021611.1",
   "name": "Rozella allomycis",
   "group": "Fungi",
@@ -690,13 +690,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_084443.1",
-  "name": "Saccharomycopsis fibuligera",
+  "label": "NC_037773.1",
+  "name": "Russula compacta",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "4944",
-  "accession": "NC_084443.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes; Saccharomycopsidaceae; Saccharomycopsis",
+  "taxid": "40490",
+  "accession": "NC_037773.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Agaricomycetes; Russulales; Russulaceae; Russula",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_059893.1",
+  "name": "Saccharomyces cerevisiae x Saccharomyces paradoxus",
+  "group": "Fungi",
+  "supergroup": "Opisthokonta",
+  "taxid": "595493",
+  "accession": "NC_059893.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes; Saccharomycetales; Saccharomycetaceae; Saccharomyces",
   "kind": "mito"
  },
  {
@@ -810,16 +820,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_061401.1",
-  "name": "Polyozellus multiplex",
-  "group": "Fungi",
-  "supergroup": "Opisthokonta",
-  "taxid": "281719",
-  "accession": "NC_061401.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Agaricomycetes; Thelephorales; Thelephoraceae; Polyozellus",
-  "kind": "mito"
- },
- {
   "label": "NC_073546.1",
   "name": "Tilletia controversa",
   "group": "Fungi",
@@ -860,23 +860,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_036422.1",
-  "name": "Tremella fuciformis",
+  "label": "NC_038224.1",
+  "name": "Lyophyllum shimeji",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "64657",
-  "accession": "NC_036422.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Tremellomycetes; Tremellales; Tremellaceae; Tremella",
+  "taxid": "47721",
+  "accession": "NC_038224.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Agaricomycetes; Agaricomycetidae; Agaricales; Tricholomatineae; Lyophyllaceae; Lyophyllum",
   "kind": "mito"
  },
  {
-  "label": "NC_068697.1",
-  "name": "Pascua guehoae",
+  "label": "NC_068698.1",
+  "name": "Cutaneotrichosporon cutaneum",
   "group": "Fungi",
   "supergroup": "Opisthokonta",
-  "taxid": "105714",
-  "accession": "NC_068697.1",
-  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Tremellomycetes; Trichosporonales; Trichosporonaceae; Pascua",
+  "taxid": "5554",
+  "accession": "NC_068698.1",
+  "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Tremellomycetes; Trichosporonales; Trichosporonaceae; Cutaneotrichosporon",
   "kind": "mito"
  },
  {
@@ -897,6 +897,16 @@
   "taxid": "5270",
   "accession": "NC_008368.1",
   "lineage": "Eukaryota; Fungi; Dikarya; Basidiomycota; Ustilaginomycotina; Ustilaginomycetes; Ustilaginales; Ustilaginales incertae sedis; Mycosarcoma",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_068065.1",
+  "name": "Mopalia retifera",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "430713",
+  "accession": "NC_068065.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Mollusca; Polyplacophora; Neoloricata; Chitonida; Acanthochitonina; Mopaliidae; Mopalia",
   "kind": "mito"
  },
  {
@@ -940,23 +950,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_027612.1",
-  "name": "Halcampoides purpureus",
+  "label": "NC_049065.1",
+  "name": "Anemonia sulcata",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "2268653",
-  "accession": "NC_027612.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Actiniaria; Halcampoididae; Halcampoides",
-  "kind": "mito"
- },
- {
-  "label": "NC_010213.1",
-  "name": "Agelas schmidtii",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "2723817",
-  "accession": "NC_010213.1",
-  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Agelasida; Agelasidae; Agelas",
+  "taxid": "6108",
+  "accession": "NC_049065.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Actiniaria; Actiniidae; Anemonia",
   "kind": "mito"
  },
  {
@@ -967,16 +967,6 @@
   "taxid": "3298910",
   "accession": "NC_031872.1",
   "lineage": "Eukaryota; Metazoa; Ecdysozoa; Scalidophora; Kinorhyncha; Allomalorhagida; Pycnophyidae; Setaphyes",
-  "kind": "mito"
- },
- {
-  "label": "NC_020155.1",
-  "name": "Geotrypetes seraphini",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "260995",
-  "accession": "NC_020155.1",
-  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Amphibia; Gymnophiona; Geotrypetes",
   "kind": "mito"
  },
  {
@@ -1070,23 +1060,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_046843.1",
-  "name": "Tanacetipathes thamnea",
+  "label": "NC_034297.1",
+  "name": "Daphnia galeata",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "2716933",
-  "accession": "NC_046843.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Antipatharia; Myriopathidae; Tanacetipathes",
+  "taxid": "27404",
+  "accession": "NC_034297.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Altocrustacea; Allotriocarida; Branchiopoda; Diplostraca; Cladocera; Anomopoda; Daphniidae; Daphnia",
   "kind": "mito"
  },
  {
-  "label": "NC_023208.1",
-  "name": "Bursaphelenchus xylophilus",
+  "label": "NC_027667.1",
+  "name": "Myriopathes japonica",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "6326",
-  "accession": "NC_023208.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida; Tylenchina; Tylenchomorpha; Aphelenchoidea; Aphelenchoididae; Bursaphelenchus",
+  "taxid": "1342722",
+  "accession": "NC_027667.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Antipatharia; Antipathidae; Myriopathes",
   "kind": "mito"
  },
  {
@@ -1096,16 +1086,6 @@
   "supergroup": "Opisthokonta",
   "taxid": "6088",
   "accession": "NC_010214.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Hydrozoa; Hydroidolina; Anthoathecata; Aplanulata; Hydridae; Hydra",
-  "kind": "mito"
- },
- {
-  "label": "NC_021406.1",
-  "name": "Hydra sinensis",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "570418",
-  "accession": "NC_021406.1",
   "lineage": "Eukaryota; Metazoa; Cnidaria; Hydrozoa; Hydroidolina; Anthoathecata; Aplanulata; Hydridae; Hydra",
   "kind": "mito"
  },
@@ -1170,23 +1150,43 @@
   "kind": "mito"
  },
  {
-  "label": "NC_005935.1",
-  "name": "Argulus americanus",
+  "label": "NC_014870.1",
+  "name": "Contracaecum rudolphii B Bullini et al., 1986",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "260819",
-  "accession": "NC_005935.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Oligostraca; Ichthyostraca; Branchiura; Arguloida; Argulidae; Argulus",
+  "taxid": "646521",
+  "accession": "NC_014870.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida; Spirurina; Ascaridomorpha; Ascaridoidea; Anisakidae; Contracaecum",
   "kind": "mito"
  },
  {
-  "label": "NC_057223.1",
-  "name": "Actinopyga lecanora",
+  "label": "NC_052743.1",
+  "name": "Stichopus monotuberculatus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "571811",
-  "accession": "NC_057223.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Holothuroidea; Aspidochirotacea; Aspidochirotida; Holothuriidae; Actinopyga",
+  "taxid": "576894",
+  "accession": "NC_052743.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Holothuroidea; Aspidochirotacea; Aspidochirotida; Stichopodidae; Stichopus",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_025335.1",
+  "name": "Poecillastra laminaris",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "1336882",
+  "accession": "NC_025335.1",
+  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Tetractinellida; Astrophorina; Vulcanellidae; Poecillastra",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_006894.1",
+  "name": "Axinella corrugata",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "153946",
+  "accession": "NC_006894.1",
+  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Axinellida; Axinellidae; Axinella",
   "kind": "mito"
  },
  {
@@ -1230,13 +1230,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_039982.1",
-  "name": "Freyastera benthophila",
+  "label": "NC_026064.1",
+  "name": "Ovis vignei",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "556872",
-  "accession": "NC_039982.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Asteroidea; Forcipulatacea; Brisingida; Brisingidae; Freyastera",
+  "taxid": "59896",
+  "accession": "NC_026064.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Caprinae; Ovis",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_037237.1",
+  "name": "Penion maximus",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "620537",
+  "accession": "NC_037237.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Mollusca; Gastropoda; Caenogastropoda; Neogastropoda; Buccinoidea; Buccinidae; Penion",
   "kind": "mito"
  },
  {
@@ -1260,16 +1270,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_080938.1",
-  "name": "Abylopsis tetragona",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "316209",
-  "accession": "NC_080938.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Hydrozoa; Hydroidolina; Siphonophorae; Calycophorae; Abylidae; Abylopsis",
-  "kind": "mito"
- },
- {
   "label": "NC_000941.1",
   "name": "Terebratulina retusa",
   "group": "Metazoa",
@@ -1290,6 +1290,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_024055.1",
+  "name": "Carcharhinus acronotus",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "303932",
+  "accession": "NC_024055.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Chondrichthyes; Elasmobranchii; Galeomorphii; Galeoidea; Carcharhiniformes; Carcharhinidae; Carcharhinus",
+  "kind": "mito"
+ },
+ {
   "label": "NC_035256.1",
   "name": "Stenostomum sthenum",
   "group": "Metazoa",
@@ -1297,16 +1307,6 @@
   "taxid": "1611831",
   "accession": "NC_035256.1",
   "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Platyhelminthes; Catenulida; Stenostomidae; Stenostomum",
-  "kind": "mito"
- },
- {
-  "label": "NC_003127.1",
-  "name": "Neoceratodus forsteri",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "7892",
-  "accession": "NC_003127.1",
-  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Dipnomorpha; Ceratodontiformes; Ceratodontoidei; Ceratodontidae; Neoceratodus",
   "kind": "mito"
  },
  {
@@ -1320,13 +1320,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_014292.1",
-  "name": "Harriotta raleighana",
+  "label": "NC_014290.1",
+  "name": "Hydrolagus lemures",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "765186",
-  "accession": "NC_014292.1",
-  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Chondrichthyes; Holocephali; Chimaeriformes; Rhinochimaeridae; Harriotta",
+  "taxid": "334987",
+  "accession": "NC_014290.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Chondrichthyes; Holocephali; Chimaeriformes; Chimaeridae; Hydrolagus",
   "kind": "mito"
  },
  {
@@ -1410,33 +1410,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_069646.1",
-  "name": "Cliona patera",
+  "label": "NC_063502.1",
+  "name": "Elaphe moellendorffi",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "2910015",
-  "accession": "NC_069646.1",
-  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Clionaida; Clionaidae; Cliona",
-  "kind": "mito"
- },
- {
-  "label": "NC_061414.1",
-  "name": "Astriclypeus mannii",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "31188",
-  "accession": "NC_061414.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Echinoidea; Euechinoidea; Gnathostomata; Clypeasteroida; Astriclypeidae; Astriclypeus",
-  "kind": "mito"
- },
- {
-  "label": "NC_006921.2",
-  "name": "Latimeria menadoensis",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "106881",
-  "accession": "NC_006921.2",
-  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Coelacanthiformes; Coelacanthidae; Latimeria",
+  "taxid": "74366",
+  "accession": "NC_063502.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Lepidosauria; Squamata; Bifurcata; Unidentata; Episquamata; Toxicofera; Serpentes; Colubroidea; Colubridae; Colubrinae; Elaphe",
   "kind": "mito"
  },
  {
@@ -1570,23 +1550,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_027102.1",
-  "name": "Corynactis californica",
+  "label": "NC_027100.1",
+  "name": "Discosoma nummiforme",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "44298",
-  "accession": "NC_027102.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Corallimorpharia; Corallimorphidae; Corynactis",
+  "taxid": "446316",
+  "accession": "NC_027100.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Corallimorpharia; Discosomidae; Discosoma",
   "kind": "mito"
  },
  {
-  "label": "NC_023930.1",
-  "name": "Nipponnemertes punctatula",
+  "label": "NC_066924.1",
+  "name": "Cottus marginatus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "1332184",
-  "accession": "NC_023930.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Nemertea; Enopla; Hoplonemertea; Monostilifera; Cratenemertea; Cratenemertidae; Nipponnemertes",
+  "taxid": "304283",
+  "accession": "NC_066924.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Actinopterygii; Neopterygii; Teleostei; Neoteleostei; Acanthomorphata; Eupercaria; Perciformes; Cottioidei; Cottales; Cottidae; Cottus",
   "kind": "mito"
  },
  {
@@ -1620,13 +1600,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_008192.1",
-  "name": "Flustrellidra hispida",
+  "label": "NC_024591.1",
+  "name": "Taenia crocutae",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "97271",
-  "accession": "NC_008192.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Bryozoa; Gymnolaemata; Ctenostomatida; Flustrellidridae; Flustrellidra",
+  "taxid": "1453888",
+  "accession": "NC_024591.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Platyhelminthes; Rhabditophora; Neodermata; Cestoda; Eucestoda; Cyclophyllidea; Taeniidae; Taenia",
   "kind": "mito"
  },
  {
@@ -1650,23 +1630,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_042792.1",
-  "name": "Cypridina dentata",
+  "label": "NC_005306.1",
+  "name": "Vargula hilgendorfii",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "1483471",
-  "accession": "NC_042792.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Oligostraca; Ostracoda; Myodocopa; Myodocopida; Cypridinoidea; Cypridinidae; Cypridina",
-  "kind": "mito"
- },
- {
-  "label": "NC_028407.1",
-  "name": "Cypridopsis vidua",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "230730",
-  "accession": "NC_028407.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Oligostraca; Ostracoda; Podocopa; Podocopida; Cypridocopina; Cypridoidea; Cyprididae; Cypridopsis",
+  "taxid": "6674",
+  "accession": "NC_005306.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Oligostraca; Ostracoda; Myodocopa; Myodocopida; Cypridinoidea; Cypridinidae; Vargula",
   "kind": "mito"
  },
  {
@@ -1700,23 +1670,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_051929.1",
-  "name": "Colochirus quadrangularis",
+  "label": "NC_005929.1",
+  "name": "Cucumaria miniata",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "1980634",
-  "accession": "NC_051929.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Holothuroidea; Dendrochirotacea; Dendrochirotida; Cucumariidae; Colochirus",
-  "kind": "mito"
- },
- {
-  "label": "NC_058589.1",
-  "name": "Thyonella gemmata",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "206685",
-  "accession": "NC_058589.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Holothuroidea; Dendrochirotacea; Dendrochirotida; Cucumariidae; Thyonella",
+  "taxid": "28833",
+  "accession": "NC_005929.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Holothuroidea; Dendrochirotacea; Dendrochirotida; Cucumariidae; Cucumaria",
   "kind": "mito"
  },
  {
@@ -1730,13 +1690,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_006162.1",
-  "name": "Graptacme eborea",
+  "label": "NC_033522.1",
+  "name": "Diadema setosum",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "55752",
-  "accession": "NC_006162.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Mollusca; Scaphopoda; Dentaliida; Dentaliidae; Graptacme",
+  "taxid": "31175",
+  "accession": "NC_033522.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Echinoidea; Euechinoidea; Acroechinoidea; Diadematoida; Diadematidae; Diadema",
   "kind": "mito"
  },
  {
@@ -1780,23 +1740,33 @@
   "kind": "mito"
  },
  {
-  "label": "NC_015245.1",
-  "name": "Pristionchus pacificus",
+  "label": "NC_029233.1",
+  "name": "Allodiplogaster sudhausi",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "54126",
-  "accession": "NC_015245.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida; Rhabditina; Diplogasteromorpha; Diplogasteroidea; Neodiplogasteridae; Pristionchus",
+  "taxid": "2761625",
+  "accession": "NC_029233.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida; Rhabditina; Diplogasteromorpha; Diplogasteroidea; Diplogasteridae; Allodiplogaster",
   "kind": "mito"
  },
  {
-  "label": "NC_016019.1",
-  "name": "Dracunculus medinensis",
+  "label": "NC_009940.1",
+  "name": "Strongylocentrotus droebachiensis",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "318479",
-  "accession": "NC_016019.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida; Spirurina; Dracunculoidea; Dracunculidae; Dracunculus",
+  "taxid": "7671",
+  "accession": "NC_009940.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Echinoidea; Euechinoidea; Echinacea; Camarodonta; Echinidea; Strongylocentrotidae; Strongylocentrotus",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_060483.1",
+  "name": "Pomphorhynchus bulbocolli",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "317556",
+  "accession": "NC_060483.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Acanthocephala; Palaeacanthocephala; Echinorhynchida; Pomphorhynchidae; Pomphorhynchus",
   "kind": "mito"
  },
  {
@@ -1900,6 +1870,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_024823.1",
+  "name": "Nemertopsis tetraclitophila",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "1417004",
+  "accession": "NC_024823.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Nemertea; Enopla; Hoplonemertea; Monostilifera; Eumonostilifera; Emplectonematidae; Nemertopsis",
+  "kind": "mito"
+ },
+ {
   "label": "NC_009082.1",
   "name": "Epiperipatus biolleyi",
   "group": "Metazoa",
@@ -1940,16 +1920,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_013878.1",
-  "name": "Astrospartus mediterraneus",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "691888",
-  "accession": "NC_013878.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Ophiuroidea; Ophiuridea; Euryalida; Gorgonocephalidae; Astrospartus",
-  "kind": "mito"
- },
- {
   "label": "NC_040146.1",
   "name": "Astrotoma agassizii",
   "group": "Metazoa",
@@ -1970,33 +1940,53 @@
   "kind": "mito"
  },
  {
-  "label": "NC_016465.1",
-  "name": "Clava multicornis",
+  "label": "NC_056960.1",
+  "name": "Onchocerca lupi",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "498518",
-  "accession": "NC_016465.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Hydrozoa; Hydroidolina; Anthoathecata; Filifera; Hydractiniidae; Clava",
+  "taxid": "153009",
+  "accession": "NC_056960.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida; Spirurina; Spiruromorpha; Filarioidea; Onchocercidae; Onchocerca",
   "kind": "mito"
  },
  {
-  "label": "NC_063669.1",
-  "name": "Zoroaster ophiactis",
+  "label": "NC_031213.1",
+  "name": "Turritopsis dohrnii",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "467010",
-  "accession": "NC_063669.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Asteroidea; Forcipulatacea; Forcipulatida; Zoroasteridae; Zoroaster",
+  "taxid": "308579",
+  "accession": "NC_031213.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Hydrozoa; Hydroidolina; Anthoathecata; Filifera; Oceaniidae; Turritopsis",
   "kind": "mito"
  },
  {
-  "label": "NC_049136.1",
-  "name": "Siphonosoma cumanense",
+  "label": "NC_042741.1",
+  "name": "Pisaster ochraceus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "6444",
-  "accession": "NC_049136.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Annelida; Sipuncula; Sipunculidea; Golfingiida; Sipunculidae; Siphonosoma",
+  "taxid": "7612",
+  "accession": "NC_042741.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Asteroidea; Forcipulatacea; Forcipulatida; Asteriidae; Pisaster",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_025597.1",
+  "name": "Carpodacus erythrinus",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "175930",
+  "accession": "NC_025597.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Archelosauria; Archosauria; Dinosauria; Saurischia; Theropoda; Coelurosauria; Aves; Neognathae; Neoaves; Telluraves; Australaves; Passeriformes; Passeroidea; Fringillidae; Carduelinae; Carpodacus",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_073107.1",
+  "name": "Helice tridens",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "53325",
+  "accession": "NC_073107.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Altocrustacea; Communostraca; Malacostraca; Eumalacostraca; Stomatocarida; Decapoda; Pleocyemata; Brachyura; Eubrachyura; Grapsoidea; Varunidae; Helice",
   "kind": "mito"
  },
  {
@@ -2010,53 +2000,53 @@
   "kind": "mito"
  },
  {
-  "label": "NC_010211.1",
-  "name": "Xestospongia muta",
+  "label": "NC_037391.1",
+  "name": "Halichondria okadai",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "178552",
-  "accession": "NC_010211.1",
-  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Haplosclerida; Petrosiidae; Xestospongia",
+  "taxid": "163232",
+  "accession": "NC_037391.1",
+  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Suberitida; Halichondriidae; Halichondria; Halichondria",
   "kind": "mito"
  },
  {
-  "label": "NC_072668.1",
-  "name": "Ophioleila elegans",
+  "label": "NC_010201.1",
+  "name": "Amphimedon compressa",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "1815333",
-  "accession": "NC_072668.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Ophiuroidea; Myophiuroidea; Metophiurida; Ophintegrida; Amphilepidida; Ophiurina; Hemieuryalina; Hemieuryalidae; Ophioleila",
+  "taxid": "178514",
+  "accession": "NC_010201.1",
+  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Haplosclerida; Niphatidae; Amphimedon",
   "kind": "mito"
  },
  {
-  "label": "NC_021615.1",
-  "name": "Heterodontus zebra",
+  "label": "NC_021403.1",
+  "name": "Cermatobius longicornis",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "1213687",
-  "accession": "NC_021615.1",
-  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Chondrichthyes; Elasmobranchii; Galeomorphii; Heterodontoidea; Heterodontiformes; Heterodontidae; Heterodontus",
+  "taxid": "1273176",
+  "accession": "NC_021403.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Myriapoda; Chilopoda; Pleurostigmophora; Lithobiomorpha; Henicopidae; Henicopinae; Henicopini; Cermatobius",
   "kind": "mito"
  },
  {
-  "label": "NC_042687.1",
-  "name": "Notospermus geniculatus",
+  "label": "NC_027727.1",
+  "name": "Micrura bella",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "416868",
-  "accession": "NC_042687.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Nemertea; Pilidiophora; Heteronemertea; Lineidae; Notospermus",
+  "taxid": "1692167",
+  "accession": "NC_027727.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Nemertea; Pilidiophora; Heteronemertea; Lineidae; Micrura",
   "kind": "mito"
  },
  {
-  "label": "NC_069205.1",
-  "name": "Paracanthobdella livanowi",
+  "label": "NC_018344.1",
+  "name": "Celleporella hyalina",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "2905687",
-  "accession": "NC_069205.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Annelida; Clitellata; Hirudinea; Acanthobdellida; Paracanthobdella",
+  "taxid": "60593",
+  "accession": "NC_018344.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Bryozoa; Gymnolaemata; Cheilostomatida; Flustrina; Hippothooidea; Hippothoidae; Celleporella",
   "kind": "mito"
  },
  {
@@ -2230,6 +2220,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_062626.1",
+  "name": "Ixodes barkeri",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "2932797",
+  "accession": "NC_062626.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Chelicerata; Arachnida; Acari; Parasitiformes; Ixodida; Ixodoidea; Ixodidae; Ixodinae; Ixodes",
+  "kind": "mito"
+ },
+ {
   "label": "NC_045069.1",
   "name": "Semnoderes armiger",
   "group": "Metazoa",
@@ -2240,13 +2240,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_003086.1",
-  "name": "Terebratalia transversa",
+  "label": "NC_039685.1",
+  "name": "Laqueus japonicus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "34513",
-  "accession": "NC_003086.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Brachiopoda; Rhynchonelliformea; Rhynchonellata; Terebratellidina; Laqueoidea; Laqueidae; Terebratalia",
+  "taxid": "147651",
+  "accession": "NC_039685.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Brachiopoda; Rhynchonelliformea; Rhynchonellata; Terebratellidina; Laqueoidea; Laqueidae; Laqueus",
   "kind": "mito"
  },
  {
@@ -2270,13 +2270,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_025284.1",
-  "name": "Scutopus ventrolineatus",
+  "label": "NC_039869.1",
+  "name": "Limenitis arthemis",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "52922",
-  "accession": "NC_025284.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Mollusca; Aplacophora; Caudofoveata; Limifossorimorpha; Limifossorida; Scutopodidae; Scutopus",
+  "taxid": "124411",
+  "accession": "NC_039869.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Altocrustacea; Allotriocarida; Hexapoda; Insecta; Pterygota; Neoptera; Eumetabola; Endopterygota; Aparaglossata; Panorpida; Lepidoptera; Glossata; Ditrysia; Papilionoidea; Nymphalidae; Limenitidinae; Limenitidini; Limenitis",
   "kind": "mito"
  },
  {
@@ -2310,16 +2310,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_085563.1",
-  "name": "Lingula reevei",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "2792136",
-  "accession": "NC_085563.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Brachiopoda; Linguliformea; Lingulata; Lingulida; Linguloidea; Lingulidae; Lingula",
-  "kind": "mito"
- },
- {
   "label": "NC_016117.1",
   "name": "Mnemiopsis leidyi",
   "group": "Metazoa",
@@ -2330,16 +2320,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_033867.1",
-  "name": "Longidorus vineacola",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "241698",
-  "accession": "NC_033867.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Enoplea; Dorylaimia; Dorylaimida; Dorylaimina; Longidoroidea; Longidoridae; Longidorus",
-  "kind": "mito"
- },
- {
   "label": "NC_033868.1",
   "name": "Paralongidorus litoralis",
   "group": "Metazoa",
@@ -2347,6 +2327,16 @@
   "taxid": "474435",
   "accession": "NC_033868.1",
   "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Enoplea; Dorylaimia; Dorylaimida; Dorylaimina; Longidoroidea; Longidoridae; Paralongidorus",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_005928.1",
+  "name": "Xiphinema americanum",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "208518",
+  "accession": "NC_005928.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Enoplea; Dorylaimia; Dorylaimida; Dorylaimina; Longidoroidea; Longidoridae; Xiphinema",
   "kind": "mito"
  },
  {
@@ -2380,43 +2370,43 @@
   "kind": "mito"
  },
  {
-  "label": "NC_035255.1",
-  "name": "Macrostomum lignano",
+  "label": "NC_061274.1",
+  "name": "Alcyonium digitatum",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "282301",
-  "accession": "NC_035255.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Platyhelminthes; Rhabditophora; Macrostomorpha; Macrostomidae; Macrostomum",
+  "taxid": "51768",
+  "accession": "NC_061274.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Octocorallia; Malacalcyonacea; Alcyoniidae; Alcyonium",
   "kind": "mito"
  },
  {
-  "label": "NC_048963.1",
-  "name": "Carijoa riisei",
+  "label": "NC_034749.1",
+  "name": "Paramuricea clavata",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "360972",
-  "accession": "NC_048963.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Octocorallia; Malacalcyonacea; Carijoidae; Carijoa",
+  "taxid": "317549",
+  "accession": "NC_034749.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Octocorallia; Malacalcyonacea; Plexauridae; Paramuricea",
   "kind": "mito"
  },
  {
-  "label": "NC_020458.1",
-  "name": "Euplexaura crassa",
+  "label": "NC_061282.1",
+  "name": "Sclerophytum flexibile",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "58800",
-  "accession": "NC_020458.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Octocorallia; Malacalcyonacea; Euplexauridae; Euplexaura",
+  "taxid": "51815",
+  "accession": "NC_061282.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Octocorallia; Malacalcyonacea; Sarcophytidae; Sclerophytum",
   "kind": "mito"
  },
  {
-  "label": "NC_008231.1",
-  "name": "Agamermis sp. BH-2006",
+  "label": "NC_065012.1",
+  "name": "Amynthas deogyusanensis",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "390897",
-  "accession": "NC_008231.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Enoplea; Dorylaimia; Mermithida; Mermithoidea; Mermithidae; Agamermis",
+  "taxid": "2885233",
+  "accession": "NC_065012.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Annelida; Clitellata; Oligochaeta; Crassiclitellata; Megascolecida; Megascolecidae; Amynthas",
   "kind": "mito"
  },
  {
@@ -2427,6 +2417,16 @@
   "taxid": "387665",
   "accession": "NC_008828.1",
   "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Enoplea; Dorylaimia; Mermithida; Mermithoidea; Mermithidae; Hexamermis",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_008640.1",
+  "name": "Romanomermis culicivorax",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "13658",
+  "accession": "NC_008640.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Enoplea; Dorylaimia; Mermithida; Mermithoidea; Mermithidae; Romanomermis",
   "kind": "mito"
  },
  {
@@ -2480,16 +2480,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_060758.1",
-  "name": "Myxine fernholmi",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "1932030",
-  "accession": "NC_060758.1",
-  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Cyclostomata; Myxini; Myxiniformes; Myxinidae; Myxininae; Myxine",
-  "kind": "mito"
- },
- {
   "label": "NC_002639.1",
   "name": "Myxine glutinosa",
   "group": "Metazoa",
@@ -2500,33 +2490,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_005938.1",
-  "name": "Xibalbanus tulumensis",
+  "label": "NC_068517.1",
+  "name": "Austropallene bucera",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "1519145",
-  "accession": "NC_005938.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Altocrustacea; Allotriocarida; Remipedia; Nectiopoda; Speleonectidae; Xibalbanus",
+  "taxid": "2992010",
+  "accession": "NC_068517.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Chelicerata; Pycnogonida; Pantopoda; Eupantopodida; Nymphonoidea; Callipallenidae; Austropallene",
   "kind": "mito"
  },
  {
-  "label": "NC_016754.1",
-  "name": "Oncicola luehei",
+  "label": "NC_005334.1",
+  "name": "Ophiopholis aculeata",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "1100885",
-  "accession": "NC_016754.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Acanthocephala; Archiacanthocephala; Oligacanthorhynchida; Oligacanthorhynchidae; Oncicola",
-  "kind": "mito"
- },
- {
-  "label": "NC_046053.1",
-  "name": "Ophiarachnella gorgonia",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "1365872",
-  "accession": "NC_046053.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Ophiuroidea; Myophiuroidea; Metophiurida; Ophintegrida; Amphilepidida; Ophiurina; Ophiodermatina; Ophiodermatidae; Ophiarachnella",
+  "taxid": "35052",
+  "accession": "NC_005334.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Ophiuroidea; Myophiuroidea; Metophiurida; Ophintegrida; Amphilepidida; Ophiurina; Gnathophiurina; Ophiactoidea; Ophiactidae; Ophiopholis",
   "kind": "mito"
  },
  {
@@ -2537,6 +2517,16 @@
   "taxid": "35056",
   "accession": "NC_044109.1",
   "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Ophiuroidea; Myophiuroidea; Metophiurida; Ophintegrida; Amphilepidida; Ophiurina; Ophiolepidina; Ophiolepididae; Ophioplocus",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_005930.1",
+  "name": "Ophiura luetkenii",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "869195",
+  "accession": "NC_005930.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Ophiuroidea; Myophiuroidea; Metophiurida; Ophintegrida; Amphilepidida; Ophiurina; Chilophiurina; Ophiuridae; Ophiurinae; Ophiura",
   "kind": "mito"
  },
  {
@@ -2560,16 +2550,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_085811.1",
-  "name": "Halicephalobus mephisto",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "2559892",
-  "accession": "NC_085811.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida; Tylenchina; Panagrolaimomorpha; Panagrolaimoidea; Panagrolaimidae; Halicephalobus",
-  "kind": "mito"
- },
- {
   "label": "NC_026985.1",
   "name": "Lepidodermella squamata",
   "group": "Metazoa",
@@ -2580,13 +2560,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_041450.1",
-  "name": "Styracaster yapensis",
+  "label": "NC_006666.1",
+  "name": "Astropecten polyacanthus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "2038754",
-  "accession": "NC_041450.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Asteroidea; Valvatacea; Paxillosida; Porcellanasteridae; Styracaster",
+  "taxid": "60560",
+  "accession": "NC_006666.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Asteroidea; Valvatacea; Paxillosida; Astropectinidae; Astropecten",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_044091.1",
+  "name": "Virgularia mirabilis",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "1399339",
+  "accession": "NC_044091.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Octocorallia; Scleralcyonacea; Pennatuloidea; Virgulariidae; Virgularia",
   "kind": "mito"
  },
  {
@@ -2610,13 +2600,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_025582.1",
-  "name": "Eudontomyzon morii",
+  "label": "NC_066903.1",
+  "name": "Entosphenus minimus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "682880",
-  "accession": "NC_025582.1",
-  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Cyclostomata; Hyperoartia; Petromyzontiformes; Petromyzontidae; Eudontomyzon",
+  "taxid": "126726",
+  "accession": "NC_066903.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Cyclostomata; Hyperoartia; Petromyzontiformes; Petromyzontidae; Entosphenus",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_049135.1",
+  "name": "Phascolosoma similis",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "2735967",
+  "accession": "NC_049135.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Annelida; Sipuncula; Phascolosomatidea; Phascolosomatiformes; Phascolosomatidae; Phascolosoma",
   "kind": "mito"
  },
  {
@@ -2690,16 +2690,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_068617.1",
-  "name": "Anoplodactylus australis",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "2992006",
-  "accession": "NC_068617.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Chelicerata; Pycnogonida; Pantopoda; Eupantopodida; Phoxichilidioidea; Phoxichilidiidae; Anoplodactylus",
-  "kind": "mito"
- },
- {
   "label": "NC_006083.1",
   "name": "Paraspadella gotoi",
   "group": "Metazoa",
@@ -2730,13 +2720,33 @@
   "kind": "mito"
  },
  {
-  "label": "NC_080944.1",
-  "name": "Stephalia dilata",
+  "label": "NC_051994.1",
+  "name": "Perinereis cultrifera",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "316222",
-  "accession": "NC_080944.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Hydrozoa; Hydroidolina; Siphonophorae; Physonectae; Rhodaliidae; Stephalia",
+  "taxid": "59559",
+  "accession": "NC_051994.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Annelida; Polychaeta; Errantia; Phyllodocida; Nereididae; Perinereis",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_080954.1",
+  "name": "Agalma elegans",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "316166",
+  "accession": "NC_080954.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Hydrozoa; Hydroidolina; Siphonophorae; Physonectae; Agalmatidae; Agalma",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_080943.1",
+  "name": "Bargmannia elongata",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "316231",
+  "accession": "NC_080943.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Hydrozoa; Hydroidolina; Siphonophorae; Physonectae; Pyrostephidae; Bargmannia",
   "kind": "mito"
  },
  {
@@ -2770,16 +2780,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_052721.1",
-  "name": "Pharyngocirrus uchidai",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "2498818",
-  "accession": "NC_052721.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Annelida; Polychaeta; Polychaeta incertae sedis; Saccocirridae; Pharyngocirrus",
-  "kind": "mito"
- },
- {
   "label": "NC_023834.1",
   "name": "Polymastia littoralis",
   "group": "Metazoa",
@@ -2800,6 +2800,26 @@
   "kind": "mito"
  },
  {
+  "label": "NC_039399.1",
+  "name": "Linguatula serrata",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "646052",
+  "accession": "NC_039399.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Oligostraca; Ichthyostraca; Pentastomida; Porocephalida; Linguatulidae; Linguatula",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_080949.1",
+  "name": "Praya dubia",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "316184",
+  "accession": "NC_080949.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Hydrozoa; Hydroidolina; Siphonophorae; Calycophorae; Prayidae; Prayinae; Praya",
+  "kind": "mito"
+ },
+ {
   "label": "NC_008557.1",
   "name": "Priapulus caudatus",
   "group": "Metazoa",
@@ -2810,43 +2830,33 @@
   "kind": "mito"
  },
  {
-  "label": "NC_024110.1",
-  "name": "Pristiophorus japonicus",
+  "label": "NC_037962.1",
+  "name": "Dipturus innominatus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "55135",
-  "accession": "NC_024110.1",
-  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Chondrichthyes; Elasmobranchii; Squalomorphii; Pristiophoriformes; Pristiophoridae; Pristiophorus",
+  "taxid": "1036015",
+  "accession": "NC_037962.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Chondrichthyes; Elasmobranchii; Batoidea; Rajiformes; Rajidae; Dipturus",
   "kind": "mito"
  },
  {
-  "label": "NC_010210.1",
-  "name": "Ectyoplasia ferox",
+  "label": "NC_068259.1",
+  "name": "Rana coreana",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "458493",
-  "accession": "NC_010210.1",
-  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Axinellida; Raspailiidae; Raspailiinae; Ectyoplasia",
+  "taxid": "1168020",
+  "accession": "NC_068259.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Amphibia; Batrachia; Anura; Neobatrachia; Ranoidea; Ranidae; Rana; Rana",
   "kind": "mito"
  },
  {
-  "label": "NC_024020.1",
-  "name": "Rhigonema thysanophora",
+  "label": "NC_022826.1",
+  "name": "Acropora hyacinthus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "435730",
-  "accession": "NC_024020.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida; Spirurina; Rhigonematomorpha; Rhigonematoidea; Rhigonematidae; Rhigonema",
-  "kind": "mito"
- },
- {
-  "label": "NC_079950.1",
-  "name": "Sacculina confragosa",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "238040",
-  "accession": "NC_079950.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Altocrustacea; Communostraca; Cirripedia; Rhizocephala; Sacculinidae; Sacculina",
+  "taxid": "55974",
+  "accession": "NC_022826.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Scleractinia; Refertina; Acroporidae; Acropora",
   "kind": "mito"
  },
  {
@@ -2890,16 +2900,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_035741.1",
-  "name": "Rhopilema esculentum",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "499914",
-  "accession": "NC_035741.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Scyphozoa; Rhizostomeae; Rhizostomatidae; Rhopilema",
-  "kind": "mito"
- },
- {
   "label": "NC_061659.1",
   "name": "Thysanostoma flagellatum",
   "group": "Metazoa",
@@ -2920,33 +2920,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_020375.1",
-  "name": "Heliopora coerulea",
+  "label": "NC_015406.1",
+  "name": "Pleurocorallium konojoi",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "86515",
-  "accession": "NC_020375.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Octocorallia; Scleralcyonacea; Helioporidae; Heliopora",
-  "kind": "mito"
- },
- {
-  "label": "NC_062014.1",
-  "name": "Ideogorgia capensis",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "767312",
-  "accession": "NC_062014.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Octocorallia; Scleralcyonacea; Ideogorgiidae; Ideogorgia",
-  "kind": "mito"
- },
- {
-  "label": "NC_062013.1",
-  "name": "Homophyton verrucosum",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "767310",
-  "accession": "NC_062013.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Octocorallia; Scleralcyonacea; Spongiodermidae; Homophyton",
+  "taxid": "2518304",
+  "accession": "NC_015406.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Octocorallia; Scleralcyonacea; Coralliidae; Pleurocorallium",
   "kind": "mito"
  },
  {
@@ -3000,23 +2980,73 @@
   "kind": "mito"
  },
  {
-  "label": "NC_004815.1",
-  "name": "Sphenodon punctatus",
+  "label": "NC_065643.1",
+  "name": "Sepiola affinis",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "8508",
-  "accession": "NC_004815.1",
-  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Lepidosauria; Sphenodontia; Sphenodontidae; Sphenodon",
+  "taxid": "70192",
+  "accession": "NC_065643.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Mollusca; Cephalopoda; Coleoidea; Decapodiformes; Sepiida; Sepiolidae; Sepiolinae; Sepiola",
   "kind": "mito"
  },
  {
-  "label": "NC_010198.1",
-  "name": "Cinachyrella kuekenthali",
+  "label": "NC_023255.1",
+  "name": "Nacospatangus altus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "458489",
-  "accession": "NC_010198.1",
-  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Tetractinellida; Spirophorina; Tetillidae; Cinachyrella",
+  "taxid": "1357422",
+  "accession": "NC_023255.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Echinoidea; Euechinoidea; Atelostomata; Spatangoida; Maretiidae; Nacospatangus",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_087784.1",
+  "name": "Henricia reniossa",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "2053902",
+  "accession": "NC_087784.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Asteroidea; Spinulosacea; Spinulosida; Echinasteridae; Henricia",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_062687.1",
+  "name": "Tropostreptus austerus",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "2931679",
+  "accession": "NC_062687.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Myriapoda; Diplopoda; Helminthomorpha; Spirostreptida; Spirostreptidae; Tropostreptus",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_018343.1",
+  "name": "Baikalospongia intermedia profundalis",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "882799",
+  "accession": "NC_018343.1",
+  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Spongillida; Lubomirskiidae; Baikalospongia",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_059940.1",
+  "name": "Squalus blainville",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "934694",
+  "accession": "NC_059940.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Chondrichthyes; Elasmobranchii; Squalomorphii; Squaliformes; Squalidae; Squalus",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_053533.1",
+  "name": "Halocynthia aurantium",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "254849",
+  "accession": "NC_053533.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Tunicata; Ascidiacea; Stolidobranchia; Pyuridae; Halocynthia",
   "kind": "mito"
  },
  {
@@ -3040,16 +3070,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_079570.1",
-  "name": "Pyura mirabilis",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "111863",
-  "accession": "NC_079570.1",
-  "lineage": "Eukaryota; Metazoa; Chordata; Tunicata; Ascidiacea; Stolidobranchia; Pyuridae; Pyura",
-  "kind": "mito"
- },
- {
   "label": "NC_021467.1",
   "name": "Botrylloides nigrum",
   "group": "Metazoa",
@@ -3070,33 +3090,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_011572.1",
-  "name": "Symphylella sp. YG-2006",
+  "label": "NC_085460.1",
+  "name": "Cylicocyclus ultrajectinus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "390856",
-  "accession": "NC_011572.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Myriapoda; Symphyla; Scolopendrellidae; Symphylella",
+  "taxid": "74783",
+  "accession": "NC_085460.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida; Rhabditina; Rhabditomorpha; Strongyloidea; Strongylidae; Cylicocyclus",
   "kind": "mito"
  },
  {
-  "label": "NC_006991.1",
-  "name": "Tethya actinia",
+  "label": "NC_066659.1",
+  "name": "Strongyloides cebus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "233783",
-  "accession": "NC_006991.1",
-  "lineage": "Eukaryota; Metazoa; Porifera; Demospongiae; Heteroscleromorpha; Tethyida; Tethyidae; Tethya",
-  "kind": "mito"
- },
- {
-  "label": "NC_016676.1",
-  "name": "Pauropus longiramus",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "933850",
-  "accession": "NC_016676.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Myriapoda; Pauropoda; Tetramerocerata; Pauropodidae; Pauropus",
+  "taxid": "174719",
+  "accession": "NC_066659.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida; Tylenchina; Panagrolaimomorpha; Strongyloidoidea; Strongyloididae; Strongyloides",
   "kind": "mito"
  },
  {
@@ -3110,13 +3120,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_071371.1",
-  "name": "Aonchotheca putorii",
+  "label": "NC_025749.1",
+  "name": "Trichinella pseudospiralis",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "1647945",
-  "accession": "NC_071371.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Enoplea; Dorylaimia; Trichinellida; Capillariidae; Aonchotheca",
+  "taxid": "6337",
+  "accession": "NC_025749.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Nematoda; Enoplea; Dorylaimia; Trichinellida; Trichinellidae; Trichinella",
   "kind": "mito"
  },
  {
@@ -3140,16 +3150,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_033379.1",
-  "name": "Vema ewingi",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "1930079",
-  "accession": "NC_033379.1",
-  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Mollusca; Monoplacophora; Tryblidiida; Neopilinidae; Vema",
-  "kind": "mito"
- },
- {
   "label": "NC_015646.1",
   "name": "Tubulipora flabellaris",
   "group": "Metazoa",
@@ -3160,33 +3160,33 @@
   "kind": "mito"
  },
  {
-  "label": "NC_083273.1",
-  "name": "Echinocrepis rostrata",
+  "label": "NC_034275.1",
+  "name": "Desmophyllum dianthus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "527038",
-  "accession": "NC_083273.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Echinoidea; Euechinoidea; Holasteroida; Urechinina; Pourtalesiidae; Echinocrepis",
+  "taxid": "703462",
+  "accession": "NC_034275.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Scleractinia; Vacatina; Caryophylliidae; Desmophyllum",
   "kind": "mito"
  },
  {
-  "label": "NC_060802.1",
-  "name": "Diploastrea heliopora",
+  "label": "NC_054226.1",
+  "name": "Protoreaster nodosus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "214969",
-  "accession": "NC_060802.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Scleractinia; Vacatina; Diploastraeidae; Diploastrea",
+  "taxid": "572528",
+  "accession": "NC_054226.1",
+  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Asteroidea; Valvatacea; Valvatida; Oreasteridae; Protoreaster",
   "kind": "mito"
  },
  {
-  "label": "NC_054231.1",
-  "name": "Euretaster insignis",
+  "label": "NC_022924.1",
+  "name": "Meretrix lyrata",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "478253",
-  "accession": "NC_054231.1",
-  "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Asterozoa; Asteroidea; Spinulosacea; Velatida; Pterasteridae; Euretaster",
+  "taxid": "223151",
+  "accession": "NC_022924.1",
+  "lineage": "Eukaryota; Metazoa; Spiralia; Lophotrochozoa; Mollusca; Bivalvia; Autobranchia; Heteroconchia; Euheterodonta; Imparidentia; Neoheterodontei; Venerida; Veneroidea; Veneridae; Meretrix",
   "kind": "mito"
  },
  {
@@ -3280,23 +3280,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_019623.1",
-  "name": "Carcinoscorpius rotundicauda",
+  "label": "NC_012574.1",
+  "name": "Tachypleus tridentatus",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "6848",
-  "accession": "NC_019623.1",
-  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Chelicerata; Merostomata; Xiphosura; Limulidae; Carcinoscorpius",
+  "taxid": "6853",
+  "accession": "NC_012574.1",
+  "lineage": "Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Chelicerata; Merostomata; Xiphosura; Limulidae; Tachypleus",
   "kind": "mito"
  },
  {
-  "label": "NC_046401.1",
-  "name": "Microzoanthus occultus",
+  "label": "NC_080263.1",
+  "name": "Parazoanthus darwini",
   "group": "Metazoa",
   "supergroup": "Opisthokonta",
-  "taxid": "1130792",
-  "accession": "NC_046401.1",
-  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Zoantharia; Microzoanthidae; Microzoanthus",
+  "taxid": "513426",
+  "accession": "NC_080263.1",
+  "lineage": "Eukaryota; Metazoa; Cnidaria; Anthozoa; Hexacorallia; Zoantharia; Parazoanthidae; Parazoanthus",
   "kind": "mito"
  },
  {
@@ -3850,6 +3850,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_039405.1",
+  "name": "Kumanoa ambigua",
+  "group": "Rhodophyta",
+  "supergroup": "Archaeplastida",
+  "taxid": "644273",
+  "accession": "NC_039405.1",
+  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Nemaliophycidae; Batrachospermales; Batrachospermaceae; Kumanoa",
+  "kind": "mito"
+ },
+ {
   "label": "NC_039404.1",
   "name": "Montagnia macrospora",
   "group": "Rhodophyta",
@@ -3857,16 +3867,6 @@
   "taxid": "2662032",
   "accession": "NC_039404.1",
   "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Nemaliophycidae; Batrachospermales; Batrachospermaceae; Montagnia",
-  "kind": "mito"
- },
- {
-  "label": "NC_026843.1",
-  "name": "Asparagopsis taxiformis",
-  "group": "Rhodophyta",
-  "supergroup": "Archaeplastida",
-  "taxid": "260499",
-  "accession": "NC_026843.1",
-  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Rhodymeniophycidae; Bonnemaisoniales; Bonnemaisoniaceae; Asparagopsis",
   "kind": "mito"
  },
  {
@@ -3900,13 +3900,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_027061.1",
-  "name": "Calliarthron tuberculosum",
+  "label": "NC_033904.1",
+  "name": "Corallina officinalis",
   "group": "Rhodophyta",
   "supergroup": "Archaeplastida",
-  "taxid": "48942",
-  "accession": "NC_027061.1",
-  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Corallinophycidae; Corallinales; Corallinaceae; Corallinoideae; Calliarthron",
+  "taxid": "35170",
+  "accession": "NC_033904.1",
+  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Corallinophycidae; Corallinales; Corallinaceae; Corallinoideae; Corallina",
   "kind": "mito"
  },
  {
@@ -3980,6 +3980,26 @@
   "kind": "mito"
  },
  {
+  "label": "NC_031837.1",
+  "name": "Gelidium galapagense",
+  "group": "Rhodophyta",
+  "supergroup": "Archaeplastida",
+  "taxid": "317100",
+  "accession": "NC_031837.1",
+  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Rhodymeniophycidae; Gelidiales; Gelidiaceae; Gelidium",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_086493.1",
+  "name": "Hypnea cryptica",
+  "group": "Rhodophyta",
+  "supergroup": "Archaeplastida",
+  "taxid": "2546159",
+  "accession": "NC_086493.1",
+  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Rhodymeniophycidae; Gigartinales; Hypneaceae; Hypnea",
+  "kind": "mito"
+ },
+ {
   "label": "NC_062395.1",
   "name": "Glaucosphaera vacuolata",
   "group": "Rhodophyta",
@@ -3990,13 +4010,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_084251.1",
-  "name": "Pachymeniopsis lanceolata",
+  "label": "NC_058684.1",
+  "name": "Gracilaria urvillei",
   "group": "Rhodophyta",
   "supergroup": "Archaeplastida",
-  "taxid": "151733",
-  "accession": "NC_084251.1",
-  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Rhodymeniophycidae; Halymeniales; Halymeniaceae; Pachymeniopsis",
+  "taxid": "172974",
+  "accession": "NC_058684.1",
+  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Rhodymeniophycidae; Gracilariales; Gracilariaceae; Gracilaria",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_082174.1",
+  "name": "Grateloupia asiatica",
+  "group": "Rhodophyta",
+  "supergroup": "Archaeplastida",
+  "taxid": "151735",
+  "accession": "NC_082174.1",
+  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Rhodymeniophycidae; Halymeniales; Halymeniaceae; Grateloupia",
   "kind": "mito"
  },
  {
@@ -4020,16 +4050,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_046496.1",
-  "name": "Palmaria decipiens",
-  "group": "Rhodophyta",
-  "supergroup": "Archaeplastida",
-  "taxid": "187399",
-  "accession": "NC_046496.1",
-  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Nemaliophycidae; Palmariales; Palmariaceae; Palmaria",
-  "kind": "mito"
- },
- {
   "label": "NC_026056.1",
   "name": "Palmaria palmata",
   "group": "Rhodophyta",
@@ -4037,16 +4057,6 @@
   "taxid": "2822",
   "accession": "NC_026056.1",
   "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Nemaliophycidae; Palmariales; Palmariaceae; Palmaria",
-  "kind": "mito"
- },
- {
-  "label": "NC_014773.1",
-  "name": "Plocamiocolax pulvinatus",
-  "group": "Rhodophyta",
-  "supergroup": "Archaeplastida",
-  "taxid": "35206",
-  "accession": "NC_014773.1",
-  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Rhodymeniophycidae; Plocamiales; Plocamiaceae; Plocamiocolax",
   "kind": "mito"
  },
  {
@@ -4110,23 +4120,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_023252.1",
-  "name": "Rhodymenia pseudopalmata",
+  "label": "NC_070151.1",
+  "name": "Symphyocladiella dendroidea",
   "group": "Rhodophyta",
   "supergroup": "Archaeplastida",
-  "taxid": "31502",
-  "accession": "NC_023252.1",
-  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Rhodymeniophycidae; Rhodymeniales; Rhodymeniaceae; Rhodymenia",
-  "kind": "mito"
- },
- {
-  "label": "NC_039980.1",
-  "name": "Neogoniolithon spectabile",
-  "group": "Rhodophyta",
-  "supergroup": "Archaeplastida",
-  "taxid": "231755",
-  "accession": "NC_039980.1",
-  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Corallinophycidae; Corallinales; Spongitidaceae; Neogoniolithoideae; Neogoniolithon",
+  "taxid": "2506487",
+  "accession": "NC_070151.1",
+  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Rhodymeniophycidae; Ceramiales; Rhodomelaceae; Pterosiphonieae; Symphyocladiella",
   "kind": "mito"
  },
  {
@@ -4147,16 +4147,6 @@
   "taxid": "202687",
   "accession": "NC_035158.1",
   "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Nemaliophycidae; Thoreales; Thoreaceae; Thorea",
-  "kind": "mito"
- },
- {
-  "label": "NC_037988.1",
-  "name": "Toxarium undulatum",
-  "group": "Stramenopiles",
-  "supergroup": "SAR",
-  "taxid": "210620",
-  "accession": "NC_037988.1",
-  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Bacillariophyta; Thalassiosirophyceae; Ardissoniophycidae; Ardissoneales; Ardissoneaceae; Toxarium",
   "kind": "mito"
  },
  {
@@ -4237,6 +4227,26 @@
   "taxid": "62313",
   "accession": "NC_007684.1",
   "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; PX clade; Phaeophyceae; Desmarestiales; Desmarestiaceae; Desmarestia",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_043845.1",
+  "name": "Dictyopteris divaricata",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "taxid": "156996",
+  "accession": "NC_043845.1",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; PX clade; Phaeophyceae; Dictyotales; Dictyotaceae; Dictyopteris",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_025227.1",
+  "name": "Petalonia fascia",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "taxid": "2893",
+  "accession": "NC_025227.1",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; PX clade; Phaeophyceae; Ectocarpales; Scytosiphonaceae; Petalonia",
   "kind": "mito"
  },
  {
@@ -4330,13 +4340,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_013710.1",
-  "name": "Ulnaria acus",
+  "label": "NC_063981.1",
+  "name": "Sargassum henslowianum",
   "group": "Stramenopiles",
   "supergroup": "SAR",
-  "taxid": "1436140",
-  "accession": "NC_013710.1",
-  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Bacillariophyta; Fragilariophyceae; Fragilariophycidae; Fragilariales; Fragilariaceae; Ulnaria",
+  "taxid": "703908",
+  "accession": "NC_063981.1",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; PX clade; Phaeophyceae; Fucales; Sargassaceae; Sargassum",
   "kind": "mito"
  },
  {
@@ -4370,6 +4380,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_026108.1",
+  "name": "Saccharina latissima",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "taxid": "309358",
+  "accession": "NC_026108.1",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; PX clade; Phaeophyceae; Laminariales; Laminariaceae; Saccharina",
+  "kind": "mito"
+ },
+ {
   "label": "NC_037728.1",
   "name": "Melosira undulata",
   "group": "Stramenopiles",
@@ -4377,6 +4397,16 @@
   "taxid": "2133757",
   "accession": "NC_037728.1",
   "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Bacillariophyta; Melosirophyceae; Melosirophycidae; Melosirales; Melosiraceae; Melosira",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_044492.1",
+  "name": "Haslea nusantara",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "taxid": "2600302",
+  "accession": "NC_044492.1",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Bacillariophyta; Bacillariophyceae; Bacillariophycidae; Naviculales; Naviculaceae; Haslea",
   "kind": "mito"
  },
  {
@@ -4570,16 +4600,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_063801.1",
-  "name": "Phytophthora pinifolia",
-  "group": "Stramenopiles",
-  "supergroup": "SAR",
-  "taxid": "538568",
-  "accession": "NC_063801.1",
-  "lineage": "Eukaryota; Sar; Stramenopiles; Oomycota; Peronosporomycetes; Peronosporales; Peronosporaceae; Phytophthora",
-  "kind": "mito"
- },
- {
   "label": "NC_063807.1",
   "name": "Phytophthora rubi",
   "group": "Stramenopiles",
@@ -4657,16 +4677,6 @@
   "taxid": "1440115",
   "accession": "NC_080886.1",
   "lineage": "Eukaryota; Sar; Stramenopiles; Oomycota; Peronosporomycetes; Peronosporomycetes incertae sedis; Paralagenidium",
-  "kind": "mito"
- },
- {
-  "label": "NC_085336.1",
-  "name": "Scytothamnus australis",
-  "group": "Stramenopiles",
-  "supergroup": "SAR",
-  "taxid": "66621",
-  "accession": "NC_085336.1",
-  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; PX clade; Phaeophyceae; Scytothamnales; Scytothamnus",
   "kind": "mito"
  },
  {
@@ -4840,16 +4850,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_085326.1",
-  "name": "Choristocarpus tenellus",
-  "group": "Stramenopiles",
-  "supergroup": "SAR",
-  "taxid": "116065",
-  "accession": "NC_085326.1",
-  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; PX clade; Phaeophyceae; Sphacelariales; Choristocarpaceae; Choristocarpus",
-  "kind": "mito"
- },
- {
   "label": "NC_054370.1",
   "name": "Halteria grandinella",
   "group": "Alveolata",
@@ -4857,16 +4857,6 @@
   "taxid": "5974",
   "accession": "NC_054370.1",
   "lineage": "Eukaryota; Sar; Alveolata; Ciliophora; Intramacronucleata; Spirotrichea; Stichotrichia; Sporadotrichida; Halteriidae; Halteria",
-  "kind": "mito"
- },
- {
-  "label": "NC_085337.1",
-  "name": "Sporochnus bolleanus",
-  "group": "Stramenopiles",
-  "supergroup": "SAR",
-  "taxid": "461143",
-  "accession": "NC_085337.1",
-  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; PX clade; Phaeophyceae; Sporochnales; Sporochnaceae; Sporochnus",
   "kind": "mito"
  },
  {
@@ -4940,6 +4930,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_058792.1",
+  "name": "Skeletonema potamos",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "taxid": "1429247",
+  "accession": "NC_058792.1",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Bacillariophyta; Thalassiosirophyceae; Thalassiosirophycidae; Thalassiosirales; Thalassiosiraceae; Skeletonema",
+  "kind": "mito"
+ },
+ {
   "label": "NC_072596.1",
   "name": "Bakuella subtropica",
   "group": "Alveolata",
@@ -4947,6 +4947,16 @@
   "taxid": "1295181",
   "accession": "NC_072596.1",
   "lineage": "Eukaryota; Sar; Alveolata; Ciliophora; Intramacronucleata; Spirotrichea; Stichotrichia; Urostylida; Bakuellidae; Bakuella",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_065232.1",
+  "name": "Prunus mume",
+  "group": "Streptophyta",
+  "supergroup": "Archaeplastida",
+  "taxid": "102107",
+  "accession": "NC_065232.1",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta; Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae; rosids; fabids; Rosales; Rosaceae; Amygdaloideae; Amygdaleae; Prunus",
   "kind": "mito"
  },
  {
@@ -5010,16 +5020,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_024518.1",
-  "name": "Buxbaumia aphylla",
-  "group": "Streptophyta",
-  "supergroup": "Archaeplastida",
-  "taxid": "70128",
-  "accession": "NC_024518.1",
-  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Bryophyta; Bryophytina; Bryopsida; Buxbaumiidae; Buxbaumiales; Buxbaumiaceae; Buxbaumia",
-  "kind": "mito"
- },
- {
   "label": "NC_043889.1",
   "name": "Haplomitrium hookeri",
   "group": "Streptophyta",
@@ -5060,33 +5060,43 @@
   "kind": "mito"
  },
  {
-  "label": "NC_044670.1",
-  "name": "Haematococcus lacustris",
+  "label": "NC_023091.1",
+  "name": "Polytomella magna",
   "group": "Chlorophyta",
   "supergroup": "Archaeplastida",
-  "taxid": "44745",
-  "accession": "NC_044670.1",
-  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Chlorophyceae; CS clade; Chlamydomonadales; Haematococcaceae; Haematococcus",
+  "taxid": "353565",
+  "accession": "NC_023091.1",
+  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Chlorophyceae; CS clade; Chlamydomonadales; Chlamydomonadaceae; Polytomella",
   "kind": "mito"
  },
  {
-  "label": "NC_026009.1",
-  "name": "Auxenochlorella protothecoides",
+  "label": "NC_021108.1",
+  "name": "Pleodorina starrii",
   "group": "Chlorophyta",
   "supergroup": "Archaeplastida",
-  "taxid": "3075",
-  "accession": "NC_026009.1",
-  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Trebouxiophyceae; Chlorellales; Chlorellaceae; Auxenochlorella",
+  "taxid": "330485",
+  "accession": "NC_021108.1",
+  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Chlorophyceae; CS clade; Chlamydomonadales; Volvocaceae; Pleodorina",
   "kind": "mito"
  },
  {
-  "label": "NC_017841.1",
-  "name": "Helicosporidium sp. ex Simulium jonesi",
+  "label": "NC_045362.1",
+  "name": "Chlorella vulgaris",
   "group": "Chlorophyta",
   "supergroup": "Archaeplastida",
-  "taxid": "145475",
-  "accession": "NC_017841.1",
-  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Trebouxiophyceae; Chlorellales; Chlorellaceae; Helicosporidium",
+  "taxid": "3077",
+  "accession": "NC_045362.1",
+  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Trebouxiophyceae; Chlorellales; Chlorellaceae; Chlorella clade; Chlorella",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_045058.1",
+  "name": "Prototheca bovis",
+  "group": "Chlorophyta",
+  "supergroup": "Archaeplastida",
+  "taxid": "2509265",
+  "accession": "NC_045058.1",
+  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Trebouxiophyceae; Chlorellales; Chlorellaceae; Prototheca",
   "kind": "mito"
  },
  {
@@ -5260,16 +5270,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_010303.1",
-  "name": "Cycas taitungensis",
-  "group": "Streptophyta",
-  "supergroup": "Archaeplastida",
-  "taxid": "54799",
-  "accession": "NC_010303.1",
-  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta; Spermatophyta; Cycadidae; Cycadales; Cycadaceae; Cycas",
-  "kind": "mito"
- },
- {
   "label": "NC_012651.1",
   "name": "Nothoceros aenigmaticus",
   "group": "Streptophyta",
@@ -5310,26 +5310,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_043887.1",
-  "name": "Fossombronia foveolata",
-  "group": "Streptophyta",
-  "supergroup": "Archaeplastida",
-  "taxid": "56918",
-  "accession": "NC_043887.1",
-  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Marchantiophyta; Jungermanniopsida; Pelliidae; Fossombroniales; Fossombroniineae; Fossombroniaceae; Fossombronia",
-  "kind": "mito"
- },
- {
-  "label": "NC_024523.1",
-  "name": "Funaria hygrometrica",
-  "group": "Streptophyta",
-  "supergroup": "Archaeplastida",
-  "taxid": "29583",
-  "accession": "NC_024523.1",
-  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Bryophyta; Bryophytina; Bryopsida; Funariidae; Funariales; Funariaceae; Funaria",
-  "kind": "mito"
- },
- {
   "label": "NC_027976.1",
   "name": "Ginkgo biloba",
   "group": "Streptophyta",
@@ -5337,6 +5317,16 @@
   "taxid": "3311",
   "accession": "NC_027976.1",
   "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta; Spermatophyta; Ginkgoidae; Ginkgoales; Ginkgoaceae; Ginkgo",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_026890.1",
+  "name": "Niphotrichum elongatum",
+  "group": "Streptophyta",
+  "supergroup": "Archaeplastida",
+  "taxid": "71396",
+  "accession": "NC_026890.1",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Bryophyta; Bryophytina; Bryopsida; Dicranidae; Grimmiales; Grimmiaceae; Niphotrichum",
   "kind": "mito"
  },
  {
@@ -5357,6 +5347,16 @@
   "taxid": "148947",
   "accession": "NC_038217.1",
   "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Ulvophyceae; TCBD clade; Bryopsidales; Halimedineae; Caulerpaceae; Caulerpa",
+  "kind": "mito"
+ },
+ {
+  "label": "NC_071974.1",
+  "name": "Calypogeia neesiana",
+  "group": "Streptophyta",
+  "supergroup": "Archaeplastida",
+  "taxid": "588642",
+  "accession": "NC_071974.1",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Marchantiophyta; Jungermanniopsida; Jungermanniidae; Jungermanniales; Jungermanniineae; Calypogeiaceae; Calypogeia",
   "kind": "mito"
  },
  {
@@ -5460,13 +5460,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_053538.1",
-  "name": "Wiesnerella denudata",
+  "label": "NC_080355.1",
+  "name": "Aneura maxima",
   "group": "Streptophyta",
   "supergroup": "Archaeplastida",
-  "taxid": "179049",
-  "accession": "NC_053538.1",
-  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Marchantiophyta; Marchantiopsida; Marchantiidae; Marchantiales; Wiesnerellaceae; Wiesnerella",
+  "taxid": "414042",
+  "accession": "NC_080355.1",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Marchantiophyta; Jungermanniopsida; Metzgeriidae; Metzgeriales; Aneuraceae; Aneura",
   "kind": "mito"
  },
  {
@@ -5520,6 +5520,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_031390.1",
+  "name": "Orthotrichum callistomum",
+  "group": "Streptophyta",
+  "supergroup": "Archaeplastida",
+  "taxid": "1903711",
+  "accession": "NC_031390.1",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Bryophyta; Bryophytina; Bryopsida; Bryidae; Bryanae; Orthotrichales; Orthotrichaceae; Orthotrichum",
+  "kind": "mito"
+ },
+ {
   "label": "NC_045361.1",
   "name": "Ostreobium quekettii",
   "group": "Chlorophyta",
@@ -5540,6 +5550,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_080363.1",
+  "name": "Pellia epiphylla",
+  "group": "Streptophyta",
+  "supergroup": "Archaeplastida",
+  "taxid": "40340",
+  "accession": "NC_080363.1",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Marchantiophyta; Jungermanniopsida; Pelliidae; Pelliales; Pelliaceae; Pellia",
+  "kind": "mito"
+ },
+ {
   "label": "NC_042491.1",
   "name": "Picocystis salinarum",
   "group": "Chlorophyta",
@@ -5550,13 +5570,13 @@
   "kind": "mito"
  },
  {
-  "label": "NC_013444.1",
-  "name": "Pleurozia purpurea",
+  "label": "NC_071216.1",
+  "name": "Abies koreana",
   "group": "Streptophyta",
   "supergroup": "Archaeplastida",
-  "taxid": "280637",
-  "accession": "NC_013444.1",
-  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Marchantiophyta; Jungermanniopsida; Metzgeriidae; Pleuroziales; Pleuroziaceae; Pleurozia",
+  "taxid": "97170",
+  "accession": "NC_071216.1",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta; Spermatophyta; Pinopsida; Pinidae; Conifers I; Pinales; Pinaceae; Abies",
   "kind": "mito"
  },
  {
@@ -5630,23 +5650,23 @@
   "kind": "mito"
  },
  {
-  "label": "NC_024760.1",
-  "name": "Mychonastes homosphaera",
+  "label": "NC_036659.1",
+  "name": "Pectinodesmus pectinatus",
   "group": "Chlorophyta",
   "supergroup": "Archaeplastida",
-  "taxid": "31300",
-  "accession": "NC_024760.1",
-  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Chlorophyceae; CS clade; Sphaeropleales; Mychonastaceae; Mychonastes",
+  "taxid": "91197",
+  "accession": "NC_036659.1",
+  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Chlorophyceae; CS clade; Sphaeropleales; Scenedesmaceae; Pectinodesmus",
   "kind": "mito"
  },
  {
-  "label": "NC_024763.1",
-  "name": "Pseudomuriella schumacherensis",
+  "label": "NC_051461.1",
+  "name": "Ankistrodesmus falcatus",
   "group": "Chlorophyta",
   "supergroup": "Archaeplastida",
-  "taxid": "889459",
-  "accession": "NC_024763.1",
-  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Chlorophyceae; CS clade; Sphaeropleales; Pseudomuriellaceae; Pseudomuriella",
+  "taxid": "52960",
+  "accession": "NC_051461.1",
+  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Chlorophyceae; CS clade; Sphaeropleales; Selenastraceae; Ankistrodesmus",
   "kind": "mito"
  },
  {
@@ -5720,16 +5740,6 @@
   "kind": "mito"
  },
  {
-  "label": "NC_072925.1",
-  "name": "Gayralia brasiliensis",
-  "group": "Chlorophyta",
-  "supergroup": "Archaeplastida",
-  "taxid": "1286870",
-  "accession": "NC_072925.1",
-  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Ulvophyceae; OUU clade; Ulotrichales; Gayraliaceae; Gayralia",
-  "kind": "mito"
- },
- {
   "label": "NC_005926.1",
   "name": "Tupiella akineta",
   "group": "Chlorophyta",
@@ -5757,16 +5767,6 @@
   "taxid": "434723",
   "accession": "NC_065202.1",
   "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Ulvophyceae; OUU clade; Ulvales; Ulvaceae; Ulva",
-  "kind": "mito"
- },
- {
-  "label": "NC_048968.1",
-  "name": "Jaagichlorella hainangensis",
-  "group": "Chlorophyta",
-  "supergroup": "Archaeplastida",
-  "taxid": "445995",
-  "accession": "NC_048968.1",
-  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Trebouxiophyceae; Watanabeales; Watanabeaceae; Jaagichlorella",
   "kind": "mito"
  },
  {

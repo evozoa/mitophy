@@ -20,3 +20,7 @@ Automatically generated entries for pipeline runs; hand-written entries for cont
 ## 2026-08-15 — site created
 
 - Initial release: literature hypotheses for the origin of mitochondria (4 trees), eukaryote supergroup tree with mitogenome traits, automated origin and diversification analyses, methods and provenance pages.
+
+## 2026-08-16 — deep origin tree added
+
+- `results/origin_deep`: LG+C20+F+G4 (PMSF guide LG+F+G4), full search, 1000 UFBoot + 1000 SH-aLRT, 103 taxa × 10,206 sites; run locally (`--profile deep`, 16 threads). Mitochondria monophyletic (100/100), sister to Rickettsiales (93.6/96).

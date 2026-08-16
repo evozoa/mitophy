@@ -1,0 +1,1032 @@
+[
+ {
+  "label": "NC_021124.1",
+  "name": "Andalucia godoyi",
+  "group": "Jakobida",
+  "supergroup": "Discoba",
+  "kind": "mito",
+  "accession": "NC_021124.1",
+  "taxid": "505711",
+  "lineage": "Eukaryota; Discoba; Jakobea; Jakobida; Andalucina; Andaluciidae; Andalucia"
+ },
+ {
+  "label": "NC_001823.1",
+  "name": "Reclinomonas americana",
+  "group": "Jakobida",
+  "supergroup": "Discoba",
+  "kind": "mito",
+  "accession": "NC_001823.1",
+  "taxid": "48483",
+  "lineage": "Eukaryota; Discoba; Jakobea; Jakobida; Histionina; Histionidae; Reclinomonas"
+ },
+ {
+  "label": "NC_021127.1",
+  "name": "Jakoba libera",
+  "group": "Jakobida",
+  "supergroup": "Discoba",
+  "kind": "mito",
+  "accession": "NC_021127.1",
+  "taxid": "143017",
+  "lineage": "Eukaryota; Discoba; Jakobea; Jakobida; Histionina; Jakobidae; Jakoba"
+ },
+ {
+  "label": "NC_021126.1",
+  "name": "Jakoba bahamiensis",
+  "group": "Jakobida",
+  "supergroup": "Discoba",
+  "kind": "mito",
+  "accession": "NC_021126.1",
+  "taxid": "221721",
+  "lineage": "Eukaryota; Discoba; Jakobea; Jakobida; Histionina; Jakobidae; Jakoba"
+ },
+ {
+  "label": "NC_021128.1",
+  "name": "Seculamonas ecuadoriensis",
+  "group": "Jakobida",
+  "supergroup": "Discoba",
+  "kind": "mito",
+  "accession": "NC_021128.1",
+  "taxid": "221724",
+  "lineage": "Eukaryota; Discoba; Jakobea; Jakobida; Histionina; Moramonadidae; Seculamonas"
+ },
+ {
+  "label": "NC_021125.1",
+  "name": "Histiona aroides",
+  "group": "Jakobida",
+  "supergroup": "Discoba",
+  "kind": "mito",
+  "accession": "NC_021125.1",
+  "taxid": "392300",
+  "lineage": "Eukaryota; Discoba; Jakobea; Jakobida; Histionina; Histionidae; Histiona"
+ },
+ {
+  "label": "NC_002553.1",
+  "name": "Malawimonas jakobiformis",
+  "group": "Malawimonadida",
+  "supergroup": "Malawimonadida",
+  "kind": "mito",
+  "accession": "NC_002553.1",
+  "taxid": "136089",
+  "lineage": "Eukaryota; Malawimonada; Malawimonadea; Malawimonadida; Malawimonadidae; Malawimonas"
+ },
+ {
+  "label": "NC_002573.1",
+  "name": "Naegleria gruberi",
+  "group": "Discoba",
+  "supergroup": "Discoba",
+  "kind": "mito",
+  "accession": "NC_002573.1",
+  "taxid": "5762",
+  "lineage": "Eukaryota; Discoba; Heterolobosea; Tetramitia; Eutetramitea; Acrasida; Naegleriidae; Naegleria"
+ },
+ {
+  "label": "NC_029886.1",
+  "name": "Diphylleia rotans",
+  "group": "CRuMs",
+  "supergroup": "CRuMs",
+  "kind": "mito",
+  "accession": "NC_029886.1",
+  "taxid": "190327",
+  "lineage": "Eukaryota; CRuMs; CRuMs incertae sedis; Collodictyonidae; Diphylleia"
+ },
+ {
+  "label": "NC_036491.1",
+  "name": "Ancoracysta twista",
+  "group": "Other eukaryotes",
+  "supergroup": "Other",
+  "kind": "mito",
+  "accession": "NC_036491.1",
+  "taxid": "2044563",
+  "lineage": "Eukaryota; Provora; Nebulidia; Nebulidea; Nebulidida; Nebulidae"
+ },
+ {
+  "label": "NC_037508.1",
+  "name": "Marchantia polymorpha subsp. ruderalis",
+  "group": "Streptophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_037508.1",
+  "taxid": "1480154",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Marchantiophyta; Marchantiopsida; Marchantiidae; Marchantiales; Marchantiaceae; Marchantia"
+ },
+ {
+  "label": "NC_007945.1",
+  "name": "Physcomitrium patens",
+  "group": "Streptophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_007945.1",
+  "taxid": "3218",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Bryophyta; Bryophytina; Bryopsida; Funariidae; Funariales; Funariaceae; Physcomitrium"
+ },
+ {
+  "label": "NC_008240.1",
+  "name": "Mesostigma viride",
+  "group": "Streptophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_008240.1",
+  "taxid": "41882",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Mesostigmatophyceae; Mesostigmatales; Mesostigmataceae; Mesostigma"
+ },
+ {
+  "label": "NC_008239.1",
+  "name": "Nephroselmis olivacea",
+  "group": "Chlorophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_008239.1",
+  "taxid": "31312",
+  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; Nephroselmidophyceae; Nephroselmidales; Nephroselmidaceae; Nephroselmis"
+ },
+ {
+  "label": "NC_001613.1",
+  "name": "Prototheca wickerhamii",
+  "group": "Chlorophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_001613.1",
+  "taxid": "3111",
+  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes; Trebouxiophyceae; Chlorellales; Chlorellaceae; Prototheca"
+ },
+ {
+  "label": "NC_001677.2",
+  "name": "Chondrus crispus",
+  "group": "Rhodophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_001677.2",
+  "taxid": "2769",
+  "lineage": "Eukaryota; Rhodophyta; Florideophyceae; Rhodymeniophycidae; Gigartinales; Gigartinaceae; Chondrus"
+ },
+ {
+  "label": "NC_002007.1",
+  "name": "Porphyra purpurea",
+  "group": "Rhodophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_002007.1",
+  "taxid": "2787",
+  "lineage": "Eukaryota; Rhodophyta; Bangiophyceae; Bangiales; Bangiaceae; Porphyra"
+ },
+ {
+  "label": "NC_000887.3",
+  "name": "Cyanidioschyzon merolae",
+  "group": "Rhodophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_000887.3",
+  "taxid": "45157",
+  "lineage": "Eukaryota; Rhodophyta; Bangiophyceae; Cyanidiales; Cyanidiaceae; Cyanidioschyzon"
+ },
+ {
+  "label": "NC_053320.1",
+  "name": "Cyanidium caldarium",
+  "group": "Rhodophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_053320.1",
+  "taxid": "2771",
+  "lineage": "Eukaryota; Rhodophyta; Bangiophyceae; Cyanidiales; Cyanidiaceae; Cyanidium"
+ },
+ {
+  "label": "NC_017836.1",
+  "name": "Cyanophora paradoxa",
+  "group": "Glaucophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_017836.1",
+  "taxid": "2762",
+  "lineage": "Eukaryota; Glaucocystophyceae; Cyanophorales; Cyanophoraceae; Cyanophora"
+ },
+ {
+  "label": "NC_002572.1",
+  "name": "Rhodomonas salina",
+  "group": "Cryptophyta",
+  "supergroup": "Cryptista",
+  "kind": "mito",
+  "accession": "NC_002572.1",
+  "taxid": "3034",
+  "lineage": "Eukaryota; Cryptophyceae; Pyrenomonadales; Pyrenomonadaceae; Rhodomonas"
+ },
+ {
+  "label": "NC_010637.1",
+  "name": "Hemiselmis andersenii",
+  "group": "Cryptophyta",
+  "supergroup": "Cryptista",
+  "kind": "mito",
+  "accession": "NC_010637.1",
+  "taxid": "464988",
+  "lineage": "Eukaryota; Cryptophyceae; Cryptomonadales; Hemiselmidaceae; Hemiselmis"
+ },
+ {
+  "label": "NC_002387.1",
+  "name": "Phytophthora infestans",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "kind": "mito",
+  "accession": "NC_002387.1",
+  "taxid": "4787",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Oomycota; Peronosporomycetes; Peronosporales; Peronosporaceae; Phytophthora"
+ },
+ {
+  "label": "NC_002174.1",
+  "name": "Synura synuroidea",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "kind": "mito",
+  "accession": "NC_002174.1",
+  "taxid": "47573",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Synurophyceae; Synurales; Mallomonadaceae; Synura"
+ },
+ {
+  "label": "NC_002571.1",
+  "name": "Ochromonas danica",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "kind": "mito",
+  "accession": "NC_002571.1",
+  "taxid": "2986",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Chrysophyceae; Chromulinales; Chromulinaceae; Ochromonas"
+ },
+ {
+  "label": "NC_000946.1",
+  "name": "Cafeteria roenbergensis",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "kind": "mito",
+  "accession": "NC_000946.1",
+  "taxid": "33653",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Bigyra; Opalozoa; Bicosoecida; Cafeteriaceae; Cafeteria"
+ },
+ {
+  "label": "NC_003029.1",
+  "name": "Tetrahymena thermophila",
+  "group": "Alveolata",
+  "supergroup": "SAR",
+  "kind": "mito",
+  "accession": "NC_003029.1",
+  "taxid": "5911",
+  "lineage": "Eukaryota; Sar; Alveolata; Ciliophora; Intramacronucleata; Oligohymenophorea; Hymenostomatida; Tetrahymenina; Tetrahymenidae; Tetrahymena"
+ },
+ {
+  "label": "NC_058286.1",
+  "name": "Paramecium gigas",
+  "group": "Alveolata",
+  "supergroup": "SAR",
+  "kind": "mito",
+  "accession": "NC_058286.1",
+  "taxid": "2709424",
+  "lineage": "Eukaryota; Sar; Alveolata; Ciliophora; Intramacronucleata; Oligohymenophorea; Peniculida; Parameciidae; Paramecium"
+ },
+ {
+  "label": "NC_005332.1",
+  "name": "Emiliania huxleyi",
+  "group": "Haptophyta",
+  "supergroup": "Haptista",
+  "kind": "mito",
+  "accession": "NC_005332.1",
+  "taxid": "2903",
+  "lineage": "Eukaryota; Haptista; Haptophyta; Prymnesiophyceae; Isochrysidales; Noelaerhabdaceae; Emiliania"
+ },
+ {
+  "label": "NC_001637.1",
+  "name": "Acanthamoeba castellanii",
+  "group": "Amoebozoa",
+  "supergroup": "Amoebozoa",
+  "kind": "mito",
+  "accession": "NC_001637.1",
+  "taxid": "5755",
+  "lineage": "Eukaryota; Amoebozoa; Discosea; Longamoebia; Centramoebida; Acanthamoebidae; Acanthamoeba"
+ },
+ {
+  "label": "NC_000895.1",
+  "name": "Dictyostelium discoideum",
+  "group": "Amoebozoa",
+  "supergroup": "Amoebozoa",
+  "kind": "mito",
+  "accession": "NC_000895.1",
+  "taxid": "44689",
+  "lineage": "Eukaryota; Amoebozoa; Evosea; Eumycetozoa; Dictyostelia; Dictyosteliales; Dictyosteliaceae; Dictyostelium"
+ },
+ {
+  "label": "NC_004309.1",
+  "name": "Monosiga brevicollis",
+  "group": "Choanoflagellata",
+  "supergroup": "Opisthokonta",
+  "kind": "mito",
+  "accession": "NC_004309.1",
+  "taxid": "81824",
+  "lineage": "Eukaryota; Choanoflagellata; Craspedida; Salpingoecidae; Monosiga"
+ },
+ {
+  "label": "NC_001715.1",
+  "name": "Allomyces macrogynus",
+  "group": "Fungi",
+  "supergroup": "Opisthokonta",
+  "kind": "mito",
+  "accession": "NC_001715.1",
+  "taxid": "28583",
+  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Blastocladiomycota; Blastocladiomycetes; Blastocladiales; Blastocladiaceae; Allomyces"
+ },
+ {
+  "label": "NC_003053.1",
+  "name": "Rhizophydium sp. 136",
+  "group": "Fungi",
+  "supergroup": "Opisthokonta",
+  "kind": "mito",
+  "accession": "NC_003053.1",
+  "taxid": "60187",
+  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; chytridiomyceta; Chytridiomycota; Chytridiomycotina; Chytridiomycetes; Rhizophydiales; Rhizophydiaceae; Rhizophydium"
+ },
+ {
+  "label": "NC_027264.1",
+  "name": "Saccharomyces cerevisiae",
+  "group": "Fungi",
+  "supergroup": "Opisthokonta",
+  "kind": "mito",
+  "accession": "NC_027264.1",
+  "taxid": "4932",
+  "lineage": "Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes; Saccharomycetales; Saccharomycetaceae; Saccharomyces"
+ },
+ {
+  "label": "NC_008151.3",
+  "name": "Trichoplax adhaerens",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "kind": "mito",
+  "accession": "NC_008151.3",
+  "taxid": "10228",
+  "lineage": "Eukaryota; Metazoa; Placozoa; Uniplacotomia; Trichoplacea; Trichoplacidae; Trichoplax"
+ },
+ {
+  "label": "NC_012920.1",
+  "name": "Homo sapiens",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "kind": "mito",
+  "accession": "NC_012920.1",
+  "taxid": "9606",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae; Homo"
+ },
+ {
+  "label": "NC_016739.1",
+  "name": "Phaeodactylum tricornutum",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "kind": "mito",
+  "accession": "NC_016739.1",
+  "taxid": "2850",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Bacillariophyta; Bacillariophyceae; Bacillariophycidae; Surirellales; Neidiineae; Neidiaceae; Phaeodactylum"
+ },
+ {
+  "label": "NC_030223.1",
+  "name": "Ectocarpus siliculosus",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "kind": "mito",
+  "accession": "NC_030223.1",
+  "taxid": "2880",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; PX clade; Phaeophyceae; Ectocarpales; Ectocarpaceae; Ectocarpus"
+ },
+ {
+  "label": "NC_009630.1",
+  "name": "Chlorokybus atmophyticus",
+  "group": "Streptophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_009630.1",
+  "taxid": "3144",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Chlorokybophyceae; Chlorokybales; Chlorokybaceae; Chlorokybus"
+ },
+ {
+  "label": "NC_005255.1",
+  "name": "Chara vulgaris",
+  "group": "Streptophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_005255.1",
+  "taxid": "55564",
+  "lineage": "Eukaryota; Viridiplantae; Streptophyta; Charophyceae; Charales; Characeae; Chara"
+ },
+ {
+  "label": "NC_013935.1",
+  "name": "Pycnococcus provasolii",
+  "group": "Chlorophyta",
+  "supergroup": "Archaeplastida",
+  "kind": "mito",
+  "accession": "NC_013935.1",
+  "taxid": "41880",
+  "lineage": "Eukaryota; Viridiplantae; Chlorophyta; Pseudoscourfieldiophyceae; Pseudoscourfieldiales; Pycnococcaceae; Pycnococcus"
+ },
+ {
+  "label": "GCF_000277165.1",
+  "name": "Rickettsia prowazekii",
+  "group": "Rickettsiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000277165.1",
+  "taxid": "",
+  "lineage": "Rickettsiales"
+ },
+ {
+  "label": "GCF_000012385.1",
+  "name": "Rickettsia bellii",
+  "group": "Rickettsiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000012385.1",
+  "taxid": "",
+  "lineage": "Rickettsiales"
+ },
+ {
+  "label": "GCF_900327255.1",
+  "name": "Orientia tsutsugamushi",
+  "group": "Rickettsiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_900327255.1",
+  "taxid": "",
+  "lineage": "Rickettsiales"
+ },
+ {
+  "label": "GCF_000964685.1",
+  "name": "Anaplasma phagocytophilum",
+  "group": "Rickettsiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000964685.1",
+  "taxid": "",
+  "lineage": "Rickettsiales"
+ },
+ {
+  "label": "GCF_000013145.1",
+  "name": "Ehrlichia chaffeensis",
+  "group": "Rickettsiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000013145.1",
+  "taxid": "",
+  "lineage": "Rickettsiales"
+ },
+ {
+  "label": "GCF_947533255.1",
+  "name": "Wolbachia pipientis",
+  "group": "Rickettsiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_947533255.1",
+  "taxid": "",
+  "lineage": "Rickettsiales"
+ },
+ {
+  "label": "GCF_000013165.1",
+  "name": "Neorickettsia sennetsu",
+  "group": "Rickettsiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000013165.1",
+  "taxid": "",
+  "lineage": "Rickettsiales"
+ },
+ {
+  "label": "GCF_000219355.1",
+  "name": "Midichloria mitochondrii",
+  "group": "Rickettsiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000219355.1",
+  "taxid": "",
+  "lineage": "Rickettsiales"
+ },
+ {
+  "label": "GCF_000469665.2",
+  "name": "Holospora obtusa",
+  "group": "Holosporales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000469665.2",
+  "taxid": "",
+  "lineage": "Holosporales"
+ },
+ {
+  "label": "GCF_000388175.3",
+  "name": "Holospora undulata",
+  "group": "Holosporales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000388175.3",
+  "taxid": "",
+  "lineage": "Holosporales"
+ },
+ {
+  "label": "GCF_000012345.1",
+  "name": "Pelagibacter ubique",
+  "group": "Pelagibacterales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000012345.1",
+  "taxid": "",
+  "lineage": "Pelagibacterales"
+ },
+ {
+  "label": "GCF_000195085.1",
+  "name": "Pelagibacter sp. IMCC9063",
+  "group": "Pelagibacterales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000195085.1",
+  "taxid": "",
+  "lineage": "Pelagibacterales"
+ },
+ {
+  "label": "GCF_000013085.1",
+  "name": "Rhodospirillum rubrum",
+  "group": "Rhodospirillales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000013085.1",
+  "taxid": "",
+  "lineage": "Rhodospirillales"
+ },
+ {
+  "label": "GCF_007827425.1",
+  "name": "Azospirillum brasilense",
+  "group": "Rhodospirillales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_007827425.1",
+  "taxid": "",
+  "lineage": "Rhodospirillales"
+ },
+ {
+  "label": "GCF_009914215.2",
+  "name": "Acetobacter pasteurianus",
+  "group": "Rhodospirillales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_009914215.2",
+  "taxid": "",
+  "lineage": "Rhodospirillales"
+ },
+ {
+  "label": "GCF_000583855.1",
+  "name": "Gluconobacter oxydans",
+  "group": "Rhodospirillales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000583855.1",
+  "taxid": "",
+  "lineage": "Rhodospirillales"
+ },
+ {
+  "label": "GCF_002995515.1",
+  "name": "Magnetospirillum gryphiswaldense",
+  "group": "Rhodospirillales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_002995515.1",
+  "taxid": "",
+  "lineage": "Rhodospirillales"
+ },
+ {
+  "label": "GCF_057418525.1",
+  "name": "Tistrella mobilis",
+  "group": "Rhodospirillales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_057418525.1",
+  "taxid": "",
+  "lineage": "Rhodospirillales"
+ },
+ {
+  "label": "GCF_000515255.1",
+  "name": "Rhodovibrio salinarum",
+  "group": "Rhodospirillales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000515255.1",
+  "taxid": "",
+  "lineage": "Rhodospirillales"
+ },
+ {
+  "label": "GCF_017607425.1",
+  "name": "Sphingomonas wittichii",
+  "group": "Sphingomonadales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_017607425.1",
+  "taxid": "",
+  "lineage": "Sphingomonadales"
+ },
+ {
+  "label": "GCF_000498655.1",
+  "name": "Zymomonas mobilis",
+  "group": "Sphingomonadales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000498655.1",
+  "taxid": "",
+  "lineage": "Sphingomonadales"
+ },
+ {
+  "label": "GCF_001719165.1",
+  "name": "Erythrobacter litoralis",
+  "group": "Sphingomonadales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_001719165.1",
+  "taxid": "",
+  "lineage": "Sphingomonadales"
+ },
+ {
+  "label": "GCF_000091125.1",
+  "name": "Sphingobium japonicum",
+  "group": "Sphingomonadales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000091125.1",
+  "taxid": "",
+  "lineage": "Sphingomonadales"
+ },
+ {
+  "label": "GCF_016027095.1",
+  "name": "Sphingomonas paucimobilis",
+  "group": "Sphingomonadales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_016027095.1",
+  "taxid": "",
+  "lineage": "Sphingomonadales"
+ },
+ {
+  "label": "GCF_000092045.1",
+  "name": "Rhizobium etli",
+  "group": "Hyphomicrobiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000092045.1",
+  "taxid": "",
+  "lineage": "Hyphomicrobiales"
+ },
+ {
+  "label": "GCF_037023865.1",
+  "name": "Sinorhizobium meliloti",
+  "group": "Hyphomicrobiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_037023865.1",
+  "taxid": "",
+  "lineage": "Hyphomicrobiales"
+ },
+ {
+  "label": "GCF_000092025.1",
+  "name": "Agrobacterium fabrum",
+  "group": "Hyphomicrobiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000092025.1",
+  "taxid": "",
+  "lineage": "Hyphomicrobiales"
+ },
+ {
+  "label": "GCF_001642675.1",
+  "name": "Bradyrhizobium diazoefficiens",
+  "group": "Hyphomicrobiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_001642675.1",
+  "taxid": "",
+  "lineage": "Hyphomicrobiales"
+ },
+ {
+  "label": "GCF_000007125.1",
+  "name": "Brucella melitensis",
+  "group": "Hyphomicrobiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000007125.1",
+  "taxid": "",
+  "lineage": "Hyphomicrobiales"
+ },
+ {
+  "label": "GCF_019930925.1",
+  "name": "Bartonella henselae",
+  "group": "Hyphomicrobiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_019930925.1",
+  "taxid": "",
+  "lineage": "Hyphomicrobiales"
+ },
+ {
+  "label": "GCF_000083545.1",
+  "name": "Methylobacterium extorquens",
+  "group": "Hyphomicrobiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000083545.1",
+  "taxid": "",
+  "lineage": "Hyphomicrobiales"
+ },
+ {
+  "label": "GCF_012913625.1",
+  "name": "Mesorhizobium japonicum",
+  "group": "Hyphomicrobiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_012913625.1",
+  "taxid": "",
+  "lineage": "Hyphomicrobiales"
+ },
+ {
+  "label": "GCF_016584445.1",
+  "name": "Rhodopseudomonas palustris",
+  "group": "Hyphomicrobiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_016584445.1",
+  "taxid": "",
+  "lineage": "Hyphomicrobiales"
+ },
+ {
+  "label": "GCF_000143145.1",
+  "name": "Hyphomicrobium denitrificans",
+  "group": "Hyphomicrobiales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000143145.1",
+  "taxid": "",
+  "lineage": "Hyphomicrobiales"
+ },
+ {
+  "label": "GCF_000022005.1",
+  "name": "Caulobacter vibrioides",
+  "group": "Caulobacterales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000022005.1",
+  "taxid": "",
+  "lineage": "Caulobacterales"
+ },
+ {
+  "label": "GCF_000144605.1",
+  "name": "Brevundimonas subvibrioides",
+  "group": "Caulobacterales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000144605.1",
+  "taxid": "",
+  "lineage": "Caulobacterales"
+ },
+ {
+  "label": "GCF_000017265.1",
+  "name": "Phenylobacterium zucineum",
+  "group": "Caulobacterales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000017265.1",
+  "taxid": "",
+  "lineage": "Caulobacterales"
+ },
+ {
+  "label": "GCF_003324715.1",
+  "name": "Cereibacter sphaeroides",
+  "group": "Rhodobacterales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_003324715.1",
+  "taxid": "",
+  "lineage": "Rhodobacterales"
+ },
+ {
+  "label": "GCF_004063735.1",
+  "name": "Paracoccus denitrificans",
+  "group": "Rhodobacterales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_004063735.1",
+  "taxid": "",
+  "lineage": "Rhodobacterales"
+ },
+ {
+  "label": "GCF_000011965.2",
+  "name": "Ruegeria pomeroyi",
+  "group": "Rhodobacterales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000011965.2",
+  "taxid": "",
+  "lineage": "Rhodobacterales"
+ },
+ {
+  "label": "GCF_000018145.1",
+  "name": "Dinoroseobacter shibae",
+  "group": "Rhodobacterales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000018145.1",
+  "taxid": "",
+  "lineage": "Rhodobacterales"
+ },
+ {
+  "label": "GCF_002983865.1",
+  "name": "Roseobacter denitrificans",
+  "group": "Rhodobacterales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_002983865.1",
+  "taxid": "",
+  "lineage": "Rhodobacterales"
+ },
+ {
+  "label": "GCF_000014865.1",
+  "name": "Magnetococcus marinus",
+  "group": "Magnetococcales",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000014865.1",
+  "taxid": "",
+  "lineage": "Magnetococcales"
+ },
+ {
+  "label": "GCF_000226315.1",
+  "name": "Micavibrio aeruginosavorus",
+  "group": "Other Alphaproteobacteria",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000226315.1",
+  "taxid": "",
+  "lineage": "Other Alphaproteobacteria"
+ },
+ {
+  "label": "GCF_000152825.2",
+  "name": "Parvularcula bermudensis",
+  "group": "Other Alphaproteobacteria",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000152825.2",
+  "taxid": "",
+  "lineage": "Other Alphaproteobacteria"
+ },
+ {
+  "label": "GCF_000375545.1",
+  "name": "Kordiimonas gwangyangensis",
+  "group": "Other Alphaproteobacteria",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000375545.1",
+  "taxid": "",
+  "lineage": "Other Alphaproteobacteria"
+ },
+ {
+  "label": "GCF_055385085.1",
+  "name": "Sneathiella glossodoripedis",
+  "group": "Other Alphaproteobacteria",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_055385085.1",
+  "taxid": "",
+  "lineage": "Other Alphaproteobacteria"
+ },
+ {
+  "label": "GCF_000374005.1",
+  "name": "Kiloniella laminariae",
+  "group": "Other Alphaproteobacteria",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000374005.1",
+  "taxid": "",
+  "lineage": "Other Alphaproteobacteria"
+ },
+ {
+  "label": "GCF_000427665.1",
+  "name": "Geminicoccus roseus",
+  "group": "Other Alphaproteobacteria",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000427665.1",
+  "taxid": "",
+  "lineage": "Other Alphaproteobacteria"
+ },
+ {
+  "label": "GCF_006385175.1",
+  "name": "Emcibacter nanhaiensis",
+  "group": "Other Alphaproteobacteria",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_006385175.1",
+  "taxid": "",
+  "lineage": "Other Alphaproteobacteria"
+ },
+ {
+  "label": "GCF_000013025.1",
+  "name": "Hyphomonas neptunium",
+  "group": "Other Alphaproteobacteria",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_000013025.1",
+  "taxid": "",
+  "lineage": "Other Alphaproteobacteria"
+ },
+ {
+  "label": "GCF_003634045.1",
+  "name": "Maricaulis maris",
+  "group": "Other Alphaproteobacteria",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_003634045.1",
+  "taxid": "",
+  "lineage": "Other Alphaproteobacteria"
+ },
+ {
+  "label": "GCF_004341375.1",
+  "name": "Rhodothalassium salexigens",
+  "group": "Other Alphaproteobacteria",
+  "supergroup": "Alphaproteobacteria",
+  "kind": "bacteria",
+  "accession": "GCF_004341375.1",
+  "taxid": "",
+  "lineage": "Other Alphaproteobacteria"
+ },
+ {
+  "label": "GCF_000005845.2",
+  "name": "Escherichia coli",
+  "group": "Gammaproteobacteria",
+  "supergroup": "Outgroup",
+  "kind": "bacteria",
+  "accession": "GCF_000005845.2",
+  "taxid": "",
+  "lineage": "Outgroups"
+ },
+ {
+  "label": "GCF_000006765.1",
+  "name": "Pseudomonas aeruginosa",
+  "group": "Gammaproteobacteria",
+  "supergroup": "Outgroup",
+  "kind": "bacteria",
+  "accession": "GCF_000006765.1",
+  "taxid": "",
+  "lineage": "Outgroups"
+ },
+ {
+  "label": "GCF_022869645.1",
+  "name": "Neisseria meningitidis",
+  "group": "Betaproteobacteria",
+  "supergroup": "Outgroup",
+  "kind": "bacteria",
+  "accession": "GCF_022869645.1",
+  "taxid": "",
+  "lineage": "Outgroups"
+ },
+ {
+  "label": "GCF_001718895.1",
+  "name": "Burkholderia cenocepacia",
+  "group": "Betaproteobacteria",
+  "supergroup": "Outgroup",
+  "kind": "bacteria",
+  "accession": "GCF_001718895.1",
+  "taxid": "",
+  "lineage": "Outgroups"
+ },
+ {
+  "label": "GCF_054182965.1",
+  "name": "Nitrosomonas europaea",
+  "group": "Betaproteobacteria",
+  "supergroup": "Outgroup",
+  "kind": "bacteria",
+  "accession": "GCF_054182965.1",
+  "taxid": "",
+  "lineage": "Outgroups"
+ },
+ {
+  "label": "GCF_014142625.1",
+  "name": "Ralstonia pickettii",
+  "group": "Betaproteobacteria",
+  "supergroup": "Outgroup",
+  "kind": "bacteria",
+  "accession": "GCF_014142625.1",
+  "taxid": "",
+  "lineage": "Outgroups"
+ },
+ {
+  "label": "GCF_008369605.1",
+  "name": "Vibrio cholerae",
+  "group": "Gammaproteobacteria",
+  "supergroup": "Outgroup",
+  "kind": "bacteria",
+  "accession": "GCF_008369605.1",
+  "taxid": "",
+  "lineage": "Outgroups"
+ },
+ {
+  "label": "GCF_013388375.1",
+  "name": "Xanthomonas campestris",
+  "group": "Gammaproteobacteria",
+  "supergroup": "Outgroup",
+  "kind": "bacteria",
+  "accession": "GCF_013388375.1",
+  "taxid": "",
+  "lineage": "Outgroups"
+ }
+]

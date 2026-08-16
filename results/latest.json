@@ -1,6 +1,6 @@
 {
  "date": "2026-08-16",
- "timestamp": "2026-08-16T00:29:01Z",
+ "timestamp": "2026-08-16T00:52:06Z",
  "profile": "ci",
  "mitophy_version": "0.1.0",
  "refseq_mito": {
@@ -23,9 +23,9 @@
  "origin": {
   "tool": "IQ-TREE",
   "model": "LG+F+G4",
-  "lnL": -820540.8306,
+  "lnL": -821164.8672,
   "n_taxa": 103,
-  "n_sites": 10193,
+  "n_sites": 10199,
   "markers": [
    "atp1",
    "atp6",

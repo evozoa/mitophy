@@ -1,6 +1,6 @@
 {
   "input_hash": "de71c26ee0e15e26c9a6f225967598d101b52d31c59fafa40387eb09685886af",
-  "finished": "2026-08-16T00:28:58Z",
+  "finished": "2026-08-16T00:52:03Z",
   "tool": "FastTree",
   "command": "/home/runner/micromamba/envs/mitophy/bin/FastTreeMP -lg -gamma /home/runner/work/mitophy/mitophy/work/diversification/concat.faa",
   "model": "LG GAMMA",
@@ -20,7 +20,7 @@
   },
   "align": {
     "input_hash": "8fedbf51fcd251bb09052d5e85058695a4fe03fd04229e86caf15dd1693420ea",
-    "finished": "2026-08-16T00:24:50Z",
+    "finished": "2026-08-16T00:47:56Z",
     "n_taxa": 618,
     "n_sites": 4030,
     "markers": [

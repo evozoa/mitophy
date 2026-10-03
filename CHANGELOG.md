@@ -2,6 +2,14 @@
 
 Automatically generated entries for pipeline runs; hand-written entries for content changes.
 
+## 2026-10-03 — pipeline run (profile `ci`)
+
+- RefSeq mitochondrion release files: mitochondrion.1.genomic.gbff.gz (Fri, 04 Sep 2026 02:37:44 GMT); 17719 complete mitogenomes parsed
+- Origin tree: IQ-TREE LG+F+G4, 103 taxa × 10199 sites, lnL -821164.8672, rooted on outgroup (Betaproteobacteria, Gammaproteobacteria, Bacteria)
+- Diversification tree: FastTree LG GAMMA, 618 taxa × 4025 sites, lnL -2094156.273
+- Sampled genomes: 618 (+0 / −0 vs previous run)
+- Tools: python 3.12.14, biopython 1.88, pyhmmer 0.12.3, mafft 7.526, trimal 1.5.rev1, iqtree iqtree3 3.1.4, fasttree 2.2.0, datasets 18.38.0
+
 ## 2026-08-16 — pipeline run (profile `ci`)
 
 - RefSeq mitochondrion release files: mitochondrion.1.genomic.gbff.gz (Thu, 09 Jul 2026 18:20:43 GMT); 17720 complete mitogenomes parsed

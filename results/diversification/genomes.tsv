@@ -90,10 +90,10 @@ NC_068698.1	Cutaneotrichosporon cutaneum	5554	Fungi	Opisthokonta	Fungi	73462	0.2
 NC_054273.1	Trichosporon inkin	82517	Fungi	Opisthokonta	Fungi	39466	0.2756	22	24	2	4	15	atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6,rps3
 NC_008368.1	Mycosarcoma maydis	5270	Fungi	Opisthokonta	Fungi	56814	0.312	26	23	2	4	15	atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6,rps3
 NC_068065.1	Mopalia retifera	430713	Metazoa	Opisthokonta	Metazoa	14984	0.2985	13	22	2	5	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
+NC_014578.1	Symsagittifera roscoffensis	84072	Metazoa	Opisthokonta	Metazoa	14803	0.247	12	21	2	5	12	atp6,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_034947.1	Baltalimania ylvae	3341436	Metazoa	Opisthokonta	Metazoa	16619	0.253	12	22	2	5	12	atp6,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_034948.1	Isodiametra pulchra	504439	Metazoa	Opisthokonta	Metazoa	18725	0.3272	11	22	2	5	11	atp6,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad5,nad6
 NC_034946.1	Paratomella rubra	90914	Metazoa	Opisthokonta	Metazoa	14954	0.2185	13	22	2	5	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
-NC_014578.1	Symsagittifera roscoffensis	84072	Metazoa	Opisthokonta	Metazoa	14803	0.247	12	21	2	5	12	atp6,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_049065.1	Anemonia sulcata	6108	Metazoa	Opisthokonta	Metazoa	20390	0.3868	13	0	0	4	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_031872.1	Setaphyes kielensis	3298910	Metazoa	Opisthokonta	Metazoa	14985	0.2597	13	23	2	5	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_009774.1	Asymmetron inferum	426587	Metazoa	Opisthokonta	Metazoa	15084	0.373	13	22	2	5	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
@@ -140,7 +140,6 @@ NC_044095.1	Gordionus alpestris	1137640	Metazoa	Opisthokonta	Metazoa	15132	0.294
 NC_050252.1	Eucidaris tribuloides	7632	Metazoa	Opisthokonta	Metazoa	15803	0.403	13	22	2	9	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_050272.1	Prionocidaris baculosa	1198993	Metazoa	Opisthokonta	Metazoa	15836	0.4081	13	22	2	9	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_050273.1	Stylocidaris reini	1986297	Metazoa	Opisthokonta	Metazoa	15850	0.4007	13	22	2	9	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
-NC_063502.1	Elaphe moellendorffi	74366	Metazoa	Opisthokonta	Metazoa	17191	0.3854	13	22	2	2	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_010692.1	Antedon mediterranea	105859	Metazoa	Opisthokonta	Metazoa	16156	0.2674	13	22	2	9	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_001878.1	Florometra serratissima	73431	Metazoa	Opisthokonta	Metazoa	16005	0.2718	13	22	2	9	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_066490.1	Poliometra prolixa	1320728	Metazoa	Opisthokonta	Metazoa	15916	0.3108	13	22	2	9	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
@@ -321,6 +320,7 @@ NC_022924.1	Meretrix lyrata	223151	Metazoa	Opisthokonta	Metazoa	21625	0.2951	13	
 NC_016949.1	Aplysina cauliformis	289398	Metazoa	Opisthokonta	Metazoa	19620	0.3288	14	25	2	4	14	atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_010203.1	Aplysina fulva	289401	Metazoa	Opisthokonta	Metazoa	19620	0.3286	14	25	2	4	14	atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_053937.1	Aplysina gerardogreeni	1171991	Metazoa	Opisthokonta	Metazoa	19620	0.3285	14	25	2	4	14	atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
+NC_029165.1	Protobothrops himalayanus	1515440	Metazoa	Opisthokonta	Metazoa	17389	0.4227	13	22	2	2	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_008556.1	Xenoturbella bocki	242395	Metazoa	Opisthokonta	Metazoa	15234	0.3544	13	22	2	5	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_029217.1	Xenoturbella churro	1768098	Metazoa	Opisthokonta	Metazoa	15339	0.376	13	22	2	5	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
 NC_029218.1	Xenoturbella hollandorum	1755482	Metazoa	Opisthokonta	Metazoa	15210	0.3469	13	22	2	5	13	atp6,atp8,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad4L,nad5,nad6
@@ -429,10 +429,10 @@ NC_085701.1	Euplotes cristatus	756077	Alveolata	SAR	SAR	41080	0.4006	36	7	4	4	20
 NC_085702.1	Euplotes vannus	5939	Alveolata	SAR	SAR	41256	0.3587	36	7	4	4	20	atp9,cob,cox1,cox2,nad2,nad3,nad4,nad4L,nad5,nad6,nad7,nad9,rpl14,rpl16,rpl2,rpl6,rps12,rps19,rps3,rps7
 NC_065668.1	Vischeria punctata	643629	Stramenopiles	SAR	SAR	41528	0.2736	36	28	3	1	28	atp1,atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad11,nad2,nad3,nad4,nad4L,nad5,nad6,nad7,nad9,rpl14,rpl16,rpl2,rpl5,rpl6,rps11,rps12,rps19,rps3,rps7
 NC_041506.1	Vischeria stellata	1104407	Stramenopiles	SAR	SAR	42608	0.2756	36	26	3	1	28	atp1,atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad11,nad2,nad3,nad4,nad4L,nad5,nad6,nad7,nad9,rpl14,rpl16,rpl2,rpl5,rpl6,rps11,rps12,rps19,rps3,rps7
+NC_020015.1	Microchloropsis gaditana	72520	Stramenopiles	SAR	SAR	42213	0.3141	33	0	0	1	24	atp1,atp6,atp9,cob,cox1,cox2,cox3,nad1,nad2,nad3,nad4,nad5,nad6,nad7,nad9,rpl14,rpl16,rpl2,rpl5,rpl6,rps11,rps19,rps3,rps7
 NC_022255.1	Microchloropsis salina	2511165	Stramenopiles	SAR	SAR	41907	0.3141	36	26	2	1	28	atp1,atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad11,nad2,nad3,nad4,nad4L,nad5,nad6,nad7,nad9,rpl14,rpl16,rpl2,rpl5,rpl6,rps11,rps12,rps19,rps3,rps7
 NC_022254.1	Nannochloropsis granulata	43926	Stramenopiles	SAR	SAR	38791	0.3197	35	26	2	1	28	atp1,atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad11,nad2,nad3,nad4,nad4L,nad5,nad6,nad7,nad9,rpl14,rpl16,rpl2,rpl5,rpl6,rps11,rps12,rps19,rps3,rps7
 NC_022256.1	Nannochloropsis limnetica	120807	Stramenopiles	SAR	SAR	38543	0.3169	35	26	2	1	28	atp1,atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad11,nad2,nad3,nad4,nad4L,nad5,nad6,nad7,nad9,rpl14,rpl16,rpl2,rpl5,rpl6,rps11,rps12,rps19,rps3,rps7
-NC_022257.1	Nannochloropsis oculata	43925	Stramenopiles	SAR	SAR	38444	0.3174	35	26	2	1	28	atp1,atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad11,nad2,nad3,nad4,nad4L,nad5,nad6,nad7,nad9,rpl14,rpl16,rpl2,rpl5,rpl6,rps11,rps12,rps19,rps3,rps7
 NC_063981.1	Sargassum henslowianum	703908	Stramenopiles	SAR	SAR	34923	0.3557	37	25	3	1	27	atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad11,nad2,nad3,nad4,nad4L,nad5,nad6,nad7,nad9,rpl14,rpl16,rpl2,rpl5,rpl6,rps11,rps12,rps19,rps3,rps7
 NC_029643.1	Trachydiscus minutus	1032745	Stramenopiles	SAR	SAR	45831	0.3252	46	27	3	1	28	atp1,atp6,atp8,atp9,cob,cox1,cox2,cox3,nad1,nad11,nad2,nad3,nad4,nad4L,nad5,nad6,nad7,nad9,rpl14,rpl16,rpl2,rpl5,rpl6,rps11,rps12,rps19,rps3,rps7
 NC_086648.1	Spirostomum yagiui	1471042	Alveolata	SAR	SAR	46559	0.2286	16	0	2	4	13	cob,cox1,nad1,nad2,nad3,nad4,nad4L,nad5,nad6,nad7,nad9,rpl6,rps12

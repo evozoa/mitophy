@@ -126,7 +126,7 @@
   "supergroup": "Opisthokonta",
   "taxid": "1167838",
   "accession": "NC_040967.1",
-  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Ancylistaceae; Capillidium",
+  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Capillidiaceae; Capillidium",
   "kind": "mito"
  },
  {
@@ -136,7 +136,7 @@
   "supergroup": "Opisthokonta",
   "taxid": "181046",
   "accession": "NC_064684.1",
-  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Ancylistaceae; Capillidium",
+  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Capillidiaceae; Capillidium",
   "kind": "mito"
  },
  {
@@ -146,7 +146,7 @@
   "supergroup": "Opisthokonta",
   "taxid": "1167813",
   "accession": "NC_058636.1",
-  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Ancylistaceae; Conidiobolus",
+  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Conidiobolaceae; Conidiobolus",
   "kind": "mito"
  },
  {
@@ -156,7 +156,7 @@
   "supergroup": "Opisthokonta",
   "taxid": "1167816",
   "accession": "NC_058637.1",
-  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Ancylistaceae; Conidiobolus",
+  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Conidiobolaceae; Conidiobolus",
   "kind": "mito"
  },
  {
@@ -166,7 +166,7 @@
   "supergroup": "Opisthokonta",
   "taxid": "1368622",
   "accession": "NC_058638.1",
-  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Ancylistaceae; Conidiobolus",
+  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Conidiobolaceae; Conidiobolus",
   "kind": "mito"
  },
  {
@@ -176,7 +176,7 @@
   "supergroup": "Opisthokonta",
   "taxid": "2074866",
   "accession": "NC_058639.1",
-  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Ancylistaceae; Conidiobolus",
+  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Conidiobolaceae; Conidiobolus",
   "kind": "mito"
  },
  {
@@ -186,7 +186,7 @@
   "supergroup": "Opisthokonta",
   "taxid": "1167814",
   "accession": "NC_058640.1",
-  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Ancylistaceae; Conidiobolus",
+  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Conidiobolaceae; Conidiobolus",
   "kind": "mito"
  },
  {
@@ -196,7 +196,7 @@
   "supergroup": "Opisthokonta",
   "taxid": "2721185",
   "accession": "NC_058641.1",
-  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Ancylistaceae; Conidiobolus",
+  "lineage": "Eukaryota; Fungi; Fungi incertae sedis; Entomophthoromycota; Entomophthoromycotina; Entomophthoromycetes; Entomophthorales; Conidiobolaceae; Conidiobolus",
   "kind": "mito"
  },
  {
@@ -910,6 +910,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_014578.1",
+  "name": "Symsagittifera roscoffensis",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "84072",
+  "accession": "NC_014578.1",
+  "lineage": "Eukaryota; Metazoa; Xenacoelomorpha; Acoelomorpha; Acoela; Convolutidae; Symsagittifera",
+  "kind": "mito"
+ },
+ {
   "label": "NC_034947.1",
   "name": "Baltalimania ylvae",
   "group": "Metazoa",
@@ -937,16 +947,6 @@
   "taxid": "90914",
   "accession": "NC_034946.1",
   "lineage": "Eukaryota; Metazoa; Xenacoelomorpha; Acoelomorpha; Acoela; Paratomellidae; Paratomella",
-  "kind": "mito"
- },
- {
-  "label": "NC_014578.1",
-  "name": "Symsagittifera roscoffensis",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "84072",
-  "accession": "NC_014578.1",
-  "lineage": "Eukaryota; Metazoa; Xenacoelomorpha; Acoelomorpha; Acoela; Sagittiferidae; Symsagittifera",
   "kind": "mito"
  },
  {
@@ -1407,16 +1407,6 @@
   "taxid": "1986297",
   "accession": "NC_050273.1",
   "lineage": "Eukaryota; Metazoa; Echinodermata; Eleutherozoa; Echinozoa; Echinoidea; Perischoechinoidea; Cidaroida; Cidaridae; Stylocidaris",
-  "kind": "mito"
- },
- {
-  "label": "NC_063502.1",
-  "name": "Elaphe moellendorffi",
-  "group": "Metazoa",
-  "supergroup": "Opisthokonta",
-  "taxid": "74366",
-  "accession": "NC_063502.1",
-  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Lepidosauria; Squamata; Bifurcata; Unidentata; Episquamata; Toxicofera; Serpentes; Colubroidea; Colubridae; Colubrinae; Elaphe",
   "kind": "mito"
  },
  {
@@ -3220,6 +3210,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_029165.1",
+  "name": "Protobothrops himalayanus",
+  "group": "Metazoa",
+  "supergroup": "Opisthokonta",
+  "taxid": "1515440",
+  "accession": "NC_029165.1",
+  "lineage": "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Lepidosauria; Squamata; Bifurcata; Unidentata; Episquamata; Toxicofera; Serpentes; Colubroidea; Viperidae; Crotalinae; Protobothrops",
+  "kind": "mito"
+ },
+ {
   "label": "NC_008556.1",
   "name": "Xenoturbella bocki",
   "group": "Metazoa",
@@ -4300,6 +4300,16 @@
   "kind": "mito"
  },
  {
+  "label": "NC_020015.1",
+  "name": "Microchloropsis gaditana",
+  "group": "Stramenopiles",
+  "supergroup": "SAR",
+  "taxid": "72520",
+  "accession": "NC_020015.1",
+  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Eustigmatophyceae; Eustigmatales; Monodopsidaceae; Microchloropsis",
+  "kind": "mito"
+ },
+ {
   "label": "NC_022255.1",
   "name": "Microchloropsis salina",
   "group": "Stramenopiles",
@@ -4326,16 +4336,6 @@
   "supergroup": "SAR",
   "taxid": "120807",
   "accession": "NC_022256.1",
-  "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Eustigmatophyceae; Eustigmatales; Monodopsidaceae; Nannochloropsis",
-  "kind": "mito"
- },
- {
-  "label": "NC_022257.1",
-  "name": "Nannochloropsis oculata",
-  "group": "Stramenopiles",
-  "supergroup": "SAR",
-  "taxid": "43925",
-  "accession": "NC_022257.1",
   "lineage": "Eukaryota; Sar; Stramenopiles; Ochrophyta; Eustigmatophyceae; Eustigmatales; Monodopsidaceae; Nannochloropsis",
   "kind": "mito"
  },

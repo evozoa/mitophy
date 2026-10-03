@@ -1,9 +1,9 @@
 {
-  "n_refseq_genomes": 17720,
+  "n_refseq_genomes": 17719,
   "n_sampled": 618,
   "n_groups": 20,
   "n_by_supergroup": {
-    "Opisthokonta": 16544,
+    "Opisthokonta": 16543,
     "Archaeplastida": 805,
     "SAR": 316,
     "Discoba": 14,
@@ -23,7 +23,7 @@
   "most_genes_n": 2190,
   "transl_tables": {
     "2": 7767,
-    "5": 7282,
+    "5": 7281,
     "4": 1323,
     "1": 873,
     "9": 329,
